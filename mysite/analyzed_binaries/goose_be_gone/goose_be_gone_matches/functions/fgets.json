@@ -1,0 +1,13 @@
+{
+  "address": "0x11a0",
+  "rules": [
+    "read file on Linux"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "jmp     qword [rel fgets]"
+  ],
+  "high_level_IL": [
+    "return fgets(buf, n, fp) __tailcall"
+  ]
+}

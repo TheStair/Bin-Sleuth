@@ -1,0 +1,15 @@
+{
+  "address": "0x1050",
+  "rules": [
+    "write file on Windows/3772193b67764012b0d59bdbe7fe5d9a"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "push    0x2 {var_8}",
+    "jmp     sub_1020"
+  ],
+  "high_level_IL": [
+    "int64_t var_8 = 2",
+    "return sub_1020() __tailcall"
+  ]
+}

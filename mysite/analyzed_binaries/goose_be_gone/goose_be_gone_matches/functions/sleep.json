@@ -1,0 +1,13 @@
+{
+  "address": "0x1200",
+  "rules": [
+    "delay execution"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "jmp     qword [rel sleep]"
+  ],
+  "high_level_IL": [
+    "return sleep(seconds) __tailcall"
+  ]
+}
