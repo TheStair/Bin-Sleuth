@@ -1,7 +1,7 @@
 {
   "address": "0x1280",
   "rules": [
-    "validate payment card number using luhn algorithm with no lookup table/62880de69d1941c9b68bc888f21444df"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
   ],
   "disassembly": [
     "lea     rdi, [rel __TMC_END__]",
