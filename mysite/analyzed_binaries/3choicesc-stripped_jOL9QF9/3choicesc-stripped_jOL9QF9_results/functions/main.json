@@ -1,0 +1,49 @@
+{
+  "address": "0x401160",
+  "rules": [
+    "write file on Windows/6b10463c9c4d44d0acbd23f1cf48dee1"
+  ],
+  "disassembly": [
+    "stmxcsr dword [rsp-0x8 {var_8_1}]",
+    "or      dword [rsp-0x8 {var_8} {var_8_1}], 0x8040",
+    "ldmxcsr dword [rsp-0x8 {var_8}]",
+    "cmp     edi, 0x3",
+    "je      0x401194",
+    "mov     qword [rsp-0x8 {var_8}], 0x401150",
+    "cmp     edi, 0x2",
+    "je      0x401189",
+    "lea     eax, [rdi+rsi]  {0x5}",
+    "retn     {__return_addr}",
+    "mov     eax, edi",
+    "sub     eax, esi  {0xffffffff}",
+    "retn     {__return_addr}",
+    "mov     eax, edi",
+    "imul    eax, esi  {0x6}",
+    "retn     {__return_addr}",
+    "mov     qword [rsp-0x8 {var_8}], 0x401140",
+    "jmp     0x40119d",
+    "test    edi, edi",
+    "mov     qword [rsp-0x8 {var_8}], 0x401130",
+    "jmp     0x40119d",
+    "mov     rax, qword [rsp-0x8 {var_8}]",
+    "mov     edi, 0x2",
+    "mov     esi, 0x3",
+    "jmp     rax"
+  ],
+  "high_level_IL": [
+    "int32_t mxcsr",
+    "int32_t var_8 = mxcsr | 0x8040",
+    "if (argc == 3)",
+    "var_8.q = 0x401150",
+    "if (argc == 2)",
+    "var_8.q = 0x401140",
+    "var_8.q = 0x401130",
+    "switch (var_8.q)",
+    "case 0x401130",
+    "return 5",
+    "case 0x401140",
+    "return 0xffffffff",
+    "case 0x401150",
+    "return 6"
+  ]
+}

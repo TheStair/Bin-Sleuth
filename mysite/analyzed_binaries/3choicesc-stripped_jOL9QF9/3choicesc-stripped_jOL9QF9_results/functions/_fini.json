@@ -1,0 +1,15 @@
+{
+  "address": "0x4011b0",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/c7fe1e7579fa4b64a366153a2c9756c7"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "sub     rsp, 0x8",
+    "add     rsp, 0x8",
+    "retn     {__return_addr}"
+  ],
+  "high_level_IL": [
+    "return "
+  ]
+}
