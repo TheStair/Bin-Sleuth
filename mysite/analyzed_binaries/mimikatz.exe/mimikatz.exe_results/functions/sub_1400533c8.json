@@ -1,0 +1,47 @@
+{
+  "address": "0x1400533c8",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "contain loop",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "test    rdx, rdx",
+    "je      0x140053432",
+    "retn    ",
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "xor     esi, esi",
+    "mov     rbx, rdx",
+    "mov     rbp, rcx",
+    "cmp     dword [rdx], esi",
+    "jle     0x14005341e",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rbp, qword [rsp+0x38]",
+    "mov     rsi, qword [rsp+0x40]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "lea     rdi, [rdx+0x30]",
+    "mov     eax, dword [rbp+0x34]",
+    "mov     dword [rdi+0x1c], eax",
+    "inc     dword [rbp+0x34]",
+    "mov     rdx, qword [rdi]",
+    "test    rdx, rdx",
+    "je      0x140053414",
+    "inc     esi",
+    "add     rdi, 0x70",
+    "cmp     esi, dword [rbx]",
+    "jl      0x1400533f1",
+    "mov     rdx, qword [rdx+0x28]",
+    "mov     rcx, rbp",
+    "call    sub_1400533c8",
+    "cmp     dword [rdi+0x1c], 0x0",
+    "jge     0x14005341e"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

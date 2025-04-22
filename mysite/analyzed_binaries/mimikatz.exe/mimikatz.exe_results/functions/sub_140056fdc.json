@@ -1,0 +1,49 @@
+{
+  "address": "0x140056fdc",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx {__saved_rbx}",
+    "sub     rsp, 0x30",
+    "mov     rbx, rcx",
+    "mov     rcx, qword [r8]",
+    "call    sub_140031230",
+    "cmp     eax, 0x11",
+    "ja      0x140057001",
+    "xor     edx, edx  {0x0}",
+    "lea     rdx, [rel data_1400d6370]",
+    "cdqe    ",
+    "mov     rdx, qword [rdx+rax*8]",
+    "jmp     0x140057003",
+    "add     rsp, 0x30",
+    "pop     rbx {__saved_rbx}",
+    "retn     {__return_addr}",
+    "mov     rcx, rbx",
+    "call    sub_1400363a8",
+    "mov     rcx, qword [rbx]",
+    "and     qword [rsp+0x20 {var_18}], 0x0",
+    "mov     r9b, 0x1",
+    "or      r8d, 0xffffffff  {0xffffffff}",
+    "call    sub_140031820",
+    "cmp     eax, 0x12",
+    "jne     0x140057025"
+  ],
+  "high_level_IL": [
+    "int32_t rax",
+    "int512_t zmm1",
+    "rax, zmm1 = sub_140031230(*arg3)",
+    "int64_t rdx",
+    "if (rax u> 0x11)",
+    "rdx = 0",
+    "rdx = (&data_1400d6370)[sx.q(rax)]",
+    "int32_t result",
+    "int64_t r12",
+    "int512_t zmm1_1",
+    "result, zmm1_1 = sub_140031820(*arg1, rdx, 0xffffffff, 1, r12, zmm1, 0)",
+    "if (result != 0x12)",
+    "return result",
+    "return sub_1400363a8(arg1, zmm1_1)"
+  ]
+}

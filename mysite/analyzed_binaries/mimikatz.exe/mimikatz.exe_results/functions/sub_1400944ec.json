@@ -1,0 +1,29 @@
+{
+  "address": "0x1400944ec",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "lea     rcx, [rel data_1401403b0]",
+    "call    LsaConnectUntrusted",
+    "xor     ebx, ebx",
+    "cmp     eax, ebx",
+    "jl      0x140094529",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    ",
+    "mov     rcx, qword [rel data_1401403b0]",
+    "lea     r8, [rel data_1401403a8]",
+    "lea     rdx, [rel data_14013c8c8]",
+    "call    LsaLookupAuthenticationPackage",
+    "cmp     eax, ebx",
+    "setge   bl",
+    "mov     dword [rel data_1401403ac], ebx"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

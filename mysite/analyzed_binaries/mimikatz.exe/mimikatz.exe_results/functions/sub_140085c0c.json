@@ -1,0 +1,38 @@
+{
+  "address": "0x140085c0c",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     rbx, rdx",
+    "cmp     ecx, 0x3",
+    "jne     0x140085c57",
+    "xor     eax, eax",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    ",
+    "mov     rcx, qword [rbx+0x18]",
+    "lea     rdx, [rel data_1400f8350]  {\"ncrypt.dll\"}",
+    "call    qword [rel _stricmp]",
+    "test    eax, eax",
+    "je      0x140085c44",
+    "xor     r9d, r9d",
+    "xor     r8d, r8d",
+    "xor     edx, edx",
+    "mov     ecx, 0x485",
+    "call    qword [rel RaiseException]",
+    "{ Does not return }",
+    "mov     rcx, qword [rbx+0x18]",
+    "lea     rdx, [rel data_1400f8360]  {\"bcrypt.dll\"}",
+    "call    qword [rel _stricmp]",
+    "test    eax, eax",
+    "jne     0x140085c57"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

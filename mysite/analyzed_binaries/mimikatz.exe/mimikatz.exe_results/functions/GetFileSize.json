@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c8fda",
+  "rules": [
+    "get file size"
+  ],
+  "disassembly": [
+    "jmp     qword [rel GetFileSize]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "address": "0x14008d234",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "check OS version/e331473c09f0419eb22f4786f6872060"
+  ],
+  "disassembly": [
+    "test    rcx, rcx",
+    "je      0x14008d2a6",
+    "retn    ",
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     rbx, rcx",
+    "lea     rcx, [rel data_1400fd6e8]  {u\"GUID:\"}",
+    "call    sub_14000c030",
+    "lea     rcx, [rbx+0x10]",
+    "call    sub_1400130e8",
+    "lea     rcx, [rel data_1400fd6f4]",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_1400fd6f8]  {u\"KeyHash:\"}",
+    "call    sub_14000c030",
+    "xor     r8d, r8d",
+    "lea     rcx, [rbx+0x20]",
+    "lea     edx, [r8+0x14]",
+    "call    sub_140012f68",
+    "cmp     qword [rbx+0x38], 0x0",
+    "lea     rax, [rel data_1400e17cc]",
+    "lea     rdx, [rel data_1400fd710]  {u\"not \"}",
+    "lea     rcx, [rel data_1400fd720]  {u\";Key:%savailable\\n\"}",
+    "cmovne  rdx, rax",
+    "call    sub_14000c030",
+    "add     rsp, 0x20",
+    "pop     rbx"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

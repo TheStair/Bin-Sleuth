@@ -1,0 +1,39 @@
+{
+  "address": "0x1400ce180",
+  "rules": [
+    "encrypt data using speck/4b1f3c27d17344b39cf9dede3bcf8b4b",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check for software breakpoints/eab8e97e968348cd9975bb039b618db9",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "load shellcode via donut/c9a72a5fdf6e462ea071ab99fb8585e2/5c9bba15e9b64c668b01383d9c9afe0e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     ebx, ecx",
+    "xor     ecx, ecx",
+    "call    qword [rel GetModuleHandleW]",
+    "test    rax, rax",
+    "je      0x1400ce1bd",
+    "mov     eax, ebx",
+    "mov     rcx, rax",
+    "call    sub_1400ce128",
+    "test    rax, rax",
+    "je      0x1400ce1bd",
+    "mov     ecx, 0x2",
+    "cmp     word [rax+0x5c], cx",
+    "jne     0x1400ce1b1",
+    "cmp     word [rax+0x5c], 0x3",
+    "mov     eax, 0x1",
+    "je      0x1400ce1bf",
+    "mov     eax, ecx",
+    "jmp     0x1400ce1bf",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

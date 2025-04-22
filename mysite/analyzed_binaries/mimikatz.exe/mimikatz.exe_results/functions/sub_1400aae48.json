@@ -1,0 +1,52 @@
+{
+  "address": "0x1400aae48",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x48",
+    "and     qword [rsp+0x20], 0x0",
+    "lea     r9, [rsp+0x30]",
+    "lea     r8, [rel data_140113928]  {u\"input\"}",
+    "call    sub_140013220",
+    "test    eax, eax",
+    "je      0x1400aaeef",
+    "lea     rcx, [rel data_140129dd0]  {u\"ERROR kuhl_m_misc_djoin ; An /in\u2026\"}",
+    "call    sub_14000c030",
+    "mov     rdx, qword [rsp+0x30]",
+    "lea     rcx, [rel data_140129d78]  {u\"Input   : %s\\nOpening : \"}",
+    "call    sub_14000c030",
+    "mov     rcx, qword [rsp+0x30]",
+    "lea     r8, [rsp+0x68]",
+    "lea     rdx, [rsp+0x38]",
+    "xor     r9d, r9d",
+    "call    sub_140009e4c",
+    "test    eax, eax",
+    "je      0x1400aaefb",
+    "xor     eax, eax",
+    "add     rsp, 0x48",
+    "retn    ",
+    "lea     rcx, [rel data_140129da8]  {u\"OK\\nDecoding: \"}",
+    "call    sub_14000c030",
+    "mov     rcx, qword [rsp+0x38]",
+    "lea     r8, [rsp+0x60]",
+    "lea     rdx, [rsp+0x30]",
+    "call    sub_1400136d4",
+    "test    eax, eax",
+    "je      0x1400aaee2",
+    "mov     rcx, qword [rsp+0x38]",
+    "call    qword [rel LocalFree]",
+    "jmp     0x1400aaefb",
+    "lea     rcx, [rel data_140115008]  {u\"OK\\n\\n\"}",
+    "call    sub_14000c030",
+    "mov     r8, qword [rsp+0x30]",
+    "mov     edx, dword [rsp+0x60]",
+    "xor     ecx, ecx",
+    "call    sub_1400be974",
+    "mov     rcx, qword [rsp+0x30]",
+    "call    qword [rel LocalFree]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

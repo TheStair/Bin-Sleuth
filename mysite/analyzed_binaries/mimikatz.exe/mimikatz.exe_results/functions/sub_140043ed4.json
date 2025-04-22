@@ -1,0 +1,45 @@
+{
+  "address": "0x140043ed4",
+  "rules": [
+    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
+    "inject pe/0fa951270c554b5eb43a556aa3ef2963"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rdi",
+    "test    edx, edx",
+    "je      0x140043f05",
+    "mov     edx, 0x48",
+    "cmp     byte [rcx], 0xad",
+    "je      0x140043f05",
+    "mov     rdi, qword [rsp+0x8]",
+    "lea     eax, [rdx+0x7]",
+    "and     eax, 0xfffffff8",
+    "retn    ",
+    "mov     rdi, qword [rcx+0x8]",
+    "test    rdi, rdi",
+    "je      0x140043f38",
+    "bt      dword [rcx+0x4], 0x18",
+    "jb      0x140043f05",
+    "or      rcx, 0xffffffffffffffff",
+    "xor     eax, eax",
+    "repne scasb byte [rdi]",
+    "not     rcx",
+    "dec     rcx",
+    "and     ecx, 0x3fffffff",
+    "lea     edx, [rdx+rcx+0x1]",
+    "cmp     qword [rcx+0x10], 0x0",
+    "jne     0x140043efe",
+    "mov     edx, 0x2028",
+    "jmp     0x140043f0a",
+    "cmp     qword [rcx+0x20], 0x0",
+    "jne     0x140043efe",
+    "and     edx, 0xfff",
+    "bt      dword [rcx+0x4], 0xa",
+    "jb      0x140043f38",
+    "mov     edx, 0x4010",
+    "jmp     0x140043f0a"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "address": "0x1400a466c",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     r8, rdx",
+    "mov     edx, 0x12",
+    "call    SamSetInformationUser",
+    "mov     ebx, eax",
+    "test    eax, eax",
+    "js      0x1400a4693",
+    "lea     rcx, [rel data_140110a40]  {u\"ERROR kuhl_m_lsadump_setntlm_cal\u2026\"}",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_1401109e0]  {u\"\\n>> Informations are in the tar\u2026\"}",
+    "call    sub_14000c030",
+    "jmp     0x1400a46a1",
+    "mov     eax, ebx",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

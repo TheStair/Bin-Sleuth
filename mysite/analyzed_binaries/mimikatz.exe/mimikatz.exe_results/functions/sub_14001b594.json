@@ -1,0 +1,51 @@
+{
+  "address": "0x14001b594",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "mov     eax, dword [rel data_140140360]",
+    "mov     rdi, rcx",
+    "cmp     eax, 0x2",
+    "je      0x14001b5c5",
+    "mov     r9d, 0x1fe",
+    "mov     edx, 0x40000002",
+    "call    sub_14001a7b4",
+    "test    eax, eax",
+    "jne     0x14001b5c5",
+    "mov     eax, ebx",
+    "mov     rbx, qword [rsp+0x40]",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "retn    ",
+    "call    qword [rel data_14013d6d8]",
+    "cmp     eax, 0x9e",
+    "je      0x14001b616",
+    "movsx   edx, word [rdi+0x1a]",
+    "lea     r9d, [rax+0x1]",
+    "add     edx, 0x40000002",
+    "jmp     0x14001b5d0",
+    "mov     r9, qword [rdi+0x30]",
+    "lea     r8, [rel data_1400f39f8]  {\"winUnlockReadLock\"}",
+    "mov     edx, eax",
+    "mov     ecx, 0x80a",
+    "mov     dword [rdi+0x20], eax",
+    "mov     dword [rsp+0x20], 0xabd8",
+    "call    sub_14001ac00",
+    "and     dword [rsp+0x20], 0x0",
+    "lea     rcx, [rdi+0x10]",
+    "xor     r8d, r8d",
+    "call    sub_14001ae00",
+    "mov     ebx, eax",
+    "test    eax, eax",
+    "jne     0x14001b616"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c90a6",
+  "rules": [
+    "delete file"
+  ],
+  "disassembly": [
+    "jmp     qword [rel DeleteFileW]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

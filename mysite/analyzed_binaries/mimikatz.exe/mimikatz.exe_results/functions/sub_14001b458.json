@@ -1,0 +1,46 @@
+{
+  "address": "0x14001b458",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x10], rbx",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "mov     rsi, rcx",
+    "mov     rcx, qword [rcx+0x10]",
+    "mov     rbx, rdx",
+    "lea     rdx, [rsp+0x40]",
+    "xor     edi, edi",
+    "call    qword [rel data_14013d690]",
+    "mov     r8d, dword [rsp+0x40]",
+    "shl     r8, 0x20",
+    "mov     r11d, eax",
+    "add     r8, r11",
+    "mov     qword [rbx], r8",
+    "cmp     eax, 0xffffffff",
+    "jne     0x14001b4c3",
+    "mov     rbx, qword [rsp+0x48]",
+    "mov     rsi, qword [rsp+0x50]",
+    "mov     eax, edi",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "retn    ",
+    "call    qword [rel data_14013d6d8]",
+    "cmp     eax, edi",
+    "je      0x14001b4c3",
+    "mov     r9, qword [rsi+0x30]",
+    "lea     r8, [rel data_1400f39e8]  {\"winFileSize\"}",
+    "mov     edx, eax",
+    "mov     ecx, 0x70a",
+    "mov     dword [rsi+0x20], eax",
+    "mov     dword [rsp+0x20], 0xab79",
+    "call    sub_14001ac00",
+    "mov     edi, eax"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

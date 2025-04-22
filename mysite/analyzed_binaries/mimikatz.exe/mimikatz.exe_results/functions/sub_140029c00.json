@@ -1,0 +1,44 @@
+{
+  "address": "0x140029c00",
+  "rules": [
+    "check for kernel debugger via shared user data structure/f02b2044f10f450f9f5b2b0d5d96cef0",
+    "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "hash data with CRC32/7620b456d97a4aaeb63e1213270df3d4",
+    "hash data using aphash/53c84e7b18b64c82aa36e25c45372fcd"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x38",
+    "cmp     byte [rcx+0x54], 0x13",
+    "mov     r11, qword [rcx+0x20]",
+    "mov     r10d, edx",
+    "jl      0x140029c1d",
+    "movsx   rdx, byte [rcx+0x54]",
+    "movzx   eax, word [rcx+0x56]",
+    "and     byte [rcx+0x1], 0xf9",
+    "xor     r9d, r9d",
+    "lea     r8, [rcx+0x88]",
+    "mov     word [rcx+0x46], r9w",
+    "mov     word [rcx+rdx*2+0x58], ax",
+    "movsx   rdx, byte [rcx+0x54]",
+    "mov     rax, qword [r8]",
+    "mov     qword [rcx+rdx*8+0x90], rax",
+    "movzx   eax, byte [rcx+0x2]",
+    "inc     byte [rcx+0x54]",
+    "mov     word [rcx+0x56], r9w",
+    "mov     r9, rcx",
+    "mov     edx, r10d",
+    "mov     rcx, r11",
+    "mov     dword [rsp+0x20], eax",
+    "call    sub_1400278a0",
+    "mov     ecx, 0x10b64",
+    "call    sub_140084e38",
+    "jmp     0x140029c6c",
+    "add     rsp, 0x38",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "address": "0x140029ec4",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop",
+    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
+    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     r9, qword [rcx+0x88]",
+    "mov     rbx, rcx",
+    "jmp     0x140029f23",
+    "cmp     byte [r9+0x8], 0x0",
+    "je      0x140029ed6",
+    "movzx   eax, byte [r9+0x9]",
+    "mov     rcx, rbx",
+    "add     eax, 0x8",
+    "movsxd  r8, eax",
+    "add     r8, qword [r9+0x50]",
+    "movzx   eax, byte [r8+0x2]",
+    "movzx   edx, byte [r8+0x1]",
+    "shl     edx, 0x8",
+    "or      edx, eax",
+    "movzx   eax, byte [r8]",
+    "shl     eax, 0x18",
+    "shl     edx, 0x8",
+    "or      edx, eax",
+    "movzx   eax, byte [r8+0x3]",
+    "or      edx, eax",
+    "movzx   eax, word [r9+0x18]",
+    "mov     word [rbx+0x56], ax",
+    "call    sub_140029c00",
+    "test    eax, eax",
+    "jne     0x140029f38",
+    "movzx   eax, word [r9+0x18]",
+    "dec     ax",
+    "mov     word [rbx+0x56], ax",
+    "xor     eax, eax",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    ",
+    "mov     r9, qword [rbx+0x88]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

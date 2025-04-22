@@ -1,0 +1,40 @@
+{
+  "address": "0x14001dae8",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "contain loop",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "check OS version/e331473c09f0419eb22f4786f6872060"
+  ],
+  "disassembly": [
+    "test    rcx, rcx",
+    "je      0x14001db37",
+    "retn    ",
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "cmp     dword [rcx+0x8], 0x0",
+    "mov     rbx, rcx",
+    "je      0x14001db20",
+    "mov     rcx, rbx",
+    "call    sub_140016950",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rsi, qword [rsp+0x38]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "lea     rdi, [rcx+0x10]",
+    "mov     esi, 0x3e",
+    "mov     rcx, qword [rdi]",
+    "call    sub_14001dae8",
+    "add     rdi, 0x8",
+    "sub     rsi, 0x1",
+    "jne     0x14001db0e"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

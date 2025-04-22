@@ -1,0 +1,32 @@
+{
+  "address": "0x140016e6c",
+  "rules": [
+    "contain loop"
+  ],
+  "disassembly": [
+    "mov     r9, rcx",
+    "lea     r10, [rel data_1400d6500]",
+    "jmp     0x140016e7b",
+    "movzx   eax, byte [rdx]",
+    "test    byte [rax+r10], 0x1",
+    "jne     0x140016e78",
+    "inc     rdx",
+    "sub     r8d, edx",
+    "movsxd  rcx, r8d",
+    "test    r8d, r8d",
+    "jle     0x140016ea7",
+    "movsxd  r8, r8d",
+    "mov     rcx, r9",
+    "jmp     sub_140016e18",
+    "movzx   eax, byte [rdx+rcx-0x1]",
+    "test    byte [rax+r10], 0x1",
+    "je      0x140016ea7",
+    "dec     rcx",
+    "dec     r8d",
+    "test    rcx, rcx",
+    "jg      0x140016e90"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

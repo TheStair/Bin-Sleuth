@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c8f74",
+  "rules": [
+    "get common file path"
+  ],
+  "disassembly": [
+    "jmp     qword [rel GetTempPathA]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

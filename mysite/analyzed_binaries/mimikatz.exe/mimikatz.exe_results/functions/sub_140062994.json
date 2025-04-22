@@ -1,0 +1,23 @@
+{
+  "address": "0x140062994",
+  "rules": [
+    "hide graphical window from taskbar/c26bad2600334fd9a84ba1d9de3384f6",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x48",
+    "mov     rax, qword [rsp+0x78]",
+    "and     r9d, 0xf",
+    "mov     qword [rsp+0x30], rax",
+    "mov     rax, qword [rsp+0x70]",
+    "bts     r9d, 0x7",
+    "mov     qword [rsp+0x28], rax",
+    "and     qword [rsp+0x20], 0x0",
+    "call    sub_140062858",
+    "add     rsp, 0x48",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

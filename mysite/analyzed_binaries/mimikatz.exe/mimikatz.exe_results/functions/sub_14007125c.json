@@ -1,0 +1,49 @@
+{
+  "address": "0x14007125c",
+  "rules": [
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "decompress data using LZO/9824288f395a48129467845da291cb50",
+    "contain loop",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     r9, rcx",
+    "xor     r8d, r8d",
+    "jmp     0x1400712c5",
+    "test    byte [rdx+0x12], 0x4",
+    "je      0x140071264",
+    "cmp     dword [r9], 0x0",
+    "je      0x140071273",
+    "retn    ",
+    "mov     rax, qword [r9+0x50]",
+    "test    qword [rdx+0x38], rax",
+    "jne     0x1400712cb",
+    "mov     rax, qword [rdx]",
+    "test    byte [rax+0x4], 0x1",
+    "je      0x1400712cb",
+    "test    r8d, r8d",
+    "je      0x14007129e",
+    "or      word [rdx+0x12], 0x4",
+    "movzx   eax, word [rdx+0x12]",
+    "mov     ecx, 0x400",
+    "test    cx, ax",
+    "je      0x14007129e",
+    "movsxd  rcx, dword [rdx+0x18]",
+    "mov     rax, qword [rdx+0x8]",
+    "shl     rcx, 0x6",
+    "mov     rdx, rcx",
+    "add     rdx, qword [rax+0x20]",
+    "add     byte [rdx+0x16], 0xff",
+    "jne     0x1400712cb",
+    "mov     ecx, 0x200",
+    "or      ax, cx",
+    "mov     word [rdx+0x12], ax",
+    "jmp     0x1400712a3",
+    "inc     r8d",
+    "cmp     dword [rdx+0x18], 0x0",
+    "jl      0x1400712cb"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

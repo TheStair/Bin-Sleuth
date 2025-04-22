@@ -1,0 +1,46 @@
+{
+  "address": "0x14003f11c",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/a3c4a1cc0982489686093c2de66a39c8",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop",
+    "decrypt data using TEA/b1609112b4574d7d84a6736fb833fd96/bfe99336573d4b5189dbca2cbd3ed1f2",
+    "encrypt data using TEA/a99f0fb4fab7434084917883a6622883/6cf0dbdc06cf4e518b05ed91d6a55995",
+    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/b698edc3bfd142ebb8f43c55408819b5",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     ebx, 0x2",
+    "cmp     ecx, ebx",
+    "jle     0x14003f131",
+    "mov     eax, ebx",
+    "imul    eax, eax, 0x54",
+    "add     eax, 0x20",
+    "movsxd  rcx, eax",
+    "call    sub_140016b70",
+    "test    rax, rax",
+    "je      0x14003f167",
+    "add     ebx, ebx",
+    "cmp     ebx, ecx",
+    "jl      0x14003f12b",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    ",
+    "and     qword [rax+0x8], 0x0",
+    "lea     r8, [rax+0x20]",
+    "movsxd  rcx, ebx",
+    "lea     rdx, [rcx+rcx*4]",
+    "mov     dword [rax], ebx",
+    "mov     qword [rax+0x18], r8",
+    "shl     rdx, 0x4",
+    "add     rdx, r8",
+    "mov     qword [rax+0x10], rdx"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

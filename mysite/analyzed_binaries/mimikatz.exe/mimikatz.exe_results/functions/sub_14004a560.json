@@ -1,0 +1,53 @@
+{
+  "address": "0x14004a560",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "mov     edi, edx",
+    "mov     rbp, rcx",
+    "mov     dl, 0x1",
+    "mov     rcx, r8",
+    "mov     rbx, r9",
+    "call    sub_140031c84",
+    "mov     dl, 0x1",
+    "mov     rcx, rbx",
+    "mov     rsi, rax",
+    "call    sub_140031c84",
+    "lea     rcx, [rel data_1400f54d8]  {\" after rename\"}",
+    "lea     r9, [rel data_1400f386c]",
+    "test    edi, edi",
+    "mov     r8, rax",
+    "cmovne  r9, rcx",
+    "mov     rcx, qword [rsp+0x60]",
+    "mov     rdx, qword [rcx+0x8]",
+    "lea     rcx, [rel data_1400f54e8]  {\"error in %s %s%s: %s\"}",
+    "mov     qword [rsp+0x20], rdx",
+    "mov     rdx, rsi",
+    "call    sub_14001874c",
+    "mov     rcx, qword [rbp]",
+    "mov     r9b, 0x1",
+    "mov     rbx, rax",
+    "or      rax, 0xffffffffffffffff",
+    "mov     dword [rbp+0x24], 0x1",
+    "mov     r8d, eax",
+    "mov     rdx, rbx",
+    "mov     qword [rsp+0x20], rax",
+    "call    sub_140031820",
+    "mov     rcx, rbx",
+    "mov     rbx, qword [rsp+0x40]",
+    "mov     rbp, qword [rsp+0x48]",
+    "mov     rsi, qword [rsp+0x50]",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "jmp     sub_140016950"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

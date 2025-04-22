@@ -1,0 +1,36 @@
+{
+  "address": "0x1400166bc",
+  "rules": [
+    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "movsxd  rdi, edx",
+    "mov     rsi, rcx",
+    "mov     rdx, rdi",
+    "call    qword [rel realloc]",
+    "mov     rbx, rax",
+    "test    rax, rax",
+    "jne     0x140016700",
+    "mov     rsi, qword [rsp+0x38]",
+    "mov     rax, rbx",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     rcx, rsi",
+    "call    qword [rel _msize]",
+    "lea     rdx, [rel data_1400f3840]  {\"failed memory resize %u to %u by\u2026\"}",
+    "lea     ecx, [rbx+0x7]",
+    "mov     r8, rax",
+    "mov     r9d, edi",
+    "call    sub_1400187fc"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

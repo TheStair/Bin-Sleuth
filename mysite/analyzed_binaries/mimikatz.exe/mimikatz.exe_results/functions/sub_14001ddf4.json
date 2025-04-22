@@ -1,0 +1,27 @@
+{
+  "address": "0x14001ddf4",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "test    byte [rcx+0x34], 0x2",
+    "mov     r11, rcx",
+    "je      0x14001de08",
+    "mov     rax, qword [r11+0x18]",
+    "mov     r8d, 0x1",
+    "dec     dword [rax+0x18]",
+    "mov     rcx, qword [r11+0x18]",
+    "mov     rdx, qword [r11]",
+    "mov     rcx, qword [rcx+0x40]",
+    "add     rsp, 0x28",
+    "\u2753jmp     qword [rel data_14013d138]",
+    "mov     dl, 0x1",
+    "call    sub_14001db38"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

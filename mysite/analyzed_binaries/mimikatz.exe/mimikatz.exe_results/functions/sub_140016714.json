@@ -1,0 +1,14 @@
+{
+  "address": "0x140016714",
+  "rules": [
+    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd"
+  ],
+  "disassembly": [
+    "lea     eax, [rcx+0x7]",
+    "and     eax, 0xfffffff8",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

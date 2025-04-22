@@ -1,0 +1,23 @@
+{
+  "address": "0x14007a49c",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "mov     rax, qword [rcx+0x10]",
+    "mov     edx, 0x2000",
+    "test    word [rax+0x8], dx",
+    "jne     0x14007a4bb",
+    "mov     rax, qword [rax+0x10]",
+    "mov     edx, 0x18",
+    "call    sub_14003689c",
+    "jmp     0x14007a4bf",
+    "inc     qword [rax+0x10]",
+    "add     rsp, 0x28",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

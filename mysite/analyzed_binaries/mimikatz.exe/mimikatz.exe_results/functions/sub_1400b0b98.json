@@ -1,0 +1,35 @@
+{
+  "address": "0x1400b0b98",
+  "rules": [
+    "run as service/73dfd1e4ada74828bc8b1a67120facca",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     r11, rsp",
+    "sub     rsp, 0x48",
+    "and     qword [r11-0x18], 0x0",
+    "and     qword [r11-0x10], 0x0",
+    "lea     rax, [rel data_14011dfc0]  {u\"mimikatzsvc\"}",
+    "xor     r9d, r9d",
+    "mov     qword [r11-0x28], rax",
+    "lea     rax, [rel sub_1400b0c68]",
+    "lea     edx, [r9+0x1]",
+    "xor     r8d, r8d",
+    "xor     ecx, ecx",
+    "mov     qword [r11-0x20], rax",
+    "call    qword [rel CreateEventW]",
+    "mov     qword [rel data_140140748], rax",
+    "test    rax, rax",
+    "je      0x1400b0bf5",
+    "xor     eax, eax",
+    "add     rsp, 0x48",
+    "retn    ",
+    "lea     rcx, [rsp+0x20]",
+    "call    qword [rel StartServiceCtrlDispatcherW]",
+    "mov     rcx, qword [rel data_140140748]",
+    "call    qword [rel CloseHandle]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

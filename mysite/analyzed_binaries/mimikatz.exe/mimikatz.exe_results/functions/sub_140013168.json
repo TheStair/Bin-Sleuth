@@ -1,0 +1,40 @@
+{
+  "address": "0x140013168",
+  "rules": [
+    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x40",
+    "lea     rcx, [rsp+0x30]",
+    "xor     ebx, ebx",
+    "call    qword [rel UuidCreate]",
+    "test    eax, eax",
+    "js      0x1400131c5",
+    "mov     rax, rbx",
+    "add     rsp, 0x40",
+    "pop     rbx",
+    "retn    ",
+    "lea     rdx, [rsp+0x20]",
+    "lea     rcx, [rsp+0x30]",
+    "call    RtlStringFromGUID",
+    "test    eax, eax",
+    "js      0x1400131c5",
+    "movzx   edx, word [rsp+0x22]",
+    "lea     ecx, [rbx+0x40]",
+    "call    qword [rel LocalAlloc]",
+    "mov     rbx, rax",
+    "test    rax, rax",
+    "je      0x1400131bb",
+    "lea     rcx, [rsp+0x20]",
+    "call    RtlFreeUnicodeString",
+    "movzx   r8d, word [rsp+0x22]",
+    "mov     rdx, qword [rsp+0x28]",
+    "mov     rcx, rax",
+    "call    memcpy"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

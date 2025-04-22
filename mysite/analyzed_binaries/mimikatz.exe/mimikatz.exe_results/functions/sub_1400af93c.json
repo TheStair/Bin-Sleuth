@@ -1,0 +1,33 @@
+{
+  "address": "0x1400af93c",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "cmp     qword [rel data_140140758], 0x0",
+    "je      0x1400af9d4",
+    "cmp     qword [rel data_140140750], 0x0",
+    "je      0x1400af9ea",
+    "lea     r8, [rel data_140140758]",
+    "lea     rdx, [rel data_1400df308]",
+    "lea     rcx, [rel data_1400df3f0]",
+    "call    NdrClientCall2",
+    "mov     qword [rsp+0x40], rax",
+    "jmp     0x1400af9cc",
+    "mov     rcx, qword [rel data_140140760]",
+    "test    rcx, rcx",
+    "je      0x1400afa03",
+    "lea     rcx, [rel data_140140750]",
+    "call    sub_140010484",
+    "and     qword [rel data_140140758], 0x0",
+    "xor     eax, eax",
+    "add     rsp, 0x28",
+    "retn    ",
+    "call    sub_1400056c0",
+    "and     qword [rel data_140140760], 0x0"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

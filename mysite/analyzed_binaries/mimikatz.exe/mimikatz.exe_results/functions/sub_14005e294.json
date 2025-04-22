@@ -1,0 +1,51 @@
+{
+  "address": "0x14005e294",
+  "rules": [
+    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
+    "contain loop",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rdi, rcx",
+    "call    sub_1400823f0",
+    "mov     ebx, eax",
+    "test    eax, eax",
+    "jne     0x14005e303",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     edx, dword [rel data_140140378]",
+    "mov     rcx, qword [rel data_140140380]",
+    "test    edx, edx",
+    "je      0x14005e2cf",
+    "cmp     eax, edx",
+    "jne     0x14005e301",
+    "mov     r8, rcx",
+    "mov     eax, ebx",
+    "inc     edx",
+    "shl     rdx, 0x3",
+    "call    sub_140016b3c",
+    "test    rax, rax",
+    "jne     0x14005e2e8",
+    "inc     eax",
+    "add     r8, 0x8",
+    "cmp     eax, edx",
+    "jb      0x14005e2c0",
+    "mov     ecx, dword [rel data_140140378]",
+    "mov     qword [rel data_140140380], rax",
+    "mov     qword [rax+rcx*8], rdi",
+    "inc     ecx",
+    "mov     dword [rel data_140140378], ecx",
+    "lea     ebx, [rax+0x7]",
+    "jmp     0x14005e301",
+    "cmp     qword [r8], rdi",
+    "je      0x14005e2cf"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

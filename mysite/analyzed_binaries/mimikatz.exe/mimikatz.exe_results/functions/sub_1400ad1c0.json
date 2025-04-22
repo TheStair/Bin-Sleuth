@@ -1,0 +1,45 @@
+{
+  "address": "0x1400ad1c0",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x70",
+    "test    ecx, ecx",
+    "je      0x1400ad23f",
+    "xor     eax, eax",
+    "add     rsp, 0x70",
+    "pop     rbx",
+    "retn    ",
+    "movsxd  rax, ecx",
+    "lea     rcx, [rel data_140119e70]  {u\"Trying to start \"%s\" : \"}",
+    "mov     rbx, qword [rdx+rax*8-0x8]",
+    "mov     rdx, rbx",
+    "call    sub_14000c030",
+    "mov     dword [rsp+0x48], 0x1",
+    "lea     rax, [rsp+0x50]",
+    "mov     qword [rsp+0x40], rax",
+    "and     qword [rsp+0x38], 0x0",
+    "and     qword [rsp+0x30], 0x0",
+    "and     qword [rsp+0x28], 0x0",
+    "and     dword [rsp+0x20], 0x0",
+    "xor     r9d, r9d",
+    "xor     r8d, r8d",
+    "mov     rdx, rbx",
+    "xor     ecx, ecx",
+    "call    sub_14000d648",
+    "test    eax, eax",
+    "je      0x1400ad22b",
+    "call    qword [rel GetLastError]",
+    "lea     rcx, [rel data_140119ec0]  {u\"ERROR kuhl_m_process_start ; kul\u2026\"}",
+    "mov     edx, eax",
+    "mov     edx, dword [rsp+0x60]",
+    "lea     rcx, [rel data_140119ea0]  {u\"OK ! (PID %u)\\n\"}",
+    "jmp     0x1400ad23a",
+    "call    sub_14000c030"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

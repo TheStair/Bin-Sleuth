@@ -1,0 +1,42 @@
+{
+  "address": "0x14000b3b0",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x50",
+    "xor     ebx, ebx",
+    "mov     rdi, rcx",
+    "lea     rcx, [rsp+0x28]",
+    "lea     r8d, [rbx+0x28]",
+    "xor     edx, edx",
+    "mov     dword [rsp+0x20], ebx",
+    "call    memset",
+    "lea     r9, [rsp+0x68]",
+    "lea     r8d, [rbx+0x1]",
+    "lea     rdx, [rsp+0x20]",
+    "xor     ecx, ecx",
+    "call    LsaOpenPolicy",
+    "cmp     eax, ebx",
+    "jl      0x14000b40b",
+    "mov     eax, ebx",
+    "mov     rbx, qword [rsp+0x60]",
+    "add     rsp, 0x50",
+    "pop     rdi",
+    "retn    ",
+    "mov     rcx, qword [rsp+0x68]",
+    "lea     edx, [rbx+0xc]",
+    "mov     r8, rdi",
+    "call    LsaQueryInformationPolicy",
+    "mov     rcx, qword [rsp+0x68]",
+    "cmp     eax, ebx",
+    "setge   bl",
+    "call    LsaClose"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

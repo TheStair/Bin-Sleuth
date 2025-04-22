@@ -1,0 +1,47 @@
+{
+  "address": "0x140001350",
+  "rules": [
+    "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x70",
+    "mov     rax, rdx",
+    "mov     rbx, rcx",
+    "lea     rdx, [rsp+0x50]",
+    "mov     rcx, rax",
+    "call    qword [rel FileTimeToSystemTime]",
+    "test    eax, eax",
+    "je      0x1400013e5",
+    "add     rsp, 0x70",
+    "pop     rbx",
+    "retn    ",
+    "movzx   edx, word [rsp+0x5a]",
+    "movzx   r8d, word [rsp+0x58]",
+    "movzx   eax, word [rsp+0x5c]",
+    "movzx   r10d, word [rsp+0x56]",
+    "movzx   r11d, word [rsp+0x52]",
+    "movzx   r9d, word [rsp+0x50]",
+    "mov     dword [rsp+0x40], eax",
+    "mov     dword [rsp+0x38], edx",
+    "mov     dword [rsp+0x30], r8d",
+    "mov     dword [rsp+0x28], r10d",
+    "lea     r8, [rel data_1400d2bc0]  {\"%04hu%02hu%02hu%02hu%02hu%02huZ\"}",
+    "lea     rcx, [rsp+0x60]",
+    "mov     edx, 0x10",
+    "mov     dword [rsp+0x20], r11d",
+    "call    sub_1400c92a4",
+    "test    eax, eax",
+    "jle     0x1400013e5",
+    "lea     r9, [rsp+0x60]",
+    "lea     rdx, [rel data_1400d2be0]",
+    "mov     r8d, 0x18",
+    "mov     rcx, rbx",
+    "mov     qword [rsp+0x20], 0xf",
+    "call    qword [rel Ordinal_WLDAP32_310]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

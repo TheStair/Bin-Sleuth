@@ -1,0 +1,52 @@
+{
+  "address": "0x140032c40",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "mov     r10, rcx",
+    "mov     rcx, qword [rcx]",
+    "cmp     byte [rcx+0x61], 0x0",
+    "je      0x140032c60",
+    "test    edx, edx",
+    "jns     0x140032c6d",
+    "cmp     r9d, 0xfffffff4",
+    "je      0x140032cbb",
+    "movsxd  rax, edx",
+    "lea     rcx, [rax+rax*2]",
+    "mov     rax, qword [r10+0x88]",
+    "lea     rdx, [rax+rcx*8]",
+    "test    r9d, r9d",
+    "jns     0x140032cb3",
+    "mov     edx, dword [r10+0x90]",
+    "dec     edx",
+    "add     rsp, 0x28",
+    "retn    ",
+    "mov     edx, r9d",
+    "call    sub_140032a2c",
+    "jmp     0x140032cbb",
+    "mov     rcx, r10",
+    "call    sub_140032b90",
+    "cmp     byte [rdx+0x1], 0x0",
+    "jne     0x140032cb3",
+    "cmp     r9d, 0xfffffffd",
+    "jne     0x140032c9a",
+    "test    r8, r8",
+    "je      0x140032cbb",
+    "mov     dword [rdx+0x10], r8d",
+    "mov     byte [rdx+0x1], r9b",
+    "jmp     0x140032cbb",
+    "mov     qword [rdx+0x10], r8",
+    "mov     byte [rdx+0x1], r9b",
+    "cmp     r9d, 0xfffffff4",
+    "jne     0x140032cbb",
+    "inc     dword [r8+0x18]",
+    "jmp     0x140032cbb"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

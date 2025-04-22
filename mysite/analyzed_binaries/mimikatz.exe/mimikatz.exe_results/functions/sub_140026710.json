@@ -1,0 +1,38 @@
+{
+  "address": "0x140026710",
+  "rules": [
+    "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     rax, qword [rcx+0x48]",
+    "movzx   r10d, word [rcx+0x10]",
+    "mov     r11, rdx",
+    "mov     r9d, dword [rax+0x34]",
+    "mov     eax, dword [r8+0x10]",
+    "xor     edx, edx",
+    "sub     eax, r10d",
+    "mov     ebx, 0x4",
+    "sub     r9d, ebx",
+    "div     r9d",
+    "movzx   eax, word [rcx+0xe]",
+    "add     edx, r10d",
+    "cmp     edx, eax",
+    "jg      0x14002674b",
+    "mov     word [r8+0x14], r10w",
+    "mov     word [r8+0x14], dx",
+    "jmp     0x140026750",
+    "movzx   eax, word [r8+0x8]",
+    "sub     ax, r11w",
+    "add     ax, word [r8+0x14]",
+    "add     ax, bx",
+    "mov     rbx, qword [rsp+0x8]",
+    "mov     word [r8+0x16], ax",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

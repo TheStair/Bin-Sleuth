@@ -1,0 +1,51 @@
+{
+  "address": "0x14001457c",
+  "rules": [
+    "open process",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check process job object/b286d4d3afdb478b8f588fc86186cdb4"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x10], rbx",
+    "mov     qword [rsp+0x18], rbp",
+    "mov     qword [rsp+0x20], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     r8d, dword [rcx+0x50]",
+    "mov     rdi, rdx",
+    "mov     rbp, rcx",
+    "xor     edx, edx",
+    "mov     ecx, 0x400",
+    "mov     ebx, 0x1",
+    "call    qword [rel OpenProcess]",
+    "mov     rsi, rax",
+    "test    rax, rax",
+    "je      0x1400145ed",
+    "mov     rbp, qword [rsp+0x40]",
+    "mov     rsi, qword [rsp+0x48]",
+    "mov     dword [rdi+0x10], ebx",
+    "mov     eax, ebx",
+    "mov     rbx, qword [rsp+0x38]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "lea     r8, [rsp+0x30]",
+    "lea     edx, [rbx+0x9]",
+    "mov     rcx, rax",
+    "call    qword [rel OpenProcessToken]",
+    "test    eax, eax",
+    "je      0x1400145e4",
+    "mov     rcx, rsi",
+    "call    qword [rel CloseHandle]",
+    "mov     r8, qword [rdi+0x8]",
+    "mov     edx, dword [rbp+0x50]",
+    "mov     rcx, qword [rsp+0x30]",
+    "call    qword [rdi]",
+    "mov     rcx, qword [rsp+0x30]",
+    "mov     ebx, eax",
+    "call    qword [rel CloseHandle]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

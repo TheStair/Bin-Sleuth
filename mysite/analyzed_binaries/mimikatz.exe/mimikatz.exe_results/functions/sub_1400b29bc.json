@@ -1,0 +1,40 @@
+{
+  "address": "0x1400b29bc",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8 {__saved_rbx}], rbx",
+    "mov     qword [rsp+0x10 {__saved_rsi}], rsi",
+    "push    rdi {__saved_rdi}",
+    "sub     rsp, 0x20",
+    "mov     esi, ecx",
+    "xor     ebx, ebx  {0x0}",
+    "lea     rdi, [rel data_14013b6d8]",
+    "inc     ebx",
+    "add     rdi, 0x8",
+    "cmp     ebx, 0x7",
+    "jb      0x1400b29d6",
+    "mov     rdx, qword [rdi]",
+    "lea     rcx, [rel data_140106800]  {u\"%s, \"}",
+    "call    sub_14000c030",
+    "bt      esi, ebx",
+    "jae     0x1400b29ea",
+    "mov     rbx, qword [rsp+0x30 {__saved_rbx}]",
+    "mov     rsi, qword [rsp+0x38 {__saved_rsi}]",
+    "add     rsp, 0x20",
+    "pop     rdi {__saved_rdi}",
+    "retn     {__return_addr}"
+  ],
+  "high_level_IL": [
+    "int32_t i = 0",
+    "wchar16 const (** rdi)[0xd] = &data_14013b6d8",
+    "if (test_bit(arg1, i))",
+    "sub_14000c030(u\"%s, \", *rdi)",
+    "i += 1",
+    "rdi = &rdi[1]",
+    "do while (i u< 7)",
+    "return "
+  ]
+}

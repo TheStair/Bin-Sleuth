@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c8b28",
+  "rules": [
+    "connect network resource"
+  ],
+  "disassembly": [
+    "jmp     qword [rel WNetAddConnection2W]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "address": "0x140036948",
+  "rules": [
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "contain loop"
+  ],
+  "disassembly": [
+    "mov     rax, qword [rcx+0x18]",
+    "mov     r8, qword [rax+0x120]",
+    "xor     eax, eax",
+    "retn    ",
+    "cmp     dword [r8+0x4], edx",
+    "jne     0x14003696a",
+    "mov     r8, qword [r8+0x18]",
+    "jmp     0x140036953",
+    "mov     eax, dword [rcx+0x20]",
+    "cmp     dword [r8], eax",
+    "je      0x140036970",
+    "test    r8, r8",
+    "je      0x140036975",
+    "mov     rax, qword [r8+0x8]",
+    "retn    ",
+    "test    edx, edx",
+    "js      0x140036970"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

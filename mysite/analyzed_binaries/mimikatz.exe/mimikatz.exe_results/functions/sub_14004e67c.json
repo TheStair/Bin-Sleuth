@@ -1,0 +1,51 @@
+{
+  "address": "0x14004e67c",
+  "rules": [
+    "hash data using djb2/1485ed9954f84e3481d22b64bc4cfca7",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop",
+    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
+    "encrypt data using chaskey/4b6f9d91d05f46dd9aa3662f80cb6278"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "or      r11d, 0xffffffff",
+    "mov     rdi, rdx",
+    "test    rdx, rdx",
+    "je      0x14004e6df",
+    "mov     eax, r11d",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     r11d, dword [rcx+0x28]",
+    "dec     r11d",
+    "movsxd  rbx, r11d",
+    "shl     rbx, 0x5",
+    "add     rbx, qword [rcx+0x20]",
+    "test    r11d, r11d",
+    "js      0x14004e6df",
+    "mov     rcx, qword [rbx]",
+    "test    rcx, rcx",
+    "je      0x14004e6bd",
+    "test    r11d, r11d",
+    "jne     0x14004e6d5",
+    "mov     rdx, rdi",
+    "call    sub_1400192b0",
+    "test    eax, eax",
+    "je      0x14004e6df",
+    "sub     rbx, 0x20",
+    "sub     r11d, 0x1",
+    "jns     0x14004e6a9",
+    "lea     rcx, [rel data_1400f57c8]  {\"main\"}",
+    "mov     rdx, rdi",
+    "call    sub_1400192b0",
+    "test    eax, eax",
+    "je      0x14004e6df"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

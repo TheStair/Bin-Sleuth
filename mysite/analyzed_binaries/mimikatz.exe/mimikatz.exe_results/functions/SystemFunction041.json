@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c861a",
+  "rules": [
+    "encrypt data using DPAPI"
+  ],
+  "disassembly": [
+    "jmp     qword [rel SystemFunction041]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

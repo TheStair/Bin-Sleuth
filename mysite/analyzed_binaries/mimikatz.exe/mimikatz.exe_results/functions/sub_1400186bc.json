@@ -1,0 +1,48 @@
+{
+  "address": "0x1400186bc",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rsi",
+    "push    rdi",
+    "sub     rsp, 0x90",
+    "mov     rdi, rdx",
+    "mov     rsi, rcx",
+    "call    sub_1400823f0",
+    "xor     ebx, ebx",
+    "cmp     eax, ebx",
+    "je      0x1400186e3",
+    "lea     rax, [rsp+0x40]",
+    "lea     rcx, [rsp+0x20]",
+    "mov     r8, rdi",
+    "mov     rdx, rsi",
+    "mov     qword [rsp+0x20], rbx",
+    "mov     dword [rsp+0x30], 0x46",
+    "mov     qword [rsp+0x28], rax",
+    "mov     dword [rsp+0x34], 0x3b9aca00",
+    "mov     dword [rsp+0x38], ebx",
+    "mov     byte [rsp+0x3c], bl",
+    "mov     byte [rsp+0x3d], bl",
+    "call    sub_140017068",
+    "cmp     qword [rsp+0x28], rbx",
+    "je      0x140018732",
+    "xor     eax, eax",
+    "jmp     0x140018735",
+    "mov     rax, rbx",
+    "lea     rcx, [rsp+0x20]",
+    "call    sub_1400184e8",
+    "mov     rbx, rax",
+    "lea     r11, [rsp+0x90]",
+    "mov     rbx, qword [r11+0x10]",
+    "mov     rsi, qword [r11+0x18]",
+    "mov     rsp, r11",
+    "pop     rdi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

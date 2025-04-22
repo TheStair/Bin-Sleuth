@@ -1,0 +1,45 @@
+{
+  "address": "0x14004321c",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rbp, r8",
+    "mov     rbx, rcx",
+    "call    sub_1400430d4",
+    "xor     edi, edi",
+    "mov     rsi, rax",
+    "cmp     rax, rdi",
+    "jne     0x14004324c",
+    "mov     rdx, rbp",
+    "mov     rcx, rbx",
+    "call    sub_1400430d4",
+    "cmp     rax, rdi",
+    "jne     0x140043263",
+    "mov     rax, qword [rbx]",
+    "mov     rsi, qword [rax+0x10]",
+    "mov     rdx, qword [rax]",
+    "mov     rcx, qword [rsi]",
+    "call    sub_1400192b0",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rbp, qword [rsp+0x38]",
+    "mov     rsi, qword [rsp+0x40]",
+    "cmp     eax, edi",
+    "sete    dil",
+    "mov     eax, edi",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     rcx, qword [rbx]",
+    "mov     rax, qword [rcx+0x10]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

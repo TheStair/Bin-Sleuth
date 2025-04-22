@@ -1,0 +1,38 @@
+{
+  "address": "0x1400165a4",
+  "rules": [
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "contain loop",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "check OS version/e331473c09f0419eb22f4786f6872060"
+  ],
+  "disassembly": [
+    "test    rcx, rcx",
+    "je      0x1400165ee",
+    "retn    ",
+    "mov     rdx, qword [rel data_140140320]",
+    "cmp     rdx, rcx",
+    "jne     0x1400165c1",
+    "test    rdx, rdx",
+    "je      0x1400165ee",
+    "mov     rax, qword [rcx+0x10]",
+    "mov     qword [rel data_140140320], rax",
+    "retn    ",
+    "cmp     qword [rdx+0x10], 0x0",
+    "je      0x1400165e0",
+    "cmp     qword [rdx+0x10], rcx",
+    "jne     0x1400165ee",
+    "mov     rax, qword [rdx+0x10]",
+    "cmp     rax, rcx",
+    "je      0x1400165e0",
+    "mov     rax, qword [rcx+0x10]",
+    "mov     qword [rdx+0x10], rax",
+    "cmp     qword [rax+0x10], 0x0",
+    "mov     rdx, rax",
+    "jne     0x1400165cd"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

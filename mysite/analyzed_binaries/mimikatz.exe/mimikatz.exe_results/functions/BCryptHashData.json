@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c86db",
+  "rules": [
+    "hash data via BCrypt"
+  ],
+  "disassembly": [
+    "jmp     qword [rel BCryptHashData]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

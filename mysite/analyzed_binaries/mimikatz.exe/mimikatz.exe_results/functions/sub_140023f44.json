@@ -1,0 +1,53 @@
+{
+  "address": "0x140023f44",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "contain loop",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check if file exists/a31a651e5a314ee9ac446400cc2abdd5/58dd2a2048194a11b60488e61f6f4fb2"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "cmp     byte [rcx+0x3f], 0x2",
+    "mov     esi, edx",
+    "mov     rbx, rcx",
+    "je      0x140023f69",
+    "xor     ebp, ebp",
+    "cmp     dword [rcx+0x28], ebp",
+    "jle     0x140023f93",
+    "cmp     byte [rcx+0x46], 0x0",
+    "je      0x140023f93",
+    "cmp     byte [rbx+0x3f], 0x2",
+    "je      0x140023fa8",
+    "xor     edi, edi",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rbp, qword [rsp+0x38]",
+    "mov     rsi, qword [rsp+0x40]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     rcx, qword [rbx+0x8]",
+    "mov     edx, esi",
+    "mov     rax, qword [rcx]",
+    "call    qword [rax+0x80]",
+    "mov     rcx, qword [rbx+0x30]",
+    "mov     rcx, qword [rcx+rdi]",
+    "call    sub_140016950",
+    "mov     r11, qword [rbx+0x30]",
+    "inc     ebp",
+    "and     qword [rdi+r11], 0x0",
+    "add     rdi, 0x8",
+    "cmp     ebp, dword [rbx+0x28]",
+    "jl      0x140023f72"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

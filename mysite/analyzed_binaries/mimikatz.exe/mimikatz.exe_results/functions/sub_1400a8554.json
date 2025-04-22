@@ -1,0 +1,31 @@
+{
+  "address": "0x1400a8554",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x38",
+    "mov     eax, dword [rel data_14014084c]",
+    "cmp     eax, 0x1db1",
+    "je      0x1400a857a",
+    "lea     r9, [rel data_140113148]  {u\"msv1_0.dll\"}",
+    "lea     r8, [rel data_14010f828]  {u\"SamSs\"}",
+    "lea     rcx, [rel data_14013bf50]",
+    "mov     edx, 0x2",
+    "mov     dword [rsp+0x20], 0x1",
+    "call    sub_14000c42c",
+    "cmp     eax, 0x3fab",
+    "je      0x1400a857a",
+    "lea     rcx, [rel data_1401142d0]  {u\"ERROR kuhl_m_misc_easyntlmchall \u2026\"}",
+    "call    sub_14000c030",
+    "jmp     0x1400a85a1",
+    "xor     eax, eax",
+    "add     rsp, 0x38",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

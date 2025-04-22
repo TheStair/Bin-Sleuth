@@ -1,0 +1,41 @@
+{
+  "address": "0x1400abf10",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x38",
+    "and     qword [rsp+0x50], 0x0",
+    "test    ecx, ecx",
+    "je      0x1400abf23",
+    "xor     ecx, ecx",
+    "mov     rcx, qword [rdx]",
+    "jmp     0x1400abf25",
+    "lea     rcx, [rel data_140118920]  {u\"ERROR kuhl_m_net_stats ; NetStat\u2026\"}",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_1401188d0]  {u\"LanmanWorkstation StatisticsStar\u2026\"}",
+    "call    sub_14000c030",
+    "mov     rcx, qword [rsp+0x50]",
+    "call    sub_1400130c0",
+    "lea     rcx, [rel data_1400d27a8]",
+    "call    sub_14000c030",
+    "mov     rcx, qword [rsp+0x50]",
+    "call    NetApiBufferFree",
+    "jmp     0x1400abf81",
+    "lea     rax, [rsp+0x50]",
+    "lea     rdx, [rel data_1401188a8]  {u\"LanmanWorkstation\"}",
+    "xor     r9d, r9d",
+    "xor     r8d, r8d",
+    "mov     qword [rsp+0x20], rax",
+    "call    NetStatisticsGet",
+    "test    eax, eax",
+    "jne     0x1400abf73",
+    "xor     eax, eax",
+    "add     rsp, 0x38",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

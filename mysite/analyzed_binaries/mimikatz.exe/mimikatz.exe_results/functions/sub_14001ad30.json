@@ -1,0 +1,27 @@
+{
+  "address": "0x14001ad30",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "mov     r9d, edx",
+    "test    ecx, ecx",
+    "je      0x14001ad61",
+    "add     rsp, 0x28",
+    "retn    ",
+    "lea     eax, [rcx+0x1]",
+    "imul    eax, dword [rel data_14013dbe0]",
+    "imul    eax, ecx",
+    "mov     ecx, 0x1b",
+    "cdq     ",
+    "sub     eax, edx",
+    "lea     rdx, [rel data_1400f3928]  {\"delayed %dms for lock/sharing co\u2026\"}",
+    "sar     eax, 0x1",
+    "mov     r8d, eax",
+    "call    sub_1400187fc"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

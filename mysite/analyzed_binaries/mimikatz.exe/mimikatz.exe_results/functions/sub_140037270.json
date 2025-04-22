@@ -1,0 +1,19 @@
+{
+  "address": "0x140037270",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x38",
+    "mov     rax, qword [rsp+0x60]",
+    "mov     byte [rsp+0x28], 0x2",
+    "mov     qword [rsp+0x20], rax",
+    "call    sub_140036eec",
+    "add     rsp, 0x38",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

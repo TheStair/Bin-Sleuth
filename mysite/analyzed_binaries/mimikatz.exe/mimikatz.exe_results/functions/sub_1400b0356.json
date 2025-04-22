@@ -1,0 +1,45 @@
+{
+  "address": "0x1400b0356",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "cmp     eax, 0x721",
+    "jne     0x1400b036b",
+    "cmp     eax, 0x6d3",
+    "jne     0x1400b0380",
+    "lea     rcx, [rel data_14011d7e0]  {u\"ERROR kuhl_m_rpc_connect ; A sec\u2026\"}",
+    "call    sub_14000c030",
+    "jmp     0x1400b03a6",
+    "cmp     eax, 0x6ba",
+    "jne     0x1400b0395",
+    "lea     rcx, [rel data_14011d8c0]  {u\"ERROR kuhl_m_rpc_connect ; The a\u2026\"}",
+    "call    sub_14000c030",
+    "jmp     0x1400b03a6",
+    "mov     edi, dword [rsp+0x70]",
+    "jmp     0x1400b03fa",
+    "mov     r8d, eax",
+    "mov     edx, eax",
+    "lea     rcx, [rel data_14011d9c0]  {u\"ERROR kuhl_m_rpc_connect ; RPC E\u2026\"}",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_14011d950]  {u\"ERROR kuhl_m_rpc_connect ; RPC S\u2026\"}",
+    "call    sub_14000c030",
+    "jmp     0x1400b03a6",
+    "test    edi, edi",
+    "je      0x1400b0415",
+    "xor     eax, eax",
+    "mov     rsi, qword [rsp+0xd0]",
+    "add     rsp, 0xb0",
+    "pop     r14",
+    "pop     r12",
+    "pop     rdi",
+    "retn    ",
+    "xor     edx, edx",
+    "xor     ecx, ecx",
+    "call    sub_1400af93c",
+    "jmp     0x1400b0415"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

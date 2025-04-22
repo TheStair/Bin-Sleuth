@@ -1,0 +1,13 @@
+{
+  "address": "0x140082ac8",
+  "rules": [
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+  ],
+  "disassembly": [
+    "mov     rax, qword [rcx+0x18]",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

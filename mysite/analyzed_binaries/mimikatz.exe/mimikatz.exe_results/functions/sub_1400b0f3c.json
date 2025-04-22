@@ -1,0 +1,46 @@
+{
+  "address": "0x1400b0f3c",
+  "rules": [
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     rax, rsp",
+    "mov     qword [rax+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x40",
+    "and     qword [rax+0x20], 0x0",
+    "and     qword [rax+0x18], 0x0",
+    "and     qword [rax-0x28], 0x0",
+    "lea     r9, [rax+0x18]",
+    "lea     r8, [rel data_1400ea8a0]  {u\"system\"}",
+    "mov     rbx, rdx",
+    "mov     edi, ecx",
+    "call    sub_140013220",
+    "mov     r9, qword [rsp+0x60]",
+    "lea     r11, [rsp+0x68]",
+    "lea     rax, [rsp+0x30]",
+    "xor     r8d, r8d",
+    "mov     qword [rsp+0x28], r11",
+    "mov     rdx, rbx",
+    "mov     ecx, edi",
+    "mov     qword [rsp+0x20], rax",
+    "call    sub_1400b1788",
+    "test    eax, eax",
+    "je      0x1400b0fb1",
+    "xor     eax, eax",
+    "mov     rbx, qword [rsp+0x50]",
+    "add     rsp, 0x40",
+    "pop     rdi",
+    "retn    ",
+    "mov     rcx, qword [rsp+0x68]",
+    "test    rcx, rcx",
+    "je      0x1400b0fa6",
+    "mov     rcx, qword [rsp+0x30]",
+    "call    qword [rel Ordinal_WLDAP32_13]",
+    "call    qword [rel Ordinal_WLDAP32_41]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

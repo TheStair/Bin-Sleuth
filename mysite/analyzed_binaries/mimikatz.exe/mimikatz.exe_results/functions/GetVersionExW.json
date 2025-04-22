@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c9040",
+  "rules": [
+    "get OS version"
+  ],
+  "disassembly": [
+    "jmp     qword [rel GetVersionExW]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

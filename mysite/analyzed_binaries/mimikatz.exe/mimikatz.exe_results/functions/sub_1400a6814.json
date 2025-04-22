@@ -1,0 +1,21 @@
+{
+  "address": "0x1400a6814",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x38",
+    "mov     r8d, 0x1e",
+    "lea     r9, [rel data_140112eb0]  {u\"KiwiAndTaskMgr\"}",
+    "lea     rdx, [rel data_140112ed0]  {u\"DisableTaskMgr\"}",
+    "lea     rcx, [rel data_140112ef0]  {u\"taskmgr.exe\"}",
+    "mov     qword [rsp+0x20], r8",
+    "call    sub_1400a6cac",
+    "xor     eax, eax",
+    "add     rsp, 0x38",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

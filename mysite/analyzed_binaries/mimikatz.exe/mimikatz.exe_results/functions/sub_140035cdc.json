@@ -1,0 +1,53 @@
+{
+  "address": "0x140035cdc",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "check OS version/e331473c09f0419eb22f4786f6872060"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rbx, rcx",
+    "test    rcx, rcx",
+    "jne     0x140035cf2",
+    "cmp     qword [rcx+0xb8], 0x0",
+    "mov     rdi, qword [rcx]",
+    "jle     0x140035d0a",
+    "xor     eax, eax",
+    "jmp     0x140035d5d",
+    "mov     rcx, rbx",
+    "call    sub_140034640",
+    "or      dword [rbx+0x34], 0xffffffff",
+    "and     dword [rbx+0x38], 0x0",
+    "and     dword [rbx+0x3c], 0x0",
+    "and     dword [rbx+0x40], 0x0",
+    "and     qword [rbx+0x50], 0x0",
+    "mov     dword [rbx+0x24], 0x2df20da3",
+    "mov     byte [rbx+0xc2], 0x2",
+    "mov     dword [rbx+0x30], 0x1",
+    "mov     byte [rbx+0xc3], 0xff",
+    "cmp     byte [rdi+0x61], 0x0",
+    "jne     0x140035d55",
+    "mov     rdx, rcx",
+    "mov     rcx, rdi",
+    "call    sub_140035bec",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     rcx, rdi",
+    "call    sub_140016f38",
+    "cmp     eax, 0xc0a",
+    "je      0x140035d55",
+    "and     eax, dword [rdi+0x54]",
+    "jmp     0x140035d5d"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

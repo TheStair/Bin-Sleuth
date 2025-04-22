@@ -1,0 +1,26 @@
+{
+  "address": "0x140016efc",
+  "rules": [
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+  ],
+  "disassembly": [
+    "xor     edx, edx",
+    "cmp     byte [rcx+0x61], dl",
+    "jne     0x140016f37",
+    "retn    ",
+    "cmp     byte [rcx+0x62], dl",
+    "jne     0x140016f37",
+    "cmp     dword [rcx+0xd4], edx",
+    "mov     byte [rcx+0x61], 0x1",
+    "jle     0x140016f1e",
+    "mov     rax, qword [rcx+0x128]",
+    "inc     dword [rcx+0x168]",
+    "cmp     rax, rdx",
+    "je      0x140016f37",
+    "mov     dword [rcx+0x160], 0x1",
+    "mov     dword [rax+0x18], 0x7"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "address": "0x14004b40c",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "cmp     byte [rdx], 0xa2",
+    "mov     r9, qword [rcx+0x28]",
+    "jne     0x14004b431",
+    "xor     eax, eax",
+    "add     rsp, 0x28",
+    "retn    ",
+    "lea     r8, [rdx+0x40]",
+    "mov     rax, qword [r8]",
+    "cmp     qword [r9+0x10], rax",
+    "jne     0x14004b431",
+    "mov     rcx, qword [rcx]",
+    "mov     rdx, r9",
+    "call    sub_14004a420"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

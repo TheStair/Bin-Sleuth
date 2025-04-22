@@ -1,0 +1,31 @@
+{
+  "address": "0x14009453c",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "check OS version/e331473c09f0419eb22f4786f6872060"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x48",
+    "cmp     dword [rel data_1401403ac], 0x0",
+    "mov     eax, 0xc0190028",
+    "je      0x14009457a",
+    "add     rsp, 0x48",
+    "retn    ",
+    "mov     rax, qword [rsp+0x70]",
+    "mov     qword [rsp+0x30], rax",
+    "mov     qword [rsp+0x28], r9",
+    "mov     qword [rsp+0x20], r8",
+    "mov     r8, rcx",
+    "mov     rcx, qword [rel data_1401403b0]",
+    "mov     r9d, edx",
+    "mov     edx, dword [rel data_1401403a8]",
+    "call    LsaCallAuthenticationPackage"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

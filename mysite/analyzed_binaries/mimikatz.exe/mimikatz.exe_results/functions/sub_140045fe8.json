@@ -1,0 +1,45 @@
+{
+  "address": "0x140045fe8",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "mov     r8, qword [rdx+0x10]",
+    "mov     r10, rcx",
+    "mov     rcx, r8",
+    "call    sub_140043460",
+    "bt      dword [rdx+0x4], 0xb",
+    "jae     0x14004602a",
+    "cmp     eax, 0x1",
+    "je      0x14004605a",
+    "mov     rdx, qword [rdx+0x20]",
+    "mov     r8, qword [rdx]",
+    "cmp     eax, dword [r8]",
+    "je      0x14004605a",
+    "xor     eax, eax",
+    "bt      dword [r8+0x4], 0xb",
+    "jae     0x140046049",
+    "mov     r8d, dword [r8]",
+    "mov     r9d, eax",
+    "lea     rdx, [rel data_1400f4608]  {\"row value misused\"}",
+    "mov     rcx, r10",
+    "call    sub_1400191b8",
+    "jmp     0x140046023",
+    "mov     rax, qword [r8+0x20]",
+    "mov     r9d, 0x1",
+    "mov     rcx, qword [rax]",
+    "mov     r8d, dword [rcx]",
+    "jmp     0x140046014",
+    "add     rsp, 0x28",
+    "retn    ",
+    "mov     eax, 0x1",
+    "jmp     0x14004605c",
+    "lea     rdx, [rel data_1400f4b40]  {\"sub-select returns %d columns - \u2026\"}",
+    "mov     rcx, r10",
+    "call    sub_1400191b8"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

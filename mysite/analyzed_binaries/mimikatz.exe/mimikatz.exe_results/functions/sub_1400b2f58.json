@@ -1,0 +1,28 @@
+{
+  "address": "0x1400b2f58",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "xor     edx, edx",
+    "xor     ecx, ecx",
+    "call    qword [rel SetThreadToken]",
+    "test    eax, eax",
+    "je      0x1400b2f75",
+    "call    qword [rel GetLastError]",
+    "lea     rcx, [rel data_140120e40]  {u\"ERROR kuhl_m_token_revert ; SetT\u2026\"}",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "xor     edx, edx",
+    "xor     ecx, ecx",
+    "call    sub_1400b2a70",
+    "jmp     0x1400b2f89",
+    "xor     eax, eax",
+    "add     rsp, 0x28",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

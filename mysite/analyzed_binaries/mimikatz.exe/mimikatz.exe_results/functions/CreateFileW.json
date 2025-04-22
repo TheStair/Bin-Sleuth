@@ -1,0 +1,13 @@
+{
+  "address": "0x1400c8f50",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "create or open file"
+  ],
+  "disassembly": [
+    "jmp     qword [rel CreateFileW]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

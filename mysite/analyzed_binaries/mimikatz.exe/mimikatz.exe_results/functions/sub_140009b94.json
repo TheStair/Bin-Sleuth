@@ -1,0 +1,50 @@
+{
+  "address": "0x140009b94",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
+    "get common file path",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rsi, rcx",
+    "xor     edx, edx",
+    "xor     ecx, ecx",
+    "xor     ebx, ebx",
+    "call    qword [rel GetCurrentDirectoryW]",
+    "lea     ecx, [rbx+0x40]",
+    "mov     edx, eax",
+    "mov     edi, eax",
+    "add     rdx, rdx",
+    "call    qword [rel LocalAlloc]",
+    "mov     qword [rsi], rax",
+    "cmp     rax, rbx",
+    "je      0x140009bf4",
+    "mov     rsi, qword [rsp+0x38]",
+    "mov     eax, ebx",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "cmp     edi, ebx",
+    "jbe     0x140009beb",
+    "mov     rcx, qword [rsi]",
+    "call    qword [rel LocalFree]",
+    "mov     rdx, rax",
+    "mov     ecx, edi",
+    "call    qword [rel GetCurrentDirectoryW]",
+    "mov     r11d, eax",
+    "lea     eax, [rdi-0x1]",
+    "cmp     r11d, eax",
+    "jne     0x140009beb",
+    "mov     ebx, 0x1",
+    "jmp     0x140009bf4"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

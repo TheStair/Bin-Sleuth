@@ -1,0 +1,51 @@
+{
+  "address": "0x1400ce1c8",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x18], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rax, qword [rel data_140139000]",
+    "and     qword [rsp+0x30], 0x0",
+    "mov     rdi, 0x2b992ddfa232",
+    "cmp     rax, rdi",
+    "je      0x1400ce1fa",
+    "lea     rcx, [rsp+0x30]",
+    "call    qword [rel GetSystemTimeAsFileTime]",
+    "mov     rbx, qword [rsp+0x30]",
+    "call    qword [rel GetCurrentProcessId]",
+    "mov     r11d, eax",
+    "xor     rbx, r11",
+    "call    qword [rel GetCurrentThreadId]",
+    "mov     r11d, eax",
+    "xor     rbx, r11",
+    "call    qword [rel GetTickCount]",
+    "lea     rcx, [rsp+0x38]",
+    "mov     r11d, eax",
+    "xor     rbx, r11",
+    "call    qword [rel QueryPerformanceCounter]",
+    "mov     r11, qword [rsp+0x38]",
+    "xor     r11, rbx",
+    "mov     rax, 0xffffffffffff",
+    "and     r11, rax",
+    "mov     rax, 0x2b992ddfa233",
+    "cmp     r11, rdi",
+    "cmove   r11, rax",
+    "mov     qword [rel data_140139000], r11",
+    "not     r11",
+    "mov     qword [rel data_140139008], r11",
+    "not     rax",
+    "mov     qword [rel data_140139008], rax",
+    "jmp     0x1400ce270",
+    "mov     rbx, qword [rsp+0x40]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

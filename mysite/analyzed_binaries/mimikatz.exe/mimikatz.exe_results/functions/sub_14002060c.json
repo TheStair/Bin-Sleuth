@@ -1,0 +1,49 @@
+{
+  "address": "0x14002060c",
+  "rules": [
+    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "hash data using murmur3/aeb1a4346751469b809f4261bcfbbb07/dbb00f9448c04dc1b720ac16935c1891",
+    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd"
+  ],
+  "disassembly": [
+    "mov     rdx, qword [rcx+0x28]",
+    "mov     r10, rcx",
+    "movzx   eax, byte [rdx+0x8a]",
+    "movzx   r9d, byte [rdx+0x89]",
+    "shl     r9d, 0x8",
+    "or      r9d, eax",
+    "movzx   eax, byte [rdx+0x88]",
+    "shl     eax, 0x18",
+    "shl     r9d, 0x8",
+    "or      r9d, eax",
+    "movzx   eax, byte [rdx+0x8b]",
+    "or      r9d, eax",
+    "mov     rax, qword [rcx+0x8]",
+    "inc     r9d",
+    "mov     byte [rax+0x1b], r9b",
+    "mov     r8d, r9d",
+    "mov     edx, r9d",
+    "shr     r8d, 0x18",
+    "shr     edx, 0x10",
+    "mov     ecx, r9d",
+    "mov     byte [rax+0x18], r8b",
+    "mov     byte [rax+0x19], dl",
+    "shr     ecx, 0x8",
+    "mov     byte [rax+0x1a], cl",
+    "mov     rax, qword [r10+0x8]",
+    "mov     byte [rax+0x5c], r8b",
+    "mov     byte [rax+0x5d], dl",
+    "mov     byte [rax+0x5e], cl",
+    "mov     byte [rax+0x5f], r9b",
+    "mov     rax, qword [r10+0x8]",
+    "mov     byte [rax+0x60], 0x0",
+    "mov     byte [rax+0x61], 0x2e",
+    "mov     byte [rax+0x62], 0x3b",
+    "mov     byte [rax+0x63], 0xf1",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

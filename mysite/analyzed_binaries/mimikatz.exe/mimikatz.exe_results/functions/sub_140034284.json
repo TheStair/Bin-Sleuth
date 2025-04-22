@@ -1,0 +1,31 @@
+{
+  "address": "0x140034284",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "mov     r8, qword [rcx]",
+    "test    edx, edx",
+    "je      0x1400342a9",
+    "cmp     qword [rcx+0x50], 0x0",
+    "jle     0x1400342a2",
+    "mov     rax, qword [r8+0x290]",
+    "add     rax, qword [r8+0x288]",
+    "test    rax, rax",
+    "jg      0x1400342b0",
+    "xor     eax, eax",
+    "lea     rdx, [rel data_1400f40e0]  {\"FOREIGN KEY constraint failed\"}",
+    "mov     dword [rcx+0x38], 0x313",
+    "mov     byte [rcx+0xc2], 0x2",
+    "call    sub_140032200",
+    "mov     eax, 0x1",
+    "jmp     0x1400342a4",
+    "add     rsp, 0x28",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

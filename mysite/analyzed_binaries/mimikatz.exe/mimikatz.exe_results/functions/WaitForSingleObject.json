@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c8fb0",
+  "rules": [
+    "delay execution"
+  ],
+  "disassembly": [
+    "jmp     qword [rel WaitForSingleObject]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

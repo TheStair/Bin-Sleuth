@@ -1,0 +1,17 @@
+{
+  "address": "0x14008a594",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "lea     rcx, [rel data_1400fb308]  {u\"mdCacheLookupFile\\n\"}",
+    "call    sub_14000c030",
+    "mov     eax, 0x80100004",
+    "add     rsp, 0x28",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "address": "0x140027fd8",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
+    "hash data using jshash/f142a7a7597843a791ba4ccc676b6fb1",
+    "decompress data using LZO/4cde8899b401464e87ec185666d6508a"
+  ],
+  "disassembly": [
+    "test    rcx, rcx",
+    "jne     0x140027fe0",
+    "test    edx, edx",
+    "js      0x140027fff",
+    "xor     eax, eax",
+    "retn    ",
+    "mov     rax, qword [rcx+0x8]",
+    "movzx   eax, word [rax+0x26]",
+    "shr     eax, 0x2",
+    "and     eax, 0x3",
+    "retn    ",
+    "mov     rax, qword [rcx+0x8]",
+    "mov     r8d, 0xfff3",
+    "shl     dx, 0x2",
+    "and     word [rax+0x26], r8w",
+    "mov     rax, qword [rcx+0x8]",
+    "or      word [rax+0x26], dx"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

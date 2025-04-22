@@ -1,0 +1,37 @@
+{
+  "address": "0x1400ce128",
+  "rules": [
+    "parse PE header",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x18",
+    "xor     edx, edx",
+    "cmp     rcx, rdx",
+    "je      0x1400ce175",
+    "mov     rax, rdx",
+    "add     rsp, 0x18",
+    "retn    ",
+    "cmp     rcx, 0xffffffffffffffff",
+    "je      0x1400ce175",
+    "mov     eax, 0x5a4d",
+    "cmp     word [rcx], ax",
+    "jne     0x1400ce16d",
+    "jmp     0x1400ce175",
+    "cmp     dword [rcx+0x3c], edx",
+    "jl      0x1400ce16d",
+    "cmp     dword [rcx+0x3c], 0x10000000",
+    "jae     0x1400ce16d",
+    "movsxd  rax, dword [rcx+0x3c]",
+    "add     rax, rcx",
+    "mov     qword [rsp], rax",
+    "cmp     dword [rax], 0x4550",
+    "cmovne  rax, rdx",
+    "mov     rdx, rax",
+    "mov     qword [rsp], rax"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "address": "0x14004f620",
+  "rules": [
+    "hash data using djb2/1485ed9954f84e3481d22b64bc4cfca7",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
+    "encrypt data using chaskey/4b6f9d91d05f46dd9aa3662f80cb6278",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x38",
+    "mov     rax, qword [rcx]",
+    "mov     rcx, qword [rcx+0x10]",
+    "movsxd  r9, edx",
+    "mov     r8, qword [rax+0x20]",
+    "shl     r9, 0x5",
+    "mov     rax, qword [r9+r8+0x18]",
+    "mov     r9d, 0x1",
+    "mov     r8d, dword [rax]",
+    "add     r8d, r9d",
+    "mov     dword [rsp+0x20], r8d",
+    "mov     r8d, edx",
+    "lea     edx, [r9+0x5e]",
+    "call    sub_140032364",
+    "add     rsp, 0x38",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

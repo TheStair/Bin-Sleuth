@@ -1,0 +1,48 @@
+{
+  "address": "0x1400187fc",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     rax, rsp",
+    "mov     qword [rax+0x10], rdx",
+    "mov     qword [rax+0x18], r8",
+    "mov     qword [rax+0x20], r9",
+    "push    rbx",
+    "push    rdi",
+    "sub     rsp, 0x128",
+    "xor     ebx, ebx",
+    "mov     edi, ecx",
+    "cmp     qword [rel data_14013d1c8], rbx",
+    "je      0x14001887c",
+    "add     rsp, 0x128",
+    "pop     rdi",
+    "pop     rbx",
+    "retn    ",
+    "lea     r8, [rax+0x18]",
+    "lea     rax, [rsp+0x40]",
+    "lea     rcx, [rsp+0x20]",
+    "mov     qword [rsp+0x20], rbx",
+    "mov     dword [rsp+0x30], 0xd2",
+    "mov     dword [rsp+0x34], ebx",
+    "mov     qword [rsp+0x28], rax",
+    "mov     dword [rsp+0x38], ebx",
+    "mov     byte [rsp+0x3c], bl",
+    "mov     byte [rsp+0x3d], bl",
+    "call    sub_140017068",
+    "cmp     qword [rsp+0x28], rbx",
+    "je      0x14001886a",
+    "mov     rcx, qword [rel data_14013d1d0]",
+    "mov     r8, rbx",
+    "mov     edx, edi",
+    "call    qword [rel data_14013d1c8]",
+    "lea     rcx, [rsp+0x20]",
+    "call    sub_1400184e8",
+    "mov     rbx, rax"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

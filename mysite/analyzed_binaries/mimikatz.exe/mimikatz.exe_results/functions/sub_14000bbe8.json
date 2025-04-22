@@ -1,0 +1,46 @@
+{
+  "address": "0x14000bbe8",
+  "rules": [
+    "change memory protection",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x30",
+    "mov     r11, rcx",
+    "mov     rcx, qword [rcx+0x8]",
+    "mov     rbx, r9",
+    "mov     r9d, dword [rcx]",
+    "xor     r10d, r10d",
+    "test    r9d, r9d",
+    "je      0x14000bc2b",
+    "mov     rcx, qword [r11]",
+    "lea     r9, [rsp+0x40]",
+    "call    qword [rel VirtualProtect]",
+    "cmp     r9d, 0x1",
+    "jne     0x14000bc4b",
+    "mov     eax, r10d",
+    "add     rsp, 0x30",
+    "pop     rbx",
+    "retn    ",
+    "test    rbx, rbx",
+    "je      0x14000bc4b",
+    "mov     rcx, qword [rcx+0x8]",
+    "mov     r9d, r8d",
+    "mov     r8, rdx",
+    "mov     rdx, qword [r11]",
+    "mov     rcx, qword [rcx]",
+    "lea     rax, [rsp+0x40]",
+    "mov     qword [rsp+0x20], rax",
+    "call    qword [rel VirtualProtectEx]",
+    "jmp     0x14000bc39",
+    "mov     eax, dword [rsp+0x40]",
+    "mov     dword [rbx], eax",
+    "mov     r10d, eax",
+    "test    eax, eax",
+    "je      0x14000bc4b"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

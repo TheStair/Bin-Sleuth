@@ -1,0 +1,51 @@
+{
+  "address": "0x140015dd0",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0xf0",
+    "lea     r9, [rsp+0x50]",
+    "mov     rbx, rcx",
+    "call    sub_140015c38",
+    "test    eax, eax",
+    "jne     0x140015e78",
+    "add     rsp, 0xf0",
+    "pop     rbx",
+    "retn    ",
+    "lea     rcx, [rsp+0x50]",
+    "call    sub_1400154dc",
+    "lea     rcx, [rsp+0x50]",
+    "call    sub_140015634",
+    "mov     eax, dword [rsp+0x68]",
+    "mov     r9d, dword [rsp+0x58]",
+    "cvttsd2si r11d, qword [rsp+0x70]",
+    "mov     dword [rsp+0x40], r11d",
+    "mov     dword [rsp+0x38], eax",
+    "mov     eax, dword [rsp+0x64]",
+    "mov     dword [rsp+0x30], eax",
+    "mov     eax, dword [rsp+0x60]",
+    "lea     r8, [rel data_1400f37a8]  {\"%04d-%02d-%02d %02d:%02d:%02d\"}",
+    "mov     dword [rsp+0x28], eax",
+    "mov     eax, dword [rsp+0x5c]",
+    "lea     rdx, [rsp+0x80]",
+    "mov     ecx, 0x64",
+    "mov     dword [rsp+0x20], eax",
+    "call    _fprintf_p_l",
+    "mov     rcx, qword [rbx]",
+    "or      r11, 0xffffffffffffffff",
+    "lea     rdx, [rsp+0x80]",
+    "mov     r8d, r11d",
+    "mov     r9b, 0x1",
+    "mov     qword [rsp+0x20], r11",
+    "call    sub_140031820",
+    "cmp     eax, 0x12",
+    "jne     0x140015e78",
+    "mov     rcx, rbx",
+    "call    sub_1400363a8"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

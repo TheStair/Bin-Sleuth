@@ -1,0 +1,47 @@
+{
+  "address": "0x1400192e8",
+  "rules": [
+    "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
+    "contain loop"
+  ],
+  "disassembly": [
+    "xor     r9d, r9d",
+    "mov     r10, rcx",
+    "cmp     rcx, r9",
+    "jne     0x1400192f9",
+    "cmp     rdx, r9",
+    "jne     0x140019304",
+    "neg     rdx",
+    "sbb     eax, eax",
+    "retn    ",
+    "lea     r11, [rel data_1400d6400]",
+    "jmp     0x14001932c",
+    "mov     eax, 0x1",
+    "retn    ",
+    "cmp     r8d, r9d",
+    "jg      0x14001930d",
+    "dec     r8d",
+    "cmp     byte [r10], r9b",
+    "je      0x140019334",
+    "dec     r8d",
+    "cmp     r8d, r9d",
+    "jl      0x14001934d",
+    "movzx   eax, byte [rdx]",
+    "movzx   ecx, byte [r10]",
+    "mov     al, byte [rax+r11]",
+    "cmp     byte [rcx+r11], al",
+    "jne     0x140019334",
+    "mov     eax, r9d",
+    "retn    ",
+    "movzx   eax, byte [rdx]",
+    "movzx   edx, byte [rax+r11]",
+    "movzx   eax, byte [r10]",
+    "movzx   r9d, byte [rax+r11]",
+    "sub     r9d, edx",
+    "inc     r10",
+    "inc     rdx"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

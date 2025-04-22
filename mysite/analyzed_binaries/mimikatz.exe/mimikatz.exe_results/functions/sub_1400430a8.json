@@ -1,0 +1,24 @@
+{
+  "address": "0x1400430a8",
+  "rules": [
+    "contain loop"
+  ],
+  "disassembly": [
+    "jmp     0x1400430c8",
+    "test    rcx, rcx",
+    "jne     0x1400430aa",
+    "test    dword [rcx+0x4], 0x41000",
+    "je      0x1400430cd",
+    "mov     rax, rcx",
+    "retn    ",
+    "bt      dword [rcx+0x4], 0x12",
+    "jae     0x1400430c4",
+    "mov     rcx, qword [rcx+0x10]",
+    "mov     rax, qword [rcx+0x20]",
+    "mov     rcx, qword [rax+0x8]",
+    "jmp     0x1400430c8"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

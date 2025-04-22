@@ -1,0 +1,53 @@
+{
+  "address": "0x14004e2cc",
+  "rules": [
+    "hash data using djb2/1485ed9954f84e3481d22b64bc4cfca7",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop",
+    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
+    "encrypt data using chaskey/4b6f9d91d05f46dd9aa3662f80cb6278",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "xor     ebx, ebx",
+    "mov     rdi, rcx",
+    "cmp     edx, ebx",
+    "jl      0x14004e30a",
+    "cmp     dword [rdi+0x48], ebx",
+    "jne     0x14004e336",
+    "mov     rax, qword [rcx+0x20]",
+    "movsxd  rdx, edx",
+    "shl     rdx, 0x5",
+    "mov     rdx, qword [rdx+rax+0x18]",
+    "or      word [rdx+0x72], 0x8",
+    "mov     rax, qword [rcx+0x20]",
+    "mov     rcx, qword [rax+0x38]",
+    "or      word [rcx+0x72], 0x8",
+    "and     dword [rdi+0x2c], 0xffffffef",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rsi, qword [rsp+0x38]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "cmp     dword [rdi+0x28], ebx",
+    "jle     0x14004e336",
+    "mov     rsi, rbx",
+    "inc     ebx",
+    "add     rsi, 0x20",
+    "cmp     ebx, dword [rdi+0x28]",
+    "jl      0x14004e317",
+    "call    sub_140054800",
+    "mov     rax, qword [rdi+0x20]",
+    "mov     rcx, qword [rax+rsi+0x18]",
+    "test    byte [rcx+0x72], 0x8",
+    "je      0x14004e32b"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

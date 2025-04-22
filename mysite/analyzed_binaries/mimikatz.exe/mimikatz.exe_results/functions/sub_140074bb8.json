@@ -1,0 +1,51 @@
+{
+  "address": "0x140074bb8",
+  "rules": [
+    "hash data using djb2/1485ed9954f84e3481d22b64bc4cfca7",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
+    "encrypt data using chaskey/4b6f9d91d05f46dd9aa3662f80cb6278"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     eax, dword [rdx+0x44]",
+    "mov     r10, rdx",
+    "mov     r9, rcx",
+    "cmp     dword [rcx+0x1c], eax",
+    "je      0x140074bd0",
+    "test    byte [rcx+0x14], 0x82",
+    "je      0x140074bcc",
+    "xor     eax, eax",
+    "jmp     0x140074c1b",
+    "test    byte [rdx+0x3c], 0x8",
+    "je      0x140074beb",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    ",
+    "test    qword [rcx+0x30], r8",
+    "jne     0x140074bcc",
+    "mov     rax, qword [rcx]",
+    "test    byte [rax+0x4], 0x1",
+    "jne     0x140074beb",
+    "xor     ebx, ebx",
+    "cmp     dword [rcx+0x28], ebx",
+    "jl      0x140074bcc",
+    "test    byte [rcx+0x14], 0x80",
+    "jne     0x140074bcc",
+    "movsxd  rdx, dword [rcx+0x28]",
+    "mov     rax, qword [r10+0x20]",
+    "mov     rcx, qword [rax+0x8]",
+    "shl     rdx, 0x5",
+    "mov     dl, byte [rdx+rcx+0x19]",
+    "mov     rcx, qword [r9]",
+    "call    sub_1400432cc",
+    "cmp     eax, ebx",
+    "setne   bl",
+    "mov     eax, ebx"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

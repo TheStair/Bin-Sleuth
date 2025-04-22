@@ -1,0 +1,41 @@
+{
+  "address": "0x1400056c0",
+  "rules": [
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     rbx, rcx",
+    "test    rcx, rcx",
+    "je      0x140005717",
+    "mov     rax, rbx",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    ",
+    "mov     rcx, qword [rcx+0x18]",
+    "test    rcx, rcx",
+    "je      0x1400056dd",
+    "mov     rcx, qword [rbx+0x8]",
+    "test    rcx, rcx",
+    "je      0x1400056ec",
+    "call    qword [rel LocalFree]",
+    "mov     rcx, qword [rbx+0x20]",
+    "test    rcx, rcx",
+    "je      0x1400056fb",
+    "call    qword [rel CryptDestroyKey]",
+    "mov     rcx, qword [rbx]",
+    "test    rcx, rcx",
+    "je      0x14000570b",
+    "call    qword [rel CryptDestroyKey]",
+    "mov     rcx, rbx",
+    "call    qword [rel LocalFree]",
+    "mov     rbx, rax",
+    "xor     edx, edx",
+    "call    qword [rel CryptReleaseContext]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

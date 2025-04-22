@@ -1,0 +1,49 @@
+{
+  "address": "0x1400a8044",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x50",
+    "and     qword [rsp+0x20], 0x0",
+    "lea     r9, [rsp+0x40]",
+    "lea     r8, [rel data_1400fd8c0]  {u\"file\"}",
+    "mov     rbx, rdx",
+    "mov     edi, ecx",
+    "call    sub_140013220",
+    "test    eax, eax",
+    "je      0x1400a80d4",
+    "lea     rcx, [rel data_140113ef0]  {u\"ERROR kuhl_m_misc_wp ; file argu\u2026\"}",
+    "call    sub_14000c030",
+    "lea     rax, [rel data_140113c40]  {u\"explorer.exe\"}",
+    "lea     r9, [rsp+0x70]",
+    "lea     r8, [rel data_14010bdd8]  {u\"process\"}",
+    "mov     rdx, rbx",
+    "mov     ecx, edi",
+    "mov     qword [rsp+0x20], rax",
+    "call    sub_140013220",
+    "mov     rdx, qword [rsp+0x70]",
+    "lea     rcx, [rsp+0x30]",
+    "call    RtlInitUnicodeString",
+    "mov     rdx, qword [rsp+0x40]",
+    "lea     rcx, [rel data_140113ec0]  {u\"Wallpaper file: %s\\n\"}",
+    "call    sub_14000c030",
+    "lea     rdx, [rsp+0x30]",
+    "lea     rcx, [rel data_140113c60]  {u\"Proxy process : %wZ\\n\"}",
+    "call    sub_14000c030",
+    "lea     rdx, [rsp+0x30]",
+    "lea     rcx, [rel sub_1400a80f0]",
+    "call    sub_14000c950",
+    "jmp     0x1400a80e0",
+    "xor     eax, eax",
+    "mov     rbx, qword [rsp+0x60]",
+    "add     rsp, 0x50",
+    "pop     rdi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

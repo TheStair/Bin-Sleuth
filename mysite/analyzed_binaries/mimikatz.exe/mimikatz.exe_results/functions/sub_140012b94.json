@@ -1,0 +1,47 @@
+{
+  "address": "0x140012b94",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "xor     r9d, r9d",
+    "mov     rbx, rcx",
+    "lea     edx, [r9+0x20]",
+    "lea     r8d, [r9+0x1]",
+    "call    sub_140012734",
+    "test    eax, eax",
+    "je      0x140012bba",
+    "call    qword [rel GetLastError]",
+    "cmp     eax, 0x426",
+    "jne     0x140012c02",
+    "lea     rcx, [rel data_1400f1030]  {u\"[+] '%s' service stopped\\n\"}",
+    "jmp     0x140012bce",
+    "call    qword [rel GetLastError]",
+    "lea     rcx, [rel data_1400f10b0]  {u\"ERROR kull_m_service_uninstall ;\u2026\"}",
+    "lea     rcx, [rel data_1400f1068]  {u\"[*] '%s' service not running\\n\"}",
+    "mov     rdx, rbx",
+    "call    sub_14000c030",
+    "mov     rcx, rbx",
+    "call    sub_1400126bc",
+    "test    eax, eax",
+    "je      0x140012bf3",
+    "call    qword [rel GetLastError]",
+    "lea     rcx, [rel data_1400f1170]  {u\"ERROR kull_m_service_uninstall ;\u2026\"}",
+    "jmp     0x140012c0f",
+    "lea     rcx, [rel data_1400f1130]  {u\"[+] '%s' service removed\\n\"}",
+    "mov     rdx, rbx",
+    "call    sub_14000c030",
+    "jmp     0x140012c16",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "xor     eax, eax",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

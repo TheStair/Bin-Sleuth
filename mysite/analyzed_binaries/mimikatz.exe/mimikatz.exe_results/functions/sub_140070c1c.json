@@ -1,0 +1,15 @@
+{
+  "address": "0x140070c1c",
+  "rules": [
+    "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23"
+  ],
+  "disassembly": [
+    "movzx   eax, byte [rcx+0x66]",
+    "lea     rcx, [rel data_1400d85d4]",
+    "movzx   eax, byte [rax+rcx-0x1]",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

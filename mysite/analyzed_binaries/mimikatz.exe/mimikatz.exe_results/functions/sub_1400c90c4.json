@@ -1,0 +1,45 @@
+{
+  "address": "0x1400c90c4",
+  "rules": [
+    "print debug messages",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x530",
+    "lea     rcx, [rsp+0x60]",
+    "call    qword [rel RtlCaptureContext]",
+    "mov     rbx, qword [rsp+0x158]",
+    "lea     rdx, [rsp+0x40]",
+    "mov     rcx, rbx",
+    "xor     r8d, r8d",
+    "call    qword [rel RtlLookupFunctionEntry]",
+    "test    rax, rax",
+    "je      0x1400c912f",
+    "mov     rax, qword [rsp+0x538]",
+    "mov     qword [rsp+0x158], rax",
+    "lea     rax, [rsp+0x538]",
+    "mov     qword [rsp+0xf8], rax",
+    "and     qword [rsp+0x38], 0x0",
+    "mov     rdx, qword [rsp+0x40]",
+    "lea     rcx, [rsp+0x48]",
+    "mov     qword [rsp+0x30], rcx",
+    "lea     rcx, [rsp+0x50]",
+    "mov     r9, rax",
+    "mov     qword [rsp+0x28], rcx",
+    "lea     rcx, [rsp+0x60]",
+    "mov     r8, rbx",
+    "mov     qword [rsp+0x20], rcx",
+    "xor     ecx, ecx",
+    "call    qword [rel RtlVirtualUnwind]",
+    "jmp     0x1400c914f",
+    "lea     rcx, [rel data_1400d2620]  {\"Invalid parameter passed to C ru\u2026\"}",
+    "call    qword [rel OutputDebugStringA]",
+    "add     rsp, 0x530",
+    "pop     rbx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

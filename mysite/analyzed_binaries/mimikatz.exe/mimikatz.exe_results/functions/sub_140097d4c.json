@@ -1,0 +1,45 @@
+{
+  "address": "0x140097d4c",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8 {__saved_rbx}], rbx",
+    "mov     qword [rsp+0x10 {__saved_rsi}], rsi",
+    "push    rdi {__saved_rdi}",
+    "sub     rsp, 0x20",
+    "mov     esi, ecx",
+    "xor     ebx, ebx  {0x0}",
+    "lea     rdi, [rel data_1400d5e00]",
+    "inc     ebx",
+    "add     rdi, 0x8",
+    "cmp     ebx, 0x10",
+    "jb      0x140097d66",
+    "mov     rdx, qword [rdi]",
+    "lea     rcx, [rel data_1400e69c8]  {u\"%s ; \"}",
+    "call    sub_14000c030",
+    "lea     ecx, [rbx+0x10]",
+    "mov     eax, esi",
+    "shr     eax, cl",
+    "test    al, 0x1",
+    "je      0x140097d80",
+    "mov     rbx, qword [rsp+0x30 {__saved_rbx}]",
+    "mov     rsi, qword [rsp+0x38 {__saved_rsi}]",
+    "add     rsp, 0x20",
+    "pop     rdi {__saved_rdi}",
+    "retn     {__return_addr}"
+  ],
+  "high_level_IL": [
+    "int32_t i = 0",
+    "wchar16 const (** const rdi)[0x12] = &data_1400d5e00",
+    "uint8_t result",
+    "result = (arg1 u>> (i.b + 0x10)).b",
+    "if ((result & 1) != 0)",
+    "result = sub_14000c030(u\"%s ; \", *rdi)",
+    "i += 1",
+    "rdi = &rdi[1]",
+    "do while (i u< 0x10)",
+    "return result"
+  ]
+}

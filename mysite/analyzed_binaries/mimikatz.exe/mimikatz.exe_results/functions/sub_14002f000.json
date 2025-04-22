@@ -1,0 +1,50 @@
+{
+  "address": "0x14002f000",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "hash data using murmur3/aeb1a4346751469b809f4261bcfbbb07/dbb00f9448c04dc1b720ac16935c1891",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rdi, qword [rcx+0x8]",
+    "mov     ebx, r8d",
+    "mov     esi, edx",
+    "mov     rcx, qword [rdi+0x18]",
+    "mov     rbp, qword [rcx+0x50]",
+    "mov     rcx, qword [rcx+0x70]",
+    "call    sub_140022a44",
+    "test    eax, eax",
+    "jne     0x14002f065",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rbp, qword [rsp+0x38]",
+    "mov     rsi, qword [rsp+0x40]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "lea     ecx, [rsi*4+0x24]",
+    "movsxd  r9, ecx",
+    "mov     ecx, ebx",
+    "shr     ecx, 0x18",
+    "add     r9, rbp",
+    "mov     byte [r9], cl",
+    "mov     ecx, ebx",
+    "mov     byte [r9+0x3], bl",
+    "shr     ecx, 0x10",
+    "mov     byte [r9+0x1], cl",
+    "mov     ecx, ebx",
+    "shr     ecx, 0x8",
+    "mov     byte [r9+0x2], cl",
+    "cmp     esi, 0x7",
+    "jne     0x14002f065",
+    "mov     byte [rdi+0x22], bl"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

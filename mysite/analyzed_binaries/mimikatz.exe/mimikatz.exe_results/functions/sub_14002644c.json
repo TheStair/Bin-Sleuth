@@ -1,0 +1,52 @@
+{
+  "address": "0x14002644c",
+  "rules": [
+    "encrypt data using speck/4b1f3c27d17344b39cf9dede3bcf8b4b",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "encrypt data using AES MixColumns step/954c5d7507db4ab48ac65ac05419ca28",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x10], rbx",
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "and     dword [rsp+0x40], 0x0",
+    "cmp     byte [rcx], 0x4",
+    "mov     rbx, rcx",
+    "jne     0x140026468",
+    "mov     r8, qword [rcx+0x48]",
+    "mov     rdx, qword [rcx+0x18]",
+    "lea     rax, [rsp+0x40]",
+    "xor     r9d, r9d",
+    "mov     qword [rsp+0x20], rax",
+    "mov     byte [rcx], 0x1",
+    "call    sub_140026374",
+    "mov     edi, eax",
+    "test    eax, eax",
+    "jne     0x1400264b2",
+    "mov     eax, dword [rcx+0x4]",
+    "jmp     0x1400264b4",
+    "mov     eax, edi",
+    "mov     rcx, qword [rbx+0x18]",
+    "call    sub_140016950",
+    "mov     ecx, dword [rsp+0x40]",
+    "and     qword [rbx+0x18], 0x0",
+    "test    ecx, ecx",
+    "je      0x1400264a4",
+    "mov     rbx, qword [rsp+0x48]",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "retn    ",
+    "cmp     dword [rbx+0x4], 0x0",
+    "je      0x1400264b2",
+    "mov     dword [rbx+0x4], ecx",
+    "cmp     byte [rbx], 0x0",
+    "jne     0x1400264b2",
+    "mov     byte [rbx], 0x2"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

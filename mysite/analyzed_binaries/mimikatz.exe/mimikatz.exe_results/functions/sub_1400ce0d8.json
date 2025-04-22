@@ -1,0 +1,34 @@
+{
+  "address": "0x1400ce0d8",
+  "rules": [
+    "check for kernel debugger via shared user data structure/f02b2044f10f450f9f5b2b0d5d96cef0",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "hash data with CRC32/7620b456d97a4aaeb63e1213270df3d4",
+    "hash data using aphash/53c84e7b18b64c82aa36e25c45372fcd"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "mov     r8, rcx",
+    "lea     r9, [rel __dos_header]",
+    "mov     rcx, r9",
+    "call    _ValidateImageBase",
+    "test    eax, eax",
+    "je      0x1400ce114",
+    "add     rsp, 0x28",
+    "retn    ",
+    "sub     r8, r9",
+    "mov     rdx, r8",
+    "mov     rcx, r9",
+    "call    sub_1400ce090",
+    "test    rax, rax",
+    "je      0x1400ce114",
+    "mov     eax, dword [rax+0x24]",
+    "shr     eax, 0x1f",
+    "not     eax",
+    "and     eax, 0x1",
+    "jmp     0x1400ce114"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

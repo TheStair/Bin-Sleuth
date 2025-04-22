@@ -1,0 +1,29 @@
+{
+  "address": "0x140036cf0",
+  "rules": [
+    "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using Curve25519/ba11e775237f4334901cb73b0f61e10d"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rdi, rcx",
+    "call    sub_140036a70",
+    "mov     rcx, rdi",
+    "movzx   edx, word [rax+0x8]",
+    "lea     rax, [rel data_1400d7190]",
+    "and     edx, 0x3f",
+    "movzx   ebx, byte [rdx+rax]",
+    "call    sub_140036abc",
+    "mov     eax, ebx",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

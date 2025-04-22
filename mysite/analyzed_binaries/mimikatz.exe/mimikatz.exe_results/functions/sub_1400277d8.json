@@ -1,0 +1,48 @@
+{
+  "address": "0x1400277d8",
+  "rules": [
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x10], rbx",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rax, qword [rcx]",
+    "mov     rdi, r8",
+    "mov     rsi, rcx",
+    "lea     r8, [rsp+0x30]",
+    "mov     rcx, rax",
+    "mov     ebx, edx",
+    "call    qword [rax+0x108]",
+    "test    eax, eax",
+    "jne     0x140027837",
+    "mov     rbx, qword [rsp+0x38]",
+    "mov     rsi, qword [rsp+0x40]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     rdx, qword [rsp+0x30]",
+    "mov     rcx, qword [rdx+0x10]",
+    "cmp     ebx, dword [rcx+0x4]",
+    "je      0x140027832",
+    "mov     qword [rdi], rcx",
+    "xor     eax, eax",
+    "mov     rax, qword [rdx+0x8]",
+    "cmp     ebx, 0x1",
+    "mov     qword [rcx+0x70], rdx",
+    "mov     qword [rcx+0x50], rax",
+    "setne   al",
+    "mov     qword [rcx+0x48], rsi",
+    "dec     al",
+    "mov     dword [rcx+0x4], ebx",
+    "and     al, 0x64",
+    "mov     byte [rcx+0x9], al"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

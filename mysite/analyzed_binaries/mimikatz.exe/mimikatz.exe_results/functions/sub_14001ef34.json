@@ -1,0 +1,24 @@
+{
+  "address": "0x14001ef34",
+  "rules": [
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check OS version/e331473c09f0419eb22f4786f6872060",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac"
+  ],
+  "disassembly": [
+    "cmp     dword [rcx+0x2c], 0x0",
+    "je      0x14001ef43",
+    "cmp     byte [rcx+0x1a], 0x0",
+    "lea     rax, [rel sub_1400220a0]",
+    "lea     rdx, [rel sub_14002224c]",
+    "cmovne  rax, rdx",
+    "lea     rax, [rel sub_1400223c8]",
+    "jmp     0x14001ef59",
+    "mov     qword [rcx+0x108], rax",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

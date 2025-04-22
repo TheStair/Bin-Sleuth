@@ -1,0 +1,22 @@
+{
+  "address": "0x140084ea8",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x38",
+    "lea     rax, [rel data_1400f7cd0[0x14]]  {\"18db032d058f1436ce3dea84081f4ee5\u2026\"}",
+    "mov     r9d, ecx",
+    "lea     r8, [rel data_1400f7c90]  {\"cannot open file\"}",
+    "lea     rdx, [rel data_1400f7c50]  {\"%s at line %d of [%.10s]\"}",
+    "mov     ecx, 0xe",
+    "mov     qword [rsp+0x20], rax",
+    "call    sub_1400187fc",
+    "mov     eax, 0xe",
+    "add     rsp, 0x38",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "0x140094624",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x30",
+    "mov     rbx, rdx",
+    "test    rdx, rdx",
+    "je      0x1400946a6",
+    "xor     eax, eax",
+    "add     rsp, 0x30",
+    "pop     rbx",
+    "retn    ",
+    "lea     rcx, [rel data_1401035c8]  {u\"\\n* File: '%s': \"}",
+    "call    sub_14000c030",
+    "lea     r8, [rsp+0x48]",
+    "lea     rdx, [rsp+0x20]",
+    "xor     r9d, r9d",
+    "mov     rcx, rbx",
+    "call    sub_140009e4c",
+    "test    eax, eax",
+    "je      0x140094692",
+    "call    qword [rel GetLastError]",
+    "lea     rcx, [rel data_140103670]  {u\"ERROR kuhl_m_kerberos_ptt_file ;\u2026\"}",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "mov     edx, dword [rsp+0x48]",
+    "mov     rcx, qword [rsp+0x20]",
+    "call    sub_1400946b0",
+    "test    eax, eax",
+    "js      0x140094677",
+    "lea     rcx, [rel data_1401035f0]  {u\"ERROR kuhl_m_kerberos_ptt_file ;\u2026\"}",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_1400f9538]",
+    "call    sub_14000c030",
+    "jmp     0x140094685",
+    "mov     rcx, qword [rsp+0x20]",
+    "call    qword [rel LocalFree]",
+    "jmp     0x1400946a6"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

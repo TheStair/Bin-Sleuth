@@ -1,0 +1,24 @@
+{
+  "address": "0x140099020",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "cmp     dword [rel data_1401403b8], 0x0",
+    "je      0x140099040",
+    "lea     rcx, [rel data_1401066a0]  {u\"ERROR kuhl_m_busylight_off ; No \u2026\"}",
+    "call    sub_14000c030",
+    "mov     rcx, qword [rel data_1401403c0]",
+    "mov     edx, 0x1",
+    "call    sub_140001c00",
+    "jmp     0x14009904c",
+    "xor     eax, eax",
+    "add     rsp, 0x28",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

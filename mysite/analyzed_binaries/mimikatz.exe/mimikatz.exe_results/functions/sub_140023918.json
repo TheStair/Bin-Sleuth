@@ -1,0 +1,51 @@
+{
+  "address": "0x140023918",
+  "rules": [
+    "compress data via ZLIB inflate or deflate/b4331930fe164eaaa33c054d9962358d/96f49d00dc4240378bbb70bf9dd561cc",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "movsxd  rbx, edx",
+    "mov     rsi, r8",
+    "cmp     dword [rcx+0x28], ebx",
+    "jle     0x140023947",
+    "add     r8, 0x8",
+    "mov     edx, ebx",
+    "call    sub_14002346c",
+    "test    eax, eax",
+    "jne     0x140023986",
+    "mov     rax, qword [rcx+0x30]",
+    "mov     r10, qword [rax+rbx*8]",
+    "mov     qword [r8+0x8], r10",
+    "test    r10, r10",
+    "je      0x140023947",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rsi, qword [rsp+0x38]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     rdx, qword [rsi+0x8]",
+    "lea     rcx, [rdx+0x4000]",
+    "mov     qword [rsi], rcx",
+    "test    ebx, ebx",
+    "jne     0x140023978",
+    "xor     eax, eax",
+    "jmp     0x140023956",
+    "shl     ebx, 0xc",
+    "sub     ebx, 0x22",
+    "mov     dword [rsi+0x10], ebx",
+    "and     dword [rsi+0x10], ebx",
+    "lea     rcx, [rdx+0x88]",
+    "mov     qword [rsi+0x8], rcx",
+    "jmp     0x140023981",
+    "add     qword [rsi+0x8], 0xfffffffffffffffc"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

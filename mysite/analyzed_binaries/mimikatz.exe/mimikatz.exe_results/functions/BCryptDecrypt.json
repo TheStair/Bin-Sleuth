@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c877d",
+  "rules": [
+    "encrypt or decrypt data via BCrypt"
+  ],
+  "disassembly": [
+    "jmp     qword [rel BCryptDecrypt]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

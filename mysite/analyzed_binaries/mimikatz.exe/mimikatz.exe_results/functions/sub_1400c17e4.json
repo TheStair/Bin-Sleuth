@@ -1,0 +1,25 @@
+{
+  "address": "0x1400c17e4",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x48",
+    "and     qword [rsp+0x38], 0x0",
+    "lea     rax, [rel sub_1400c1500]",
+    "lea     rcx, [rel data_14012b060]  {u\"C:\\Windows\\ServiceProfiles\\Local\u2026\"}",
+    "mov     qword [rsp+0x30], rax",
+    "xor     r9d, r9d",
+    "xor     r8d, r8d",
+    "xor     edx, edx",
+    "mov     dword [rsp+0x28], 0x1",
+    "and     dword [rsp+0x20], 0x0",
+    "call    sub_140009f9c",
+    "xor     eax, eax",
+    "add     rsp, 0x48",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "address": "0x1400146b0",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x38",
+    "and     qword [rsp+0x40], 0x0",
+    "xor     edx, edx",
+    "lea     rax, [rsp+0x40]",
+    "lea     r9, [rel data_1400d2420]",
+    "lea     rcx, [rel data_1400d2410]",
+    "lea     r8d, [rdx+0x1]",
+    "mov     qword [rsp+0x20], rax",
+    "call    qword [rel CoCreateInstance]",
+    "test    eax, eax",
+    "jne     0x140014724",
+    "lea     rcx, [rel data_1400f1920]  {u\"ERROR kull_m_xml_CreateAndInitDO\u2026\"}",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "mov     rcx, qword [rsp+0x40]",
+    "xor     edx, edx",
+    "mov     rax, qword [rcx]",
+    "call    qword [rax+0x1f8]",
+    "mov     rcx, qword [rsp+0x40]",
+    "xor     edx, edx",
+    "mov     rax, qword [rcx]",
+    "call    qword [rax+0x220]",
+    "mov     rcx, qword [rsp+0x40]",
+    "xor     edx, edx",
+    "mov     rax, qword [rcx]",
+    "call    qword [rax+0x230]",
+    "mov     rcx, qword [rsp+0x40]",
+    "xor     edx, edx",
+    "mov     rax, qword [rcx]",
+    "call    qword [rax+0x240]",
+    "jmp     0x140014732",
+    "mov     rax, qword [rsp+0x40]",
+    "add     rsp, 0x38",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

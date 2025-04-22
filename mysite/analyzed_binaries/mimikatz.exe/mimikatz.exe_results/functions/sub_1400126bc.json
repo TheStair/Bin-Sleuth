@@ -1,0 +1,47 @@
+{
+  "address": "0x1400126bc",
+  "rules": [
+    "get service handle",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "delete service",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rdi, rcx",
+    "xor     ebx, ebx",
+    "lea     rdx, [rel data_1400f0be0]  {u\"ServicesActive\"}",
+    "lea     r8d, [rbx+0x1]",
+    "xor     ecx, ecx",
+    "call    qword [rel OpenSCManagerW]",
+    "mov     rsi, rax",
+    "cmp     rax, rbx",
+    "je      0x140012722",
+    "mov     rsi, qword [rsp+0x38]",
+    "mov     eax, ebx",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     r8d, 0x10000",
+    "mov     rdx, rdi",
+    "mov     rcx, rax",
+    "call    qword [rel OpenServiceW]",
+    "mov     rdi, rax",
+    "cmp     rax, rbx",
+    "je      0x140012719",
+    "mov     rcx, rsi",
+    "call    qword [rel CloseServiceHandle]",
+    "mov     rcx, rax",
+    "call    qword [rel DeleteService]",
+    "mov     rcx, rdi",
+    "mov     ebx, eax",
+    "call    qword [rel CloseServiceHandle]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

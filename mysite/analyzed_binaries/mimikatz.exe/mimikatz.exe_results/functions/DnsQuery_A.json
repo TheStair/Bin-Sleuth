@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c8b0a",
+  "rules": [
+    "resolve DNS"
+  ],
+  "disassembly": [
+    "jmp     qword [rel DnsQuery_A]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

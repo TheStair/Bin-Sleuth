@@ -1,0 +1,44 @@
+{
+  "address": "0x14001654c",
+  "rules": [
+    "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "contain loop",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     rbx, rcx",
+    "call    sub_1400823f0",
+    "test    eax, eax",
+    "je      0x140016562",
+    "mov     rax, qword [rel data_140140320]",
+    "jmp     0x140016597",
+    "xor     eax, eax",
+    "jmp     0x14001659c",
+    "test    rax, rax",
+    "jne     0x14001656b",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    ",
+    "test    rbx, rbx",
+    "je      0x14001659c",
+    "mov     r8, qword [rax+0x18]",
+    "mov     rcx, rbx",
+    "sub     r8, rbx",
+    "test    edx, edx",
+    "je      0x14001659c",
+    "inc     rcx",
+    "test    r9d, r9d",
+    "jne     0x14001657a",
+    "mov     rax, qword [rax+0x10]",
+    "movzx   edx, byte [rcx]",
+    "movzx   r9d, byte [rcx+r8]",
+    "sub     edx, r9d",
+    "jne     0x14001658f"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

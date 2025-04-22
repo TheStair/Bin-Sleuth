@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c909a",
+  "rules": [
+    "print debug messages"
+  ],
+  "disassembly": [
+    "jmp     qword [rel OutputDebugStringA]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

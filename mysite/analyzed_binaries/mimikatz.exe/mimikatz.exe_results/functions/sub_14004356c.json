@@ -1,0 +1,48 @@
+{
+  "address": "0x14004356c",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "cmp     byte [rdx], 0xab",
+    "movsxd  r11, r8d",
+    "mov     r10, rdx",
+    "mov     rbx, rcx",
+    "jne     0x14004359c",
+    "cmp     byte [rdx], 0x86",
+    "lea     rcx, [r11+r11*4]",
+    "jne     0x1400435bf",
+    "mov     edx, r11d",
+    "mov     rcx, r10",
+    "call    sub_140043488",
+    "mov     rcx, qword [rsp+0x50]",
+    "mov     qword [rcx], rax",
+    "mov     eax, dword [r10+0x28]",
+    "add     eax, r11d",
+    "jmp     0x1400435dd",
+    "mov     rax, qword [rdx+0x20]",
+    "mov     r8, qword [rsp+0x58]",
+    "mov     rdx, qword [rax+rcx*8+0x8]",
+    "mov     rax, qword [rsp+0x50]",
+    "mov     rcx, rbx",
+    "mov     qword [rax], rdx",
+    "call    sub_140047d64",
+    "mov     rdx, qword [rdx+0x20]",
+    "mov     rax, qword [rdx]",
+    "mov     rdx, qword [rax+rcx*8+0x8]",
+    "mov     rax, qword [rsp+0x50]",
+    "mov     qword [rax], rdx",
+    "lea     eax, [r11+r9]",
+    "jmp     0x1400435dd",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

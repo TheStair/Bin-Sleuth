@@ -1,0 +1,16 @@
+{
+  "format": "PE",
+  "entry_point": "0x1400c98e8",
+  "sections": [
+    ".data",
+    ".extern",
+    ".pdata",
+    ".rdata",
+    ".reloc",
+    ".rsrc",
+    ".synthetic_builtins",
+    ".text"
+  ],
+  "arch": "x86_64",
+  "is_relocatable": true
+}

@@ -1,0 +1,30 @@
+{
+  "address": "0x14001666c",
+  "rules": [
+    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "movsxd  rdi, ecx",
+    "mov     rcx, rdi",
+    "call    qword [rel malloc]",
+    "mov     rbx, rax",
+    "test    rax, rax",
+    "jne     0x14001669c",
+    "mov     rax, rbx",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "lea     rdx, [rel data_1400f3818]  {\"failed to allocate %u bytes of m\u2026\"}",
+    "lea     ecx, [rax+0x7]",
+    "mov     r8d, edi",
+    "call    sub_1400187fc"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

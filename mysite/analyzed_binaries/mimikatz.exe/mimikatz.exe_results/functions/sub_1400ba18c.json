@@ -1,0 +1,52 @@
+{
+  "address": "0x1400ba18c",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     r11, rsp",
+    "push    rbx",
+    "sub     rsp, 0x60",
+    "and     qword [r11-0x48], 0x0",
+    "and     qword [r11-0x40], 0x0",
+    "and     qword [r11-0x30], 0x0",
+    "mov     dword [rsp+0x40], 0x2",
+    "lea     rax, [rel data_140126bf0]  {u\"removeLingeringObject\"}",
+    "mov     r9, r8",
+    "mov     qword [r11-0x20], rax",
+    "lea     rax, [r11-0x48]",
+    "mov     rbx, rcx",
+    "mov     qword [r11-0x18], rax",
+    "mov     r8, rdx",
+    "lea     rax, [r11-0x28]",
+    "lea     rdx, [rel data_140126c20]  {u\"%s:%s\"}",
+    "lea     rcx, [r11-0x48]",
+    "mov     qword [r11-0x38], rax",
+    "call    sub_140013b1c",
+    "test    eax, eax",
+    "je      0x1400ba21c",
+    "mov     ebx, dword [rsp+0x88]",
+    "lea     r8, [rsp+0x30]",
+    "lea     rdx, [rel data_1400e17cc]",
+    "mov     rcx, rbx",
+    "call    qword [rel Ordinal_WLDAP32_157]",
+    "mov     ebx, eax",
+    "test    eax, eax",
+    "je      0x1400ba20f",
+    "mov     rcx, qword [rsp+0x20]",
+    "call    qword [rel LocalFree]",
+    "jmp     0x1400ba223",
+    "lea     rcx, [rel data_140126c30]  {u\"ERROR kuhl_m_lsadump_dcshadow_li\u2026\"}",
+    "mov     r8d, eax",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "mov     eax, ebx",
+    "add     rsp, 0x60",
+    "pop     rbx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "address": "0x14000a67c",
+  "rules": [
+    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop",
+    "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4",
+    "write file on Windows/035d57bed47747649158312e9532f27d"
+  ],
+  "disassembly": [
+    "mov     r11, rsp",
+    "mov     qword [r11+0x8], rbx",
+    "mov     qword [r11+0x10], rsi",
+    "push    rdi",
+    "sub     rsp, 0x50",
+    "and     qword [r11-0x18], 0x0",
+    "lea     rax, [r11+0x20]",
+    "mov     dword [rsp+0x30], 0x1",
+    "mov     qword [r11-0x30], rax",
+    "mov     r9d, r8d",
+    "mov     r8, rdx",
+    "lea     rax, [r11-0x18]",
+    "mov     edx, ecx",
+    "lea     rcx, [rel data_1400eab78]  {u\"\\\\.\\mimidrv\"}",
+    "mov     qword [r11-0x38], rax",
+    "call    sub_14000a5b8",
+    "mov     esi, eax",
+    "test    eax, eax",
+    "je      0x14000a6f6",
+    "mov     rbx, qword [rsp+0x60]",
+    "mov     eax, esi",
+    "mov     rsi, qword [rsp+0x68]",
+    "add     rsp, 0x50",
+    "pop     rdi",
+    "retn    ",
+    "mov     edx, dword [rsp+0x78]",
+    "shr     edx, 0x1",
+    "je      0x14000a6eb",
+    "mov     rcx, qword [rsp+0x40]",
+    "call    qword [rel LocalFree]",
+    "mov     rbx, qword [rsp+0x40]",
+    "mov     edi, edx",
+    "movzx   edx, word [rbx]",
+    "lea     rcx, [rel data_1400ea930]",
+    "call    sub_14000c030",
+    "add     rbx, 0x2",
+    "sub     rdi, 0x1",
+    "jne     0x14000a6d2"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

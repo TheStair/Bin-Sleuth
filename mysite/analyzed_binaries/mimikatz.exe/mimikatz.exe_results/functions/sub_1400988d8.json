@@ -1,0 +1,44 @@
+{
+  "address": "0x1400988d8",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "mov     rbp, r9",
+    "mov     ebx, edx",
+    "mov     r9d, edx",
+    "mov     esi, r8d",
+    "lea     rdx, [rel data_140105fbc]  {\"{t{i}\"}",
+    "mov     r8d, 0xa0",
+    "mov     rdi, rcx",
+    "call    qword [rel Ordinal_WLDAP32_310]",
+    "test    ebx, ebx",
+    "je      0x14009892a",
+    "mov     eax, dword [rsp+0x60]",
+    "lea     rdx, [rel data_140105fcc]  {\"t{o}}\"}",
+    "mov     r9, rbp",
+    "mov     r8d, 0xa2",
+    "mov     rcx, rdi",
+    "mov     dword [rsp+0x20], eax",
+    "call    qword [rel Ordinal_WLDAP32_310]",
+    "mov     rbx, qword [rsp+0x40]",
+    "mov     rbp, qword [rsp+0x48]",
+    "mov     rsi, qword [rsp+0x50]",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "retn    ",
+    "lea     rdx, [rel data_140105fc4]  {\"t{i}\"}",
+    "mov     r9d, esi",
+    "mov     r8d, 0xa1",
+    "mov     rcx, rdi",
+    "call    qword [rel Ordinal_WLDAP32_310]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

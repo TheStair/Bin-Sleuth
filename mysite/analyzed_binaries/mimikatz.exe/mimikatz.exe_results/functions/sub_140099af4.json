@@ -1,0 +1,41 @@
+{
+  "address": "0x140099af4",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x30",
+    "and     dword [rsp+0x50], 0x0",
+    "lea     rax, [rel data_1401074b8]  {u\"CURRENT_USER\"}",
+    "lea     r9, [rsp+0x58]",
+    "lea     r8, [rel data_1401074d8]  {u\"systemstore\"}",
+    "mov     qword [rsp+0x20], rax",
+    "call    sub_140013220",
+    "mov     rcx, qword [rsp+0x58]",
+    "call    sub_1400055dc",
+    "mov     rdx, qword [rsp+0x58]",
+    "lea     rcx, [rel data_1401074f0]  {u\"Asking for System Store '%s' (0x\u2026\"}",
+    "mov     r8d, eax",
+    "mov     ebx, eax",
+    "call    sub_14000c030",
+    "lea     r9, [rel sub_140099b74]",
+    "lea     r8, [rsp+0x50]",
+    "xor     edx, edx",
+    "mov     ecx, ebx",
+    "call    qword [rel CertEnumSystemStore]",
+    "test    eax, eax",
+    "jne     0x140099b6a",
+    "xor     eax, eax",
+    "add     rsp, 0x30",
+    "pop     rbx",
+    "retn    ",
+    "call    qword [rel GetLastError]",
+    "lea     rcx, [rel data_140107540]  {u\"ERROR kuhl_m_crypto_l_stores ; C\u2026\"}",
+    "mov     edx, eax",
+    "call    sub_14000c030"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "address": "0x140029e50",
+  "rules": [
+    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
+    "contain loop"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     rbx, rcx",
+    "xor     eax, eax",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    ",
+    "mov     rdx, qword [r9+0x60]",
+    "movzx   r8d, word [rbx+0x56]",
+    "movzx   eax, byte [rdx+r8*2]",
+    "shl     eax, 0x8",
+    "movsxd  rcx, eax",
+    "movzx   eax, byte [rdx+r8*2+0x1]",
+    "or      rcx, rax",
+    "movzx   eax, word [r9+0x1a]",
+    "and     rcx, rax",
+    "add     rcx, qword [r9+0x50]",
+    "movzx   eax, byte [rcx+0x2]",
+    "movzx   edx, byte [rcx+0x1]",
+    "shl     edx, 0x8",
+    "or      edx, eax",
+    "movzx   eax, byte [rcx]",
+    "shl     eax, 0x18",
+    "shl     edx, 0x8",
+    "or      edx, eax",
+    "movzx   eax, byte [rcx+0x3]",
+    "mov     rcx, rbx",
+    "or      edx, eax",
+    "call    sub_140029c00",
+    "test    eax, eax",
+    "je      0x140029e5b",
+    "mov     r9, qword [rbx+0x88]",
+    "cmp     byte [r9+0x8], 0x0",
+    "jne     0x140029ebc"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

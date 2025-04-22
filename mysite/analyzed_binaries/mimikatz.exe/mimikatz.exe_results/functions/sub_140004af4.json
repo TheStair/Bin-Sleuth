@@ -1,0 +1,53 @@
+{
+  "address": "0x140004af4",
+  "rules": [
+    "encrypt data using HC-128/86aaff13b46c4951b9ca4e0a9171c391",
+    "hash data using aphash/c01783ca846f48c3a4751b50c0c12749",
+    "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/0d7bc900a8ea48098fc469578ae14b88",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "create new key via CryptAcquireContext"
+  ],
+  "disassembly": [
+    "mov     rax, rsp",
+    "push    rbx",
+    "sub     rsp, 0x40",
+    "and     dword [rax+0x10], 0x0",
+    "mov     ebx, ecx",
+    "lea     rcx, [rax-0x18]",
+    "mov     r9d, 0x18",
+    "xor     r8d, r8d",
+    "xor     edx, edx",
+    "mov     dword [rax+0x18], 0x4",
+    "mov     dword [rax-0x28], 0xf0000000",
+    "call    qword [rel CryptAcquireContextW]",
+    "test    eax, eax",
+    "je      0x140004b79",
+    "mov     eax, dword [rsp+0x58]",
+    "shr     eax, 0x3",
+    "add     rsp, 0x40",
+    "pop     rbx",
+    "retn    ",
+    "mov     rcx, qword [rsp+0x30]",
+    "lea     r9, [rsp+0x68]",
+    "xor     r8d, r8d",
+    "mov     edx, ebx",
+    "call    qword [rel CryptGenKey]",
+    "test    eax, eax",
+    "je      0x140004b6c",
+    "mov     rcx, qword [rsp+0x30]",
+    "xor     edx, edx",
+    "call    qword [rel CryptReleaseContext]",
+    "mov     rcx, qword [rsp+0x68]",
+    "and     dword [rsp+0x20], 0x0",
+    "lea     r9, [rsp+0x60]",
+    "lea     r8, [rsp+0x58]",
+    "mov     edx, 0x9",
+    "call    qword [rel CryptGetKeyParam]",
+    "mov     rcx, qword [rsp+0x68]",
+    "call    qword [rel CryptDestroyKey]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

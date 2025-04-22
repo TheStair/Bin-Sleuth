@@ -1,0 +1,45 @@
+{
+  "address": "0x140036274",
+  "rules": [
+    "encrypt data using speck/4b1f3c27d17344b39cf9dede3bcf8b4b",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "encrypt data using AES MixColumns step/954c5d7507db4ab48ac65ac05419ca28",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "write file on Windows/035d57bed47747649158312e9532f27d"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x30",
+    "movzx   eax, byte [rsp+0x60]",
+    "mov     rbx, rcx",
+    "mov     r10d, 0x2",
+    "cmp     al, 0x4",
+    "mov     ecx, eax",
+    "cmove   ecx, r10d",
+    "cmp     r8, 0x7fffffff",
+    "jbe     0x1400362b1",
+    "mov     qword [rsp+0x20], r9",
+    "mov     r9b, cl",
+    "mov     rcx, qword [rbx]",
+    "call    sub_140031820",
+    "cmp     eax, 0x12",
+    "jne     0x1400362ce",
+    "test    r9, r9",
+    "je      0x1400362aa",
+    "add     rsp, 0x30",
+    "pop     rbx",
+    "retn    ",
+    "mov     rcx, rbx",
+    "call    sub_1400363a8",
+    "test    rbx, rbx",
+    "je      0x1400362ce",
+    "cmp     r9, 0xffffffffffffffff",
+    "je      0x1400362aa",
+    "jmp     0x1400362c6",
+    "mov     rcx, rdx",
+    "call    r9"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

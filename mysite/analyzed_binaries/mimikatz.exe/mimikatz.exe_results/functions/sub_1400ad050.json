@@ -1,0 +1,34 @@
+{
+  "address": "0x1400ad050",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "xor     r8d, r8d",
+    "lea     r9, [rsp+0x38]",
+    "mov     edi, ecx",
+    "lea     edx, [r8+0x1]",
+    "call    RtlAdjustPrivilege",
+    "mov     edx, edi",
+    "mov     ebx, eax",
+    "test    eax, eax",
+    "js      0x1400ad083",
+    "lea     rcx, [rel data_140119ab0]  {u\"ERROR kuhl_m_privilege_simple ; \u2026\"}",
+    "mov     r8d, eax",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_140119a88]  {u\"Privilege '%u' OK\\n\"}",
+    "call    sub_14000c030",
+    "jmp     0x1400ad092",
+    "mov     eax, ebx",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

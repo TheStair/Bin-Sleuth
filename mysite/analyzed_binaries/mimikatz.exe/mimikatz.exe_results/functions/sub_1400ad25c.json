@@ -1,0 +1,13 @@
+{
+  "address": "0x1400ad25c",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d"
+  ],
+  "disassembly": [
+    "mov     r8d, 0x2",
+    "jmp     sub_1400ad268"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

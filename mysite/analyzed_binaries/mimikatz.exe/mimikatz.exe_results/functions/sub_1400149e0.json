@@ -1,0 +1,28 @@
+{
+  "address": "0x1400149e0",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x58",
+    "mov     rax, qword [rsp+0x90]",
+    "lea     rcx, [rel data_1400dc5b0]",
+    "xor     r8d, r8d",
+    "mov     qword [rsp+0x40], rax",
+    "mov     rax, qword [rsp+0x88]",
+    "mov     qword [rsp+0x38], rax",
+    "mov     eax, dword [rsp+0x80]",
+    "mov     dword [rsp+0x30], eax",
+    "mov     qword [rsp+0x28], r9",
+    "mov     r9, rdx",
+    "lea     rdx, [rel data_1400dc696]",
+    "mov     dword [rsp+0x20], 0x2",
+    "call    NdrClientCall2",
+    "add     rsp, 0x58",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

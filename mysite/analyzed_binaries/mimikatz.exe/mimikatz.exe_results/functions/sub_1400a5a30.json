@@ -1,0 +1,33 @@
+{
+  "address": "0x1400a5a30",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rdi, rdx",
+    "mov     r8, rdx",
+    "mov     edx, 0xf",
+    "call    SamSetInformationUser",
+    "mov     ebx, eax",
+    "test    eax, eax",
+    "js      0x1400a5a61",
+    "lea     rcx, [rel data_140112440]  {u\"ERROR kuhl_m_lsadump_update_dc_p\u2026\"}",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_140112400]  {u\"\\n  > Password updated (to %wZ)\\n\"}",
+    "mov     rdx, rdi",
+    "call    sub_14000c030",
+    "jmp     0x1400a5a6f",
+    "mov     eax, ebx",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

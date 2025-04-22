@@ -1,0 +1,52 @@
+{
+  "address": "0x140032164",
+  "rules": [
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rsi",
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "mov     rdi, qword [rcx]",
+    "mov     rsi, rcx",
+    "mov     edx, 0x128",
+    "mov     rcx, rdi",
+    "call    sub_140016c18",
+    "mov     rbx, rax",
+    "test    rax, rax",
+    "je      0x1400321ef",
+    "mov     rbx, qword [rsp+0x40]",
+    "mov     rsi, qword [rsp+0x48]",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "retn    ",
+    "lea     rcx, [rax+0x88]",
+    "xor     edx, edx",
+    "mov     r8d, 0xa0",
+    "call    memset",
+    "mov     qword [rbx], rdi",
+    "mov     rax, qword [rdi+0x8]",
+    "test    rax, rax",
+    "je      0x1400321b2",
+    "mov     rax, qword [rdi+0x8]",
+    "and     qword [rbx+0x8], 0x0",
+    "and     dword [rsp+0x20], 0x0",
+    "mov     qword [rbx+0x10], rax",
+    "mov     qword [rdi+0x8], rbx",
+    "mov     r9d, 0x1",
+    "mov     dword [rbx+0x24], 0x16bceaa5",
+    "mov     qword [rbx+0x18], rsi",
+    "lea     edx, [r9+0x3c]",
+    "xor     r8d, r8d",
+    "mov     rcx, rbx",
+    "mov     qword [rsi+0x10], rbx",
+    "call    sub_140032364",
+    "mov     rax, rbx",
+    "mov     qword [rax+0x8], rbx"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

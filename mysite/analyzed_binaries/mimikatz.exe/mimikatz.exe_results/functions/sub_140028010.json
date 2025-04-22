@@ -1,0 +1,34 @@
+{
+  "address": "0x140028010",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check if file exists/a31a651e5a314ee9ac446400cc2abdd5/58dd2a2048194a11b60488e61f6f4fb2",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777"
+  ],
+  "disassembly": [
+    "mov     r9, qword [rcx+0x8]",
+    "xor     r8d, r8d",
+    "test    byte [r9+0x26], 0x2",
+    "je      0x140028038",
+    "cmp     dl, r8b",
+    "setne   cl",
+    "cmp     dl, 0x2",
+    "mov     byte [r9+0x21], cl",
+    "sete    cl",
+    "mov     byte [r9+0x22], cl",
+    "movzx   eax, byte [r9+0x21]",
+    "cmp     dl, r8b",
+    "mov     ecx, r8d",
+    "setne   cl",
+    "cmp     ecx, eax",
+    "je      0x140028038",
+    "mov     r8d, 0x8",
+    "jmp     0x14002804c",
+    "mov     eax, r8d",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "address": "0x140088140",
+  "rules": [
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0xf0",
+    "and     dword [rsp+0x30], 0x0",
+    "and     qword [rsp+0x38], 0x0",
+    "and     dword [rsp+0x40], 0x0",
+    "and     qword [rsp+0x48], 0x0",
+    "mov     rdi, rcx",
+    "lea     rax, [rsp+0x50]",
+    "lea     rcx, [rsp+0x70]",
+    "mov     rbx, rdx",
+    "mov     dword [rsp+0x20], 0x14",
+    "mov     qword [rsp+0x28], rax",
+    "call    A_SHAInit",
+    "mov     r8d, dword [rbx+0x18]",
+    "mov     rdx, qword [rbx+0x20]",
+    "lea     rcx, [rsp+0x70]",
+    "call    A_SHAUpdate",
+    "lea     rdx, [rsp+0x50]",
+    "lea     rcx, [rsp+0x70]",
+    "call    A_SHAFinal",
+    "and     dword [rdi+0x8], 0x0",
+    "lea     rcx, [rel data_1400f8f88]  {\"2.5.29.35\"}",
+    "lea     r8, [rdi+0x10]",
+    "lea     rdx, [rsp+0x20]",
+    "mov     qword [rdi], rcx",
+    "call    sub_140087f14",
+    "mov     rbx, qword [rsp+0x100]",
+    "add     rsp, 0xf0",
+    "pop     rdi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

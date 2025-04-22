@@ -1,0 +1,48 @@
+{
+  "address": "0x1400544f8",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     r9b, r8b",
+    "mov     rax, rcx",
+    "cmp     edx, 0xfffffffe",
+    "jne     0x140054510",
+    "movsx   r8d, byte [rcx]",
+    "cmp     r8d, edx",
+    "je      0x140054521",
+    "mov     rax, qword [rcx+0x18]",
+    "neg     rax",
+    "sbb     eax, eax",
+    "and     eax, 0x6",
+    "retn    ",
+    "cmp     r8d, edx",
+    "mov     r8d, dword [rax+0x4]",
+    "mov     ecx, 0x1",
+    "lea     r10d, [rcx+0x3]",
+    "mov     eax, r8d",
+    "movzx   edx, r9b",
+    "cmove   ecx, r10d",
+    "and     eax, 0x3",
+    "cmp     edx, eax",
+    "jne     0x140054548",
+    "cmp     byte [rcx], 0x0",
+    "jl      0x140054521",
+    "and     edx, r8d",
+    "test    dl, 0x2",
+    "je      0x140054552",
+    "add     ecx, 0x2",
+    "jmp     0x140054552",
+    "xor     eax, eax",
+    "retn    ",
+    "mov     eax, ecx",
+    "retn    ",
+    "inc     ecx"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

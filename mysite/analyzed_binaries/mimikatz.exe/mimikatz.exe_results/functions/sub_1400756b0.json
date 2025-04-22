@@ -1,0 +1,53 @@
+{
+  "address": "0x1400756b0",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "movzx   eax, word [rdx+0x30]",
+    "mov     rbx, rdx",
+    "mov     rbp, rcx",
+    "cmp     eax, r8d",
+    "jge     0x140075725",
+    "xor     eax, eax",
+    "lea     edi, [r8+0x7]",
+    "and     edi, 0xfffffff8",
+    "movsxd  rdx, edi",
+    "shl     rdx, 0x3",
+    "call    sub_140016c18",
+    "mov     rsi, rax",
+    "test    rax, rax",
+    "jne     0x1400756f3",
+    "movzx   r8d, word [rbx+0x30]",
+    "mov     rdx, qword [rbx+0x38]",
+    "mov     rcx, rax",
+    "shl     r8, 0x3",
+    "call    memcpy",
+    "mov     rdx, qword [rbx+0x38]",
+    "lea     rax, [rbx+0x48]",
+    "cmp     rdx, rax",
+    "je      0x14007571d",
+    "lea     eax, [rsi+0x7]",
+    "jmp     0x140075727",
+    "mov     qword [rbx+0x38], rsi",
+    "mov     word [rbx+0x30], di",
+    "mov     rcx, rbp",
+    "call    sub_1400169a8",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rbp, qword [rsp+0x38]",
+    "mov     rsi, qword [rsp+0x40]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

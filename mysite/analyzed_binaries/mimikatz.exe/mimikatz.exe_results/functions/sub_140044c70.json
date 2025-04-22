@@ -1,0 +1,14 @@
+{
+  "address": "0x140044c70",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d"
+  ],
+  "disassembly": [
+    "mov     byte [rcx+0x24], 0x0",
+    "mov     eax, 0x2",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

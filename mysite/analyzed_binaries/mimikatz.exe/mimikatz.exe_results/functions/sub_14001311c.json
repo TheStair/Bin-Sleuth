@@ -1,0 +1,28 @@
+{
+  "address": "0x14001311c",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "lea     rdx, [rsp+0x38]",
+    "call    ConvertSidToStringSidW",
+    "test    eax, eax",
+    "je      0x14001314c",
+    "call    qword [rel GetLastError]",
+    "lea     rcx, [rel data_1400f13e0]  {u\"ERROR kull_m_string_displaySID ;\u2026\"}",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "mov     rdx, qword [rsp+0x38]",
+    "lea     rcx, [rel data_1400f13d8]",
+    "call    sub_14000c030",
+    "mov     rcx, qword [rsp+0x38]",
+    "call    qword [rel LocalFree]",
+    "jmp     0x140013160",
+    "add     rsp, 0x28",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

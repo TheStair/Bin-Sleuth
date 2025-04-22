@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c85ae",
+  "rules": [
+    "encrypt data using RC4 via SystemFunction033"
+  ],
+  "disassembly": [
+    "jmp     qword [rel SystemFunction033]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

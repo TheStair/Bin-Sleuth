@@ -1,0 +1,46 @@
+{
+  "address": "0x1400af96f",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "cmp     eax, 0x721",
+    "jne     0x1400af984",
+    "cmp     eax, 0x6d3",
+    "jne     0x1400af999",
+    "lea     rcx, [rel data_14011cb90]  {u\"ERROR kuhl_m_rpc_close ; A secur\u2026\"}",
+    "call    sub_14000c030",
+    "jmp     0x1400af9bf",
+    "cmp     eax, 0x6ba",
+    "jne     0x1400af9ae",
+    "lea     rcx, [rel data_14011cc70]  {u\"ERROR kuhl_m_rpc_close ; The aut\u2026\"}",
+    "call    sub_14000c030",
+    "jmp     0x1400af9bf",
+    "lea     rcx, [rel data_140140750]",
+    "call    sub_140010484",
+    "nop     ",
+    "and     qword [rel data_140140758], 0x0",
+    "cmp     qword [rel data_140140750], 0x0",
+    "je      0x1400af9ea",
+    "mov     r8d, eax",
+    "mov     edx, eax",
+    "lea     rcx, [rel data_14011cd60]  {u\"ERROR kuhl_m_rpc_close ; RPC Exc\u2026\"}",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_14011ccf0]  {u\"ERROR kuhl_m_rpc_close ; RPC Ser\u2026\"}",
+    "call    sub_14000c030",
+    "jmp     0x1400af9bf",
+    "mov     rcx, qword [rel data_140140760]",
+    "test    rcx, rcx",
+    "je      0x1400afa03",
+    "lea     rcx, [rel data_140140750]",
+    "call    sub_140010484",
+    "xor     eax, eax",
+    "add     rsp, 0x28",
+    "retn    ",
+    "call    sub_1400056c0",
+    "and     qword [rel data_140140760], 0x0"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

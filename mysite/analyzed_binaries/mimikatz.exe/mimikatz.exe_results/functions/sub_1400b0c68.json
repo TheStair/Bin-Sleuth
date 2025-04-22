@@ -1,0 +1,40 @@
+{
+  "address": "0x1400b0c68",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "delay execution",
+    "run as service/73dfd1e4ada74828bc8b1a67120facca"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "lea     rdx, [rel sub_1400b0bfc]",
+    "lea     rcx, [rel data_14011dfc0]  {u\"mimikatzsvc\"}",
+    "call    qword [rel RegisterServiceCtrlHandlerW]",
+    "mov     qword [rel data_140140740], rax",
+    "test    rax, rax",
+    "je      0x1400b0d04",
+    "add     rsp, 0x28",
+    "retn    ",
+    "lea     rdx, [rel data_14013bb00]",
+    "mov     rcx, rax",
+    "mov     dword [rel data_14013bb04], 0x2",
+    "call    qword [rel SetServiceStatus]",
+    "mov     rcx, qword [rel data_140140740]",
+    "lea     rdx, [rel data_14013bb00]",
+    "mov     dword [rel data_14013bb04], 0x4",
+    "mov     dword [rel data_14013bb08], 0x1",
+    "call    qword [rel SetServiceStatus]",
+    "mov     rcx, qword [rel data_140140748]",
+    "or      edx, 0xffffffff",
+    "call    qword [rel WaitForSingleObject]",
+    "mov     rcx, qword [rel data_140140740]",
+    "lea     rdx, [rel data_14013bb00]",
+    "mov     dword [rel data_14013bb04], 0x1",
+    "call    qword [rel SetServiceStatus]",
+    "and     qword [rel data_140140740], 0x0"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "0x140029c74",
+  "rules": [
+    "check for kernel debugger via shared user data structure/f02b2044f10f450f9f5b2b0d5d96cef0",
+    "hash data with CRC32/7620b456d97a4aaeb63e1213270df3d4",
+    "hash data using aphash/53c84e7b18b64c82aa36e25c45372fcd"
+  ],
+  "disassembly": [
+    "movsx   r8, byte [rcx+0x54]",
+    "and     byte [rcx+0x1], 0xf9",
+    "mov     r9, rcx",
+    "xor     eax, eax",
+    "mov     word [rcx+0x46], ax",
+    "movzx   edx, word [rcx+r8*2+0x56]",
+    "dec     r8b",
+    "mov     word [rcx+0x56], dx",
+    "mov     rcx, qword [rcx+0x88]",
+    "mov     byte [r9+0x54], r8b",
+    "movsx   rax, r8b",
+    "mov     rdx, qword [r9+rax*8+0x90]",
+    "mov     qword [r9+0x88], rdx",
+    "mov     rcx, qword [rcx+0x70]",
+    "jmp     sub_14002242c"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

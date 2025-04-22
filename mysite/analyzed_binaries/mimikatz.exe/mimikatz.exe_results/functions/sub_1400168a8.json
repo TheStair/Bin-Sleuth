@@ -1,0 +1,30 @@
+{
+  "address": "0x1400168a8",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "movsxd  rbx, ecx",
+    "call    sub_1400823f0",
+    "xor     edx, edx",
+    "cmp     eax, edx",
+    "je      0x1400168c0",
+    "cmp     ebx, edx",
+    "jle     0x1400168cf",
+    "xor     eax, eax",
+    "jmp     0x1400168d2",
+    "mov     rax, rdx",
+    "mov     rcx, rbx",
+    "call    sub_140016870",
+    "mov     rdx, rax",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

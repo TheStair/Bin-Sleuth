@@ -1,0 +1,44 @@
+{
+  "address": "0x140051d70",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "mov     r9, rcx",
+    "test    rdx, rdx",
+    "je      0x140051d96",
+    "xor     eax, eax",
+    "xor     eax, eax",
+    "cmp     dword [rdx], eax",
+    "jle     0x140051d96",
+    "lea     r8, [rdx+0x24]",
+    "cdqe    ",
+    "lea     rcx, [rax+rax*4]",
+    "mov     al, byte [rdx+rcx*8+0x20]",
+    "test    al, al",
+    "je      0x140051db6",
+    "inc     eax",
+    "add     r8, 0x28",
+    "cmp     eax, dword [rdx]",
+    "jl      0x140051d86",
+    "lea     r8, [rel data_1400f5d20]  {\"FIRST\"}",
+    "lea     r8, [rel data_1400f5d28]  {\"LAST\"}",
+    "cmp     al, 0x3",
+    "jne     0x140051dbd",
+    "test    byte [r8], 0x10",
+    "jne     0x140051d9d",
+    "add     rsp, 0x28",
+    "retn    ",
+    "lea     rdx, [rel data_1400f5d30]  {\"unsupported use of NULLS %s\"}",
+    "mov     rcx, r9",
+    "call    sub_1400191b8",
+    "mov     eax, 0x1",
+    "jmp     0x140051d98"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

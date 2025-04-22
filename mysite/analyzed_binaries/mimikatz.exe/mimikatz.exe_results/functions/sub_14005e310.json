@@ -1,0 +1,31 @@
+{
+  "address": "0x14005e310",
+  "rules": [
+    "contain loop"
+  ],
+  "disassembly": [
+    "mov     r9d, dword [rel data_140140378]",
+    "xor     eax, eax",
+    "lea     r8d, [r9-0x1]",
+    "movsxd  rdx, r8d",
+    "cmp     rdx, rax",
+    "jl      0x14005e357",
+    "retn    ",
+    "mov     r10, qword [rel data_140140380]",
+    "dec     r9d",
+    "movsxd  rcx, r8d",
+    "mov     rax, qword [r10+r9*8]",
+    "mov     dword [rel data_140140378], r9d",
+    "mov     qword [r10+rcx*8], rax",
+    "mov     eax, 0x1",
+    "dec     r8d",
+    "sub     rdx, 0x1",
+    "jns     0x14005e32c",
+    "cmp     qword [r10+rdx*8], rcx",
+    "je      0x14005e33d",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

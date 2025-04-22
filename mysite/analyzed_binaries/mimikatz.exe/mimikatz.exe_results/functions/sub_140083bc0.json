@@ -1,0 +1,15 @@
+{
+  "address": "0x140083bc0",
+  "rules": [
+    "load assembly via IAssembly/08d07504566140e580f88ed84a643e72"
+  ],
+  "disassembly": [
+    "mov     rax, qword [rcx+0x118]",
+    "mov     qword [rcx+0x120], rdx",
+    "mov     qword [rcx+0x118], r8",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "address": "0x1400191b8",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "check OS version/e331473c09f0419eb22f4786f6872060"
+  ],
+  "disassembly": [
+    "mov     rax, rsp",
+    "mov     qword [rax+0x10], rdx",
+    "mov     qword [rax+0x18], r8",
+    "mov     qword [rax+0x20], r9",
+    "push    rbx",
+    "push    rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rsi, qword [rcx]",
+    "mov     rbx, rcx",
+    "lea     r8, [rax+0x18]",
+    "mov     rcx, rsi",
+    "call    sub_14001861c",
+    "cmp     byte [rsi+0x65], 0x0",
+    "mov     rdi, rax",
+    "je      0x1400191fb",
+    "mov     rdx, qword [rbx+0x8]",
+    "inc     dword [rbx+0x30]",
+    "test    rdx, rdx",
+    "je      0x14001920f",
+    "test    rax, rax",
+    "je      0x14001921a",
+    "mov     qword [rbx+0x8], rdi",
+    "mov     dword [rbx+0x18], 0x1",
+    "mov     rcx, rsi",
+    "call    sub_1400169a8",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "pop     rsi",
+    "pop     rbx",
+    "retn    ",
+    "mov     rdx, rax",
+    "mov     rcx, rsi",
+    "call    sub_1400169a8",
+    "jmp     0x14001921a"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

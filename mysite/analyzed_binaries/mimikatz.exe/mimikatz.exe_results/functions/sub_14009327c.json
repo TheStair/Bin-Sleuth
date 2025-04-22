@@ -1,0 +1,46 @@
+{
+  "address": "0x14009327c",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "lea     rdi, [r8+0x46]",
+    "mov     rsi, rdx",
+    "mov     rbp, rcx",
+    "lea     rdx, [rel data_140102468]  {u\"]]></PolicySecret>\"}",
+    "mov     rcx, rdi",
+    "xor     ebx, ebx",
+    "call    qword [rel wcsstr]",
+    "cmp     rax, rbx",
+    "je      0x1400932d1",
+    "lea     rcx, [rel data_140102490]  {u\"ERROR kuhl_m_dpapi_sccm_XML_Data\u2026\"}",
+    "call    sub_14000c030",
+    "sub     rax, rdi",
+    "lea     r8d, [rbx+0x4]",
+    "mov     r9, rbp",
+    "sar     rax, 0x1",
+    "mov     rcx, rdi",
+    "mov     qword [rsp+0x20], rsi",
+    "mov     edx, eax",
+    "call    sub_140005b90",
+    "mov     ebx, eax",
+    "jmp     0x1400932dd",
+    "mov     rbp, qword [rsp+0x48]",
+    "mov     rsi, qword [rsp+0x50]",
+    "mov     eax, ebx",
+    "mov     rbx, qword [rsp+0x40]",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

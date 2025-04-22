@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c8fe0",
+  "rules": [
+    "create or open mutex on Windows"
+  ],
+  "disassembly": [
+    "jmp     qword [rel CreateMutexW]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

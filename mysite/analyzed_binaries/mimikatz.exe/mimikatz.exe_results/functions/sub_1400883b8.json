@@ -1,0 +1,51 @@
+{
+  "address": "0x1400883b8",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rdi, r8",
+    "mov     rsi, rcx",
+    "test    edx, edx",
+    "je      0x14008842b",
+    "mov     ebx, 0x1",
+    "test    r8, r8",
+    "je      0x14008842b",
+    "xor     r9d, r9d",
+    "lea     edx, [r9+0x20]",
+    "call    qword [rel CryptSetProvParam]",
+    "mov     ebx, eax",
+    "test    eax, eax",
+    "jne     0x140088430",
+    "mov     rsi, qword [rsp+0x38]",
+    "mov     eax, ebx",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "call    qword [rel GetLastError]",
+    "lea     rcx, [rel data_1400f90e0]  {u\"ERROR makePin ; CryptSetProvPara\u2026\"}",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "lea     edx, [rbx+0x21]",
+    "xor     r9d, r9d",
+    "mov     r8, rdi",
+    "mov     rcx, rsi",
+    "call    qword [rel CryptSetProvParam]",
+    "mov     ebx, eax",
+    "test    eax, eax",
+    "jne     0x140088430",
+    "call    qword [rel GetLastError]",
+    "lea     rcx, [rel data_1400f9160]  {u\"ERROR makePin ; CryptSetProvPara\u2026\"}",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "jmp     0x140088430"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

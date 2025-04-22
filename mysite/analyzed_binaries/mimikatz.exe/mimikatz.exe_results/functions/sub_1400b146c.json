@@ -1,0 +1,45 @@
+{
+  "address": "0x1400b146c",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "cmp     dword [rel data_14014084c], 0x1388",
+    "jae     0x1400b1492",
+    "lea     rbx, [rel data_140110060]  {u\"ntds\"}",
+    "lea     rdi, [rel data_14011eba0]  {u\"ntdsai.dll\"}",
+    "lea     rbx, [rel data_14011eb78]  {u\"samss\"}",
+    "lea     rdi, [rel data_14011eb88]  {u\"ntdsa.dll\"}",
+    "jmp     0x1400b14a0",
+    "xor     eax, eax",
+    "mov     rbx, qword [rsp+0x40]",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "retn    ",
+    "lea     rcx, [rel data_14011ebd0]  {u\"Patch 2/2: \"}",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_14013b9c0]",
+    "mov     r9, rdi",
+    "mov     r8, rbx",
+    "mov     edx, 0x140",
+    "mov     dword [rsp+0x20], 0x1",
+    "call    sub_14000c42c",
+    "lea     rcx, [rel data_14011ebb8]  {u\"Patch 1/2: \"}",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_14013b840]",
+    "mov     r9, rdi",
+    "mov     r8, rbx",
+    "mov     edx, 0x140",
+    "mov     dword [rsp+0x20], 0x1",
+    "call    sub_14000c42c",
+    "test    eax, eax",
+    "je      0x1400b14fa"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

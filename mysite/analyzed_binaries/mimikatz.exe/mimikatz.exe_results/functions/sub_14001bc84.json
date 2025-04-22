@@ -1,0 +1,17 @@
+{
+  "address": "0x14001bc84",
+  "rules": [
+    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
+    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd"
+  ],
+  "disassembly": [
+    "movzx   eax, byte [rcx+0x1c]",
+    "and     eax, 0x10",
+    "or      eax, 0x8",
+    "shl     eax, 0x8",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

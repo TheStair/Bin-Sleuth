@@ -1,0 +1,29 @@
+{
+  "address": "0x140028404",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "cmp     byte [rcx+0x24], 0x0",
+    "jne     0x140028433",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    ",
+    "mov     rax, qword [rcx+0x18]",
+    "test    rax, rax",
+    "je      0x140028433",
+    "and     qword [rcx+0x18], 0x0",
+    "mov     rcx, qword [rax+0x70]",
+    "mov     rbx, qword [rcx+0x28]",
+    "call    sub_14001ddb0",
+    "mov     rcx, rbx",
+    "call    sub_140022054"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

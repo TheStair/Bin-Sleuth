@@ -1,0 +1,44 @@
+{
+  "address": "0x14001ea5c",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "check OS version/e331473c09f0419eb22f4786f6872060"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "cmp     dword [rcx+0x38], 0x0",
+    "mov     rdi, qword [rcx]",
+    "mov     rbx, rcx",
+    "je      0x14001ea79",
+    "mov     eax, dword [rbx+0x24]",
+    "mov     rcx, rbx",
+    "sub     dword [rdi+0x8], eax",
+    "mov     eax, dword [rbx+0x20]",
+    "sub     dword [rdi+0xc], eax",
+    "mov     eax, dword [rdi+0x8]",
+    "sub     eax, dword [rdi+0xc]",
+    "add     eax, 0xa",
+    "mov     dword [rdi+0x10], eax",
+    "call    sub_14001e3e0",
+    "mov     rcx, qword [rbx+0x50]",
+    "call    sub_140016950",
+    "mov     rcx, qword [rbx+0x40]",
+    "call    sub_140016950",
+    "mov     rcx, rbx",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "jmp     sub_140016950",
+    "xor     edx, edx",
+    "call    sub_14001e46c"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

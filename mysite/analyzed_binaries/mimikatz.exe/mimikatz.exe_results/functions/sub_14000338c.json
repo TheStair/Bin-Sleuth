@@ -1,0 +1,47 @@
+{
+  "address": "0x14000338c",
+  "rules": [
+    "decompress data using LZO/368a268678dc46ccbe6ee697869692a3",
+    "64-bit execution via heavens gate/d7fcc2def38746b09a33d0c7032e9b82",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     eax, dword [rcx]",
+    "mov     rbx, rdx",
+    "mov     rdi, rcx",
+    "mov     dword [rdx+0x10], eax",
+    "test    eax, eax",
+    "je      0x1400033e7",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "dec     eax",
+    "add     rdi, 0x5",
+    "mov     dword [rdx+0x10], eax",
+    "mov     al, byte [rcx+0x4]",
+    "test    al, al",
+    "je      0x1400033d8",
+    "mov     edx, dword [rbx+0x10]",
+    "lea     rcx, [rbx+0x14]",
+    "mov     qword [rcx], rdi",
+    "call    sub_1400131d0",
+    "add     dword [rdx+0x10], 0xfffffffc",
+    "mov     edx, dword [rdi]",
+    "mov     dword [rbx+0x1c], edx",
+    "test    edx, edx",
+    "je      0x1400033d8",
+    "sub     dword [rbx+0x10], edx",
+    "add     rdi, 0x4",
+    "lea     rcx, [rbx+0x20]",
+    "mov     qword [rcx], rdi",
+    "add     rdi, rdx",
+    "call    sub_1400131d0"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

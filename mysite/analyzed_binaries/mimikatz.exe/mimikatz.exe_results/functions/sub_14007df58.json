@@ -1,0 +1,46 @@
+{
+  "address": "0x14007df58",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rsi, r8",
+    "xor     r8d, r8d",
+    "mov     ebx, r9d",
+    "mov     rdi, rcx",
+    "call    sub_140044974",
+    "mov     rbp, rax",
+    "test    ebx, ebx",
+    "jne     0x14007df8b",
+    "mov     rcx, qword [rdi]",
+    "cmp     byte [rcx+0xb5], 0x0",
+    "jne     0x14007dfad",
+    "cmp     dword [rsp+0x50], 0xffffffff",
+    "je      0x14007dfad",
+    "mov     r9d, 0x1",
+    "mov     r8, rsi",
+    "mov     rdx, rbp",
+    "mov     rcx, rdi",
+    "call    sub_140044b64",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rsi, qword [rsp+0x40]",
+    "mov     rax, rbp",
+    "mov     rbp, qword [rsp+0x38]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     r9, qword [rsi]",
+    "mov     r8d, dword [rsi+0x8]",
+    "lea     rdx, [rel data_1400f7818]  {\"syntax error after column name \"\u2026\"}",
+    "mov     rcx, rdi",
+    "call    sub_1400191b8"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

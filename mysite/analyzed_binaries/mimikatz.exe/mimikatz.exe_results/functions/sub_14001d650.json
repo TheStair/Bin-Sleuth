@@ -1,0 +1,33 @@
+{
+  "address": "0x14001d650",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "lea     rcx, [rsp+0x38]",
+    "mov     rbx, rdx",
+    "call    qword [rel data_14013d738]",
+    "mov     eax, dword [rsp+0x38]",
+    "mov     r11d, dword [rsp+0x3c]",
+    "shl     r11, 0x20",
+    "add     r11, rax",
+    "mov     rax, 0x346dc5d63886594b",
+    "imul    r11",
+    "mov     rax, 0xb5310d9cba00",
+    "sar     rdx, 0xb",
+    "add     rax, rdx",
+    "mov     rcx, rdx",
+    "shr     rcx, 0x3f",
+    "add     rcx, rax",
+    "xor     eax, eax",
+    "mov     qword [rbx], rcx",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

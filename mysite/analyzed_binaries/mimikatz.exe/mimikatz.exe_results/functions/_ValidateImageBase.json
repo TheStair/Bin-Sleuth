@@ -1,0 +1,28 @@
+{
+  "address": "0x1400ce060",
+  "rules": [
+    "parse PE header",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     rax, rcx",
+    "mov     ecx, 0x5a4d",
+    "cmp     word [rax], cx",
+    "je      0x1400ce070",
+    "movsxd  rcx, dword [rax+0x3c]",
+    "add     rcx, rax",
+    "xor     eax, eax",
+    "cmp     dword [rcx], 0x4550",
+    "jne     0x1400ce08d",
+    "xor     eax, eax",
+    "retn    ",
+    "retn    ",
+    "mov     edx, 0x20b",
+    "cmp     word [rcx+0x18], dx",
+    "sete    al"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

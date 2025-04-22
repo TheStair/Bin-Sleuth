@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c8f8c",
+  "rules": [
+    "link function at runtime on Windows"
+  ],
+  "disassembly": [
+    "jmp     qword [rel GetProcAddress]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

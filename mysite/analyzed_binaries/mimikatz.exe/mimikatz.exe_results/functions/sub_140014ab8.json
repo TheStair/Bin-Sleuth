@@ -1,0 +1,35 @@
+{
+  "address": "0x140014ab8",
+  "rules": [
+    "contain loop"
+  ],
+  "disassembly": [
+    "mov     rax, qword [rcx+0x180]",
+    "mov     r9, rcx",
+    "xor     r8d, r8d",
+    "jmp     0x140014acd",
+    "test    rax, rax",
+    "jne     0x140014ac7",
+    "mov     rax, qword [rax]",
+    "inc     r8d",
+    "mov     rax, qword [rcx+0x188]",
+    "xor     ecx, ecx",
+    "jmp     0x140014ae2",
+    "test    rax, rax",
+    "jne     0x140014add",
+    "mov     rax, qword [rax]",
+    "inc     ecx",
+    "test    rdx, rdx",
+    "je      0x140014af8",
+    "mov     eax, dword [r9+0x170]",
+    "sub     eax, ecx",
+    "sub     eax, r8d",
+    "retn    ",
+    "mov     eax, dword [r9+0x170]",
+    "sub     eax, r8d",
+    "mov     dword [rdx], eax"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

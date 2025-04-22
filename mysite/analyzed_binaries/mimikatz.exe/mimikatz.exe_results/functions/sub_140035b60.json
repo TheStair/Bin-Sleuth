@@ -1,0 +1,24 @@
+{
+  "address": "0x140035b60",
+  "rules": [
+    "decompress data using LZO/368a268678dc46ccbe6ee697869692a3",
+    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
+    "contain loop"
+  ],
+  "disassembly": [
+    "mov     rax, qword [rcx+0x8]",
+    "test    rax, rax",
+    "je      0x140035b85",
+    "retn    ",
+    "lea     ecx, [rdx+0x1]",
+    "and     ecx, 0x3",
+    "and     dword [rax+0xc8], 0xfffffffc",
+    "or      dword [rax+0xc8], ecx",
+    "mov     rax, qword [rax+0x10]",
+    "test    rax, rax",
+    "jne     0x140035b6f"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

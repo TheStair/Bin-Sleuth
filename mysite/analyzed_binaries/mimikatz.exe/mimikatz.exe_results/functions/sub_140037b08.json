@@ -1,0 +1,50 @@
+{
+  "address": "0x140037b08",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     eax, 0x4000",
+    "mov     rbx, rcx",
+    "test    word [rcx+0x8], ax",
+    "je      0x140037b21",
+    "mov     r9b, byte [rbx+0xa]",
+    "mov     r8d, dword [rbx+0xc]",
+    "mov     rcx, qword [rbx+0x10]",
+    "mov     rdx, rbx",
+    "call    sub_140019354",
+    "test    eax, eax",
+    "jg      0x140037b61",
+    "call    sub_140030f10",
+    "cmp     eax, 0x1",
+    "jne     0x140037b56",
+    "jne     0x140037b56",
+    "mov     eax, 0x8",
+    "mov     r9b, byte [rbx+0xa]",
+    "mov     r8d, dword [rbx+0xc]",
+    "mov     rcx, qword [rbx+0x10]",
+    "lea     rdx, [rsp+0x30]",
+    "call    sub_140019740",
+    "test    eax, eax",
+    "jne     0x140037b56",
+    "mov     r9b, byte [rbx+0xa]",
+    "mov     r8d, dword [rbx+0xc]",
+    "mov     rcx, qword [rbx+0x10]",
+    "lea     rdx, [rsp+0x30]",
+    "call    sub_140019740",
+    "cmp     eax, 0x1",
+    "jle     0x140037b80",
+    "mov     rax, qword [rsp+0x30]",
+    "mov     qword [rbx], rax",
+    "mov     eax, 0x4",
+    "jmp     0x140037b5b",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

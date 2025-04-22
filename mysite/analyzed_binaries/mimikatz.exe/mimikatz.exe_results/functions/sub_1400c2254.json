@@ -1,0 +1,38 @@
+{
+  "address": "0x1400c2254",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "mov     rcx, qword [rel data_140140580]",
+    "test    rcx, rcx",
+    "je      0x1400c226b",
+    "mov     rcx, qword [rel data_140140588]",
+    "test    rcx, rcx",
+    "je      0x1400c2289",
+    "xor     edx, edx",
+    "call    BCryptCloseAlgorithmProvider",
+    "mov     rcx, qword [rel data_140140540]",
+    "test    rcx, rcx",
+    "je      0x1400c229c",
+    "call    BCryptDestroyKey",
+    "mov     rcx, qword [rel data_140140590]",
+    "call    qword [rel LocalFree]",
+    "mov     rcx, qword [rel data_140140548]",
+    "test    rcx, rcx",
+    "je      0x1400c22ba",
+    "xor     edx, edx",
+    "call    BCryptCloseAlgorithmProvider",
+    "jmp     0x1400c22bc",
+    "call    BCryptDestroyKey",
+    "mov     rcx, qword [rel data_140140550]",
+    "call    qword [rel LocalFree]",
+    "mov     dword [rel data_140139f0c], 0xc0000225",
+    "add     rsp, 0x28",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

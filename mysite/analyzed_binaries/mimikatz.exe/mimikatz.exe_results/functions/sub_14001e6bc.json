@@ -1,0 +1,41 @@
+{
+  "address": "0x14001e6bc",
+  "rules": [
+    "encrypt data using HC-128/86aaff13b46c4951b9ca4e0a9171c391",
+    "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/0d7bc900a8ea48098fc469578ae14b88",
+    "hash data using aphash/c01783ca846f48c3a4751b50c0c12749",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "check OS version/e331473c09f0419eb22f4786f6872060"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "cmp     dword [rcx+0x1c], 0x0",
+    "mov     r9, rcx",
+    "je      0x14001e700",
+    "add     rsp, 0x28",
+    "retn    ",
+    "mov     r8, qword [rcx]",
+    "mov     eax, edx",
+    "sub     eax, dword [rcx+0x24]",
+    "add     dword [r8+0x8], eax",
+    "mov     eax, dword [r8+0x8]",
+    "sub     eax, dword [r8+0xc]",
+    "add     eax, 0xa",
+    "mov     dword [r8+0x10], eax",
+    "mov     dword [rcx+0x24], edx",
+    "lea     ecx, [rdx+rdx*8]",
+    "mov     eax, 0xcccccccd",
+    "mul     ecx",
+    "mov     rcx, r9",
+    "shr     edx, 0x3",
+    "mov     dword [r9+0x28], edx",
+    "call    sub_14001e3e0"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

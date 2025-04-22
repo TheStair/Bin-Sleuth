@@ -1,0 +1,42 @@
+{
+  "address": "0x1400ad0e0",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     ebx, 0xc000000d",
+    "test    ecx, ecx",
+    "je      0x1400ad137",
+    "lea     rcx, [rel data_140119c80]  {u\"ERROR kuhl_m_privilege_name ; Mi\u2026\"}",
+    "call    sub_14000c030",
+    "mov     rdx, qword [rdx]",
+    "lea     r8, [rsp+0x40]",
+    "xor     ecx, ecx",
+    "call    qword [rel LookupPrivilegeValueW]",
+    "test    eax, eax",
+    "je      0x1400ad121",
+    "call    qword [rel GetLastError]",
+    "lea     rcx, [rel data_140119c00]  {u\"ERROR kuhl_m_privilege_name ; Lo\u2026\"}",
+    "mov     edx, eax",
+    "mov     edx, dword [rsp+0x44]",
+    "test    edx, edx",
+    "jne     0x1400ad118",
+    "mov     eax, ebx",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    ",
+    "lea     rcx, [rel data_140119b90]  {u\"ERROR kuhl_m_privilege_name ; LU\u2026\"}",
+    "jmp     0x1400ad130",
+    "mov     ecx, dword [rsp+0x40]",
+    "call    sub_1400ad050",
+    "mov     ebx, eax",
+    "jmp     0x1400ad143",
+    "call    sub_14000c030",
+    "jmp     0x1400ad143"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

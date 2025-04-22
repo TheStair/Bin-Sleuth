@@ -1,0 +1,42 @@
+{
+  "address": "0x140027a28",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "check OS version/e331473c09f0419eb22f4786f6872060"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     rax, qword [rcx]",
+    "mov     rbx, qword [rcx+0x8]",
+    "mov     r8, qword [rax+0x48]",
+    "mov     rax, qword [rbx+0x218]",
+    "test    rax, rax",
+    "je      0x140027a7a",
+    "xor     eax, eax",
+    "mov     edx, dword [rbx+0x228]",
+    "test    edx, edx",
+    "js      0x140027a7a",
+    "cmp     byte [rbx+0x22c], 0x0",
+    "mov     rcx, qword [rbx+0x220]",
+    "je      0x140027a63",
+    "call    rax",
+    "call    rax",
+    "jmp     0x140027a65",
+    "inc     dword [rbx+0x228]",
+    "jmp     0x140027a7c",
+    "or      dword [rbx+0x228], 0xffffffff",
+    "jmp     0x140027a7c",
+    "test    eax, eax",
+    "jne     0x140027a72",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

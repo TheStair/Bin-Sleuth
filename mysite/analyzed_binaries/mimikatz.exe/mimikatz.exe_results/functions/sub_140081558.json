@@ -1,0 +1,26 @@
+{
+  "address": "0x140081558",
+  "rules": [
+    "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "cmp     ecx, 0x8e",
+    "ja      0x14008158f",
+    "mov     eax, 0x1",
+    "retn    ",
+    "lea     r10, [rel __dos_header]",
+    "movsxd  rcx, ecx",
+    "lea     r9, [rel data_1400dba60]  {\"REINDEXEDESCAPEACHECKEYBEFOREIGN\u2026\"}",
+    "movzx   eax, word [r10+rcx*2+0xdbe80]",
+    "add     rax, r9",
+    "mov     qword [rdx], rax",
+    "movzx   eax, byte [rcx+r10+0xdbdf0]",
+    "mov     dword [r8], eax",
+    "xor     eax, eax",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "address": "0x140018a20",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop",
+    "encrypt data using Curve25519/ba11e775237f4334901cb73b0f61e10d"
+  ],
+  "disassembly": [
+    "mov     rax, qword [rcx]",
+    "mov     r10d, 0xc0",
+    "mov     r9, rcx",
+    "movzx   edx, byte [rax]",
+    "lea     r8, [rax+0x1]",
+    "mov     qword [rcx], r8",
+    "cmp     edx, r10d",
+    "jb      0x140018a93",
+    "mov     eax, edx",
+    "retn    ",
+    "lea     rax, [rel data_1400d6900]",
+    "add     edx, 0xffffff40",
+    "lea     r11d, [r10-0x40]",
+    "movzx   edx, byte [rdx+rax]",
+    "jmp     0x140018a64",
+    "mov     al, byte [r8]",
+    "and     al, r10b",
+    "cmp     al, r11b",
+    "je      0x140018a52",
+    "movzx   ecx, byte [r8]",
+    "shl     edx, 0x6",
+    "and     ecx, 0x3f",
+    "add     edx, ecx",
+    "inc     r8",
+    "mov     qword [r9], r8",
+    "cmp     edx, r11d",
+    "jb      0x140018a8e",
+    "mov     edx, 0xfffd",
+    "mov     eax, edx",
+    "and     eax, 0xfffff800",
+    "cmp     eax, 0xd800",
+    "je      0x140018a8e",
+    "mov     eax, edx",
+    "and     eax, 0xfffffffe",
+    "cmp     eax, 0xfffe",
+    "jne     0x140018a93"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

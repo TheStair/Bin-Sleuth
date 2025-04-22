@@ -1,0 +1,45 @@
+{
+  "address": "0x1400a48ec",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x40",
+    "lea     rax, [rdx+0x38]",
+    "lea     r10, [rdx+0x28]",
+    "lea     r9, [rdx+0x14]",
+    "mov     qword [rsp+0x30], rax",
+    "mov     eax, dword [rdx+0x24]",
+    "lea     r8, [rdx+0x4]",
+    "mov     edx, dword [rdx]",
+    "mov     qword [rsp+0x28], r10",
+    "mov     dword [rsp+0x20], eax",
+    "call    SamiChangePasswordUser",
+    "mov     ebx, eax",
+    "test    eax, eax",
+    "js      0x1400a4929",
+    "cmp     eax, 0xc000006a",
+    "jne     0x1400a4939",
+    "lea     rcx, [rel data_140110cb0]  {u\"\\n>> Change password is a succes\u2026\"}",
+    "jmp     0x1400a4947",
+    "cmp     eax, 0xc000006c",
+    "jne     0x1400a494e",
+    "lea     rcx, [rel data_140110d00]  {u\"ERROR kuhl_m_lsadump_changentlm_\u2026\"}",
+    "jmp     0x1400a4947",
+    "call    sub_14000c030",
+    "jmp     0x1400a495c",
+    "lea     rcx, [rel data_140110e60]  {u\"ERROR kuhl_m_lsadump_changentlm_\u2026\"}",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_140110da0]  {u\"ERROR kuhl_m_lsadump_changentlm_\u2026\"}",
+    "mov     eax, ebx",
+    "add     rsp, 0x40",
+    "pop     rbx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

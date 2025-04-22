@@ -1,0 +1,47 @@
+{
+  "address": "0x140027ecc",
+  "rules": [
+    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/2b55bffaca6540fe805283ae15561184",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/9dc0064ea6fd4874bc7d54bf7517d572",
+    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/ef08a8f7c1c64992b1a0b647e1999c0e"
+  ],
+  "disassembly": [
+    "mov     rax, qword [rcx+0x8]",
+    "movsxd  r9, edx",
+    "mov     rcx, qword [rax]",
+    "mov     r8, qword [rcx+0x118]",
+    "test    edx, edx",
+    "je      0x140027f04",
+    "movsxd  rdx, dword [r8+0x1c]",
+    "test    edx, edx",
+    "jns     0x140027f29",
+    "jns     0x140027f00",
+    "cmp     edx, dword [r8+0x20]",
+    "cmovl   edx, dword [r8+0x20]",
+    "mov     eax, edx",
+    "retn    ",
+    "mov     eax, dword [r8+0x28]",
+    "add     eax, dword [r8+0x24]",
+    "movsxd  rcx, eax",
+    "mov     rax, rdx",
+    "neg     rax",
+    "shl     rax, 0xa",
+    "cqo     ",
+    "idiv    rcx",
+    "mov     rdx, rax",
+    "mov     dword [r8+0x20], r9d",
+    "mov     eax, dword [r8+0x28]",
+    "add     eax, dword [r8+0x24]",
+    "movsxd  rcx, eax",
+    "mov     rax, r9",
+    "neg     rax",
+    "shl     rax, 0xa",
+    "cqo     ",
+    "idiv    rcx",
+    "mov     r9, rax"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "address": "0x14007a410",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rsi",
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "mov     rbx, qword [rcx+0x10]",
+    "mov     eax, 0x2000",
+    "mov     rsi, r8",
+    "mov     rdi, rcx",
+    "test    word [rbx+0x8], ax",
+    "jne     0x14007a443",
+    "mov     rbx, qword [rbx+0x10]",
+    "mov     edx, 0x18",
+    "call    sub_14003689c",
+    "mov     rbx, rax",
+    "jmp     0x14007a447",
+    "mov     rbx, qword [rsp+0x40]",
+    "mov     rsi, qword [rsp+0x48]",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "retn    ",
+    "cmp     qword [rbx], 0x0",
+    "jne     0x14007a488",
+    "test    rbx, rbx",
+    "je      0x14007a48b",
+    "inc     qword [rbx]",
+    "mov     rcx, qword [rsi]",
+    "call    sub_140031230",
+    "mov     qword [rbx+0x8], rax",
+    "test    rax, rax",
+    "jg      0x14007a488",
+    "mov     rcx, qword [rdi]",
+    "or      rax, 0xffffffffffffffff",
+    "lea     rdx, [rel data_1400f7668]  {\"argument of ntile must be a posi\u2026\"}",
+    "mov     r8d, eax",
+    "mov     r9b, 0x1",
+    "mov     dword [rdi+0x24], 0x1",
+    "mov     qword [rsp+0x20], rax",
+    "call    sub_140031820"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

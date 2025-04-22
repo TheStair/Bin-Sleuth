@@ -1,0 +1,41 @@
+{
+  "address": "0x1400af8a6",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "cmp     eax, 0x721",
+    "jne     0x1400af8bb",
+    "cmp     eax, 0x6d3",
+    "jne     0x1400af8d0",
+    "lea     rcx, [rel data_14011c870]  {u\"ERROR kuhl_m_rpc_do ; A security\u2026\"}",
+    "call    sub_14000c030",
+    "jmp     0x1400af8f6",
+    "cmp     eax, 0x6ba",
+    "jne     0x1400af8e5",
+    "lea     rcx, [rel data_14011c940]  {u\"ERROR kuhl_m_rpc_do ; The authen\u2026\"}",
+    "call    sub_14000c030",
+    "jmp     0x1400af8f6",
+    "lea     rcx, [rel data_140140750]",
+    "call    sub_140010484",
+    "nop     ",
+    "jmp     0x1400af927",
+    "mov     r8d, eax",
+    "mov     edx, eax",
+    "lea     rcx, [rel data_14011ca20]  {u\"ERROR kuhl_m_rpc_do ; RPC Except\u2026\"}",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_14011c9c0]  {u\"ERROR kuhl_m_rpc_do ; RPC Server\u2026\"}",
+    "call    sub_14000c030",
+    "jmp     0x1400af8f6",
+    "xor     eax, eax",
+    "mov     rbx, qword [rsp+0x80]",
+    "add     rsp, 0x60",
+    "pop     r12",
+    "pop     rdi",
+    "pop     rsi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

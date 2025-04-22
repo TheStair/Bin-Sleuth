@@ -1,0 +1,49 @@
+{
+  "address": "0x140074444",
+  "rules": [
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "contain loop",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     rax, rsp",
+    "mov     qword [rax+0x8], rbx",
+    "mov     qword [rax+0x10], rbp",
+    "mov     qword [rax+0x18], rsi",
+    "mov     qword [rax+0x20], rdi",
+    "push    r12",
+    "sub     rsp, 0x20",
+    "xor     edi, edi",
+    "mov     rbx, rdx",
+    "mov     r12, rcx",
+    "test    rdx, rdx",
+    "je      0x140074495",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rbp, qword [rsp+0x38]",
+    "mov     rsi, qword [rsp+0x40]",
+    "mov     rax, rdi",
+    "mov     rdi, qword [rsp+0x48]",
+    "add     rsp, 0x20",
+    "pop     r12",
+    "retn    ",
+    "xor     ebp, ebp",
+    "cmp     dword [rdx], edi",
+    "jle     0x140074495",
+    "lea     rsi, [rdx+0x8]",
+    "xor     eax, eax",
+    "mov     rcx, r12",
+    "call    sub_14007430c",
+    "jmp     0x140074488",
+    "mov     rdx, qword [rsi]",
+    "test    rdx, rdx",
+    "je      0x140074486",
+    "inc     ebp",
+    "or      rdi, rax",
+    "add     rsi, 0x28",
+    "cmp     ebp, dword [rbx]",
+    "jl      0x140074474"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

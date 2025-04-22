@@ -1,0 +1,52 @@
+{
+  "address": "0x1400a84d0",
+  "rules": [
+    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89",
+    "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop",
+    "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x40",
+    "mov     rbx, rcx",
+    "movzx   edx, word [rbx+0x12]",
+    "movzx   ecx, word [rbx+0x10]",
+    "movzx   eax, word [rbx+0x16]",
+    "movzx   r9d, word [rbx+0x14]",
+    "mov     r8d, dword [rbx+0xc]",
+    "add     rdx, rbx",
+    "mov     qword [rsp+0x30], rdx",
+    "mov     edx, dword [rbx+0x8]",
+    "shr     rcx, 0x1",
+    "mov     qword [rsp+0x28], rcx",
+    "add     rax, rbx",
+    "lea     rcx, [rel data_140114270]  {u\"%u %u %10.*s %.*s\\n\"}",
+    "shr     r9, 0x1",
+    "mov     qword [rsp+0x20], rax",
+    "call    sub_14000c030",
+    "cmp     eax, 0x1",
+    "jne     0x1400a8542",
+    "mov     eax, dword [rbx+0x4]",
+    "sub     eax, 0x1",
+    "je      0x1400a8503",
+    "add     rsp, 0x40",
+    "pop     rbx",
+    "retn    ",
+    "mov     ecx, dword [rbx]",
+    "add     rbx, rcx",
+    "test    ecx, ecx",
+    "jne     0x1400a84d9",
+    "movzx   r8d, word [rbx+0xa]",
+    "movzx   edx, word [rbx+0x8]",
+    "lea     rcx, [rel data_140114298]  {u\"--- LEGACY --- %.*s\\n\"}",
+    "add     r8, rbx",
+    "shr     rdx, 0x1",
+    "call    sub_14000c030",
+    "jmp     0x1400a8542"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

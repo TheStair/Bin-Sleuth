@@ -1,0 +1,32 @@
+{
+  "address": "0x140098a9c",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "mov     rcx, qword [rel data_1401407e0]",
+    "test    rcx, rcx",
+    "je      0x140098acf",
+    "mov     rcx, qword [rel data_140140818]",
+    "test    rcx, rcx",
+    "je      0x140098ae8",
+    "xor     edx, edx",
+    "call    SCardDisconnect",
+    "test    eax, eax",
+    "jne     0x140098ac1",
+    "xor     eax, eax",
+    "add     rsp, 0x28",
+    "retn    ",
+    "call    SCardReleaseContext",
+    "and     qword [rel data_140140818], 0x0",
+    "lea     rcx, [rel data_1400d2730]  {u\"ERROR kull_m_acr_finish ; SCardD\u2026\"}",
+    "mov     edx, eax",
+    "call    sub_14000c030",
+    "and     qword [rel data_1401407e0], 0x0",
+    "jmp     0x140098acf"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

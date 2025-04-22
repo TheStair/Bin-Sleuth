@@ -1,0 +1,49 @@
+{
+  "address": "0x1400055dc",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rsi, rcx",
+    "test    rcx, rcx",
+    "je      0x140005633",
+    "xor     eax, eax",
+    "lea     rbp, [rel data_1400df940]",
+    "xor     ebx, ebx",
+    "mov     rdi, rbp",
+    "mov     eax, ebx",
+    "add     rax, rax",
+    "mov     eax, dword [rbp+rax*8+0x8]",
+    "jmp     0x140005635",
+    "mov     rdx, qword [rdi]",
+    "mov     rcx, rsi",
+    "add     rdx, 0x24",
+    "call    qword [rel _wcsicmp]",
+    "test    eax, eax",
+    "je      0x14000564a",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rbp, qword [rsp+0x38]",
+    "mov     rsi, qword [rsp+0x40]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "inc     ebx",
+    "add     rdi, 0x10",
+    "cmp     ebx, 0x8",
+    "jb      0x140005604",
+    "mov     rdx, qword [rdi]",
+    "mov     rcx, rsi",
+    "call    qword [rel _wcsicmp]",
+    "test    eax, eax",
+    "je      0x14000564a"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "address": "0x14002efb0",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
+    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+  ],
+  "disassembly": [
+    "mov     r9, qword [rcx+0x8]",
+    "cmp     edx, 0xf",
+    "jne     0x14002efc9",
+    "lea     eax, [rdx*4+0x24]",
+    "movsxd  rdx, eax",
+    "mov     rax, qword [r9+0x18]",
+    "add     rdx, qword [rax+0x50]",
+    "movzx   eax, byte [rdx+0x2]",
+    "movzx   ecx, byte [rdx+0x1]",
+    "shl     ecx, 0x8",
+    "or      ecx, eax",
+    "movzx   eax, byte [rdx]",
+    "shl     eax, 0x18",
+    "shl     ecx, 0x8",
+    "or      ecx, eax",
+    "movzx   eax, byte [rdx+0x3]",
+    "or      ecx, eax",
+    "mov     dword [r8], ecx",
+    "retn    ",
+    "mov     rax, qword [r9]",
+    "mov     edx, dword [rax+0x84]",
+    "add     edx, dword [rcx+0x1c]",
+    "mov     dword [r8], edx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

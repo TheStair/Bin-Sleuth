@@ -1,0 +1,44 @@
+{
+  "address": "0x140013028",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x248",
+    "lea     rdx, [rsp+0x30]",
+    "call    qword [rel FileTimeToSystemTime]",
+    "test    eax, eax",
+    "je      0x1400130b6",
+    "add     rsp, 0x248",
+    "retn    ",
+    "lea     rax, [rsp+0x40]",
+    "lea     r8, [rsp+0x30]",
+    "xor     r9d, r9d",
+    "xor     edx, edx",
+    "mov     ecx, 0x400",
+    "mov     dword [rsp+0x28], 0xff",
+    "mov     qword [rsp+0x20], rax",
+    "call    qword [rel GetDateFormatW]",
+    "test    eax, eax",
+    "je      0x1400130b6",
+    "lea     rdx, [rsp+0x40]",
+    "lea     rcx, [rel data_1400f13d0]",
+    "call    sub_14000c030",
+    "lea     rax, [rsp+0x40]",
+    "lea     r8, [rsp+0x30]",
+    "xor     r9d, r9d",
+    "xor     edx, edx",
+    "mov     ecx, 0x400",
+    "mov     dword [rsp+0x28], 0xff",
+    "mov     qword [rsp+0x20], rax",
+    "call    qword [rel GetTimeFormatW]",
+    "test    eax, eax",
+    "je      0x1400130b6",
+    "lea     rdx, [rsp+0x40]",
+    "lea     rcx, [rel data_1400f13d8]",
+    "call    sub_14000c030"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c8ed2",
+  "rules": [
+    "get OS version"
+  ],
+  "disassembly": [
+    "jmp     qword [rel RtlGetNtVersionNumbers]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

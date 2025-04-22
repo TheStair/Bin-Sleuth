@@ -1,0 +1,22 @@
+{
+  "address": "0x140026a20",
+  "rules": [
+    "contain loop",
+    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57"
+  ],
+  "disassembly": [
+    "lea     rax, [rdx+0x4]",
+    "lea     r8, [rax+0x9]",
+    "sub     rax, rdx",
+    "retn    ",
+    "cmp     rax, r8",
+    "jb      0x140026a28",
+    "mov     cl, byte [rax]",
+    "inc     rax",
+    "and     cl, 0x80",
+    "je      0x140026a37"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

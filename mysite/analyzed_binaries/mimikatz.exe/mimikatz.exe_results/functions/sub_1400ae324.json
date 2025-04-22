@@ -1,0 +1,44 @@
+{
+  "address": "0x1400ae324",
+  "rules": [
+    "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
+    "contain loop",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "lea     rdx, [rsp+0x50]",
+    "lea     rcx, [rsp+0x58]",
+    "call    sub_14000febc",
+    "test    eax, eax",
+    "je      0x1400ae383",
+    "lea     rcx, [rel data_14011aeb0]  {u\"ERROR kuhl_m_sr98_list ; No devi\u2026\"}",
+    "call    sub_14000c030",
+    "mov     rdi, qword [rsp+0x58]",
+    "test    rdi, rdi",
+    "je      0x1400ae377",
+    "mov     rcx, qword [rsp+0x58]",
+    "call    sub_1400101d4",
+    "jmp     0x1400ae38f",
+    "movzx   edx, word [rdi+0x1e]",
+    "movzx   eax, word [rdi+0x20]",
+    "movzx   r9d, word [rdi+0x1c]",
+    "mov     r8, qword [rdi+0x10]",
+    "mov     dword [rsp+0x28], eax",
+    "mov     dword [rsp+0x20], edx",
+    "mov     edx, dword [rdi+0x8]",
+    "lea     rcx, [rel data_14011a9c0]  {u\"\\n[%3u] %s\\n  Vendor: 0x%04x, Pr\u2026\"}",
+    "call    sub_14000c030",
+    "mov     rdi, qword [rdi]",
+    "test    rdi, rdi",
+    "jne     0x1400ae347",
+    "xor     eax, eax",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

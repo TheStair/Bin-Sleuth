@@ -1,0 +1,44 @@
+{
+  "address": "0x1400a5378",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x50",
+    "lea     r8, [rsp+0x40]",
+    "mov     rbx, rcx",
+    "call    sub_14009f55c",
+    "test    eax, eax",
+    "je      0x1400a53f8",
+    "xor     eax, eax",
+    "add     rsp, 0x50",
+    "pop     rbx",
+    "retn    ",
+    "mov     rdx, qword [rsp+0x40]",
+    "lea     rax, [rsp+0x70]",
+    "lea     r9, [rel data_140111c58]  {u\"MachineBoundCertificate\"}",
+    "mov     qword [rsp+0x30], rax",
+    "lea     rax, [rsp+0x78]",
+    "lea     r8, [rel data_140111c90]  {u\"Control\\Lsa\\Kerberos\\Parameters\"}",
+    "mov     qword [rsp+0x28], rax",
+    "and     qword [rsp+0x20], 0x0",
+    "mov     rcx, rbx",
+    "call    sub_14000f350",
+    "test    eax, eax",
+    "je      0x1400a53eb",
+    "mov     rdx, qword [rsp+0x40]",
+    "mov     rcx, rbx",
+    "call    sub_14000f310",
+    "mov     edx, dword [rsp+0x70]",
+    "mov     rcx, qword [rsp+0x78]",
+    "lea     r8, [rel data_140111c58]  {u\"MachineBoundCertificate\"}",
+    "xor     r9d, r9d",
+    "call    sub_14009bc34",
+    "mov     rcx, qword [rsp+0x78]",
+    "call    qword [rel LocalFree]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c8ea8",
+  "rules": [
+    "get system information on Windows"
+  ],
+  "disassembly": [
+    "jmp     qword [rel NtQuerySystemInformation]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

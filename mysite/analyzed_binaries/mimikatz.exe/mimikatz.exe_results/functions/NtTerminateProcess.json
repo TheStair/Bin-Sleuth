@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c8f1a",
+  "rules": [
+    "terminate process"
+  ],
+  "disassembly": [
+    "jmp     qword [rel NtTerminateProcess]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

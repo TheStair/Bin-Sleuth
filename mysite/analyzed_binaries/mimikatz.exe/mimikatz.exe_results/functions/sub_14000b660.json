@@ -1,0 +1,49 @@
+{
+  "address": "0x14000b660",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rbx, rcx",
+    "test    rcx, rcx",
+    "je      0x14000b6c8",
+    "xor     eax, eax",
+    "mov     ecx, dword [rcx]",
+    "sub     ecx, 0x1",
+    "je      0x14000b6b3",
+    "mov     rcx, qword [rbx+0x8]",
+    "call    qword [rel LocalFree]",
+    "sub     ecx, 0x1",
+    "je      0x14000b68a",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     rax, qword [rbx+0x8]",
+    "test    rax, rax",
+    "je      0x14000b6bd",
+    "sub     ecx, 0x1",
+    "je      0x14000b6b3",
+    "mov     rcx, rbx",
+    "call    qword [rel LocalFree]",
+    "jmp     0x14000b6ca",
+    "mov     rdi, qword [rax]",
+    "mov     rcx, qword [rdi+0x8]",
+    "test    rcx, rcx",
+    "je      0x14000b6a5",
+    "cmp     ecx, 0x3",
+    "jne     0x14000b6bd",
+    "mov     rcx, qword [rdi]",
+    "test    rcx, rcx",
+    "je      0x14000b6b3",
+    "call    qword [rel UnmapViewOfFile]",
+    "jmp     0x14000b6b3",
+    "call    qword [rel CloseHandle]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

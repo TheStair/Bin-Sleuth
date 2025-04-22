@@ -1,0 +1,38 @@
+{
+  "address": "0x14006f9c8",
+  "rules": [
+    "populate SysWhispers2 syscall list/bac71c42a489454d9c62b98a7189c5d2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "add     dword [rcx+0x18], 0xffffffff",
+    "mov     rsi, qword [rcx]",
+    "mov     rbx, rcx",
+    "jne     0x14006fa0c",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rsi, qword [rsp+0x38]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     rdx, qword [rcx+0x8]",
+    "mov     rdi, qword [rcx+0x10]",
+    "mov     rcx, rsi",
+    "call    sub_14006f98c",
+    "test    rdi, rdi",
+    "je      0x14006fa01",
+    "mov     rdx, rbx",
+    "mov     rcx, rsi",
+    "call    sub_1400169a8",
+    "mov     rax, qword [rdi]",
+    "mov     rcx, rdi",
+    "call    qword [rax+0x20]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

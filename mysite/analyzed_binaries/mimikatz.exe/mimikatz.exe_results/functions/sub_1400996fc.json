@@ -1,0 +1,47 @@
+{
+  "address": "0x1400996fc",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "link function at runtime on Windows",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "lea     rcx, [rel data_1401071d8]  {u\"rsaenh\"}",
+    "mov     ebx, 0xc0000225",
+    "call    qword [rel LoadLibraryW]",
+    "xor     edi, edi",
+    "mov     qword [rel data_1401403c8], rax",
+    "cmp     rax, rdi",
+    "je      0x14009973d",
+    "lea     rcx, [rel data_1401071e8]  {u\"dssenh\"}",
+    "call    qword [rel LoadLibraryW]",
+    "mov     qword [rel data_1401403d0], rax",
+    "cmp     rax, rdi",
+    "je      0x14009976f",
+    "lea     rdx, [rel data_1400f8a40]  {\"CPExportKey\"}",
+    "mov     rcx, rax",
+    "call    qword [rel GetProcAddress]",
+    "mov     qword [rel data_140140398], rax",
+    "mov     rax, qword [rel data_1401403a0]",
+    "lea     rdx, [rel data_1400f8a40]  {\"CPExportKey\"}",
+    "mov     rcx, rax",
+    "call    qword [rel GetProcAddress]",
+    "mov     qword [rel data_1401403a0], rax",
+    "jmp     0x140099776  {\"H9=\\x1bl\\n\"}",
+    "mov     eax, ebx",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "cmp     rax, rdi",
+    "cmovne  ebx, edi",
+    "cmp     qword [rel data_140140398], rdi",
+    "je      0x140099785"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

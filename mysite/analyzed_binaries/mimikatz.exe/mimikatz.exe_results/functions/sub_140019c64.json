@@ -1,0 +1,30 @@
+{
+  "address": "0x140019c64",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using Curve25519/bf3cf3909d844745bc0e01f23d66c6a9",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "hide graphical window from taskbar/bbd5a45812ac411c80d2c86457ef37b7",
+    "encrypt data using HC-128/9c50649e7db346e5b98b1de875012b97"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "cmp     rdx, 0x3fff",
+    "ja      0x140019c89",
+    "call    sub_140019be4",
+    "mov     rax, rdx",
+    "shr     rax, 0x7",
+    "or      al, 0x80",
+    "and     dl, 0x7f",
+    "mov     byte [rcx], al",
+    "mov     byte [rcx+0x1], dl",
+    "mov     eax, 0x2",
+    "jmp     0x140019c8e",
+    "add     rsp, 0x28",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "address": "0x140018478",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "check OS version/e331473c09f0419eb22f4786f6872060"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rbx, rcx",
+    "mov     ecx, dword [rcx+0x18]",
+    "inc     ecx",
+    "cmp     qword [rbx], 0x0",
+    "je      0x14001849d",
+    "call    sub_140016870",
+    "mov     rdx, rcx",
+    "mov     rcx, qword [rbx]",
+    "call    sub_140016c18",
+    "jmp     0x1400184a2",
+    "cmp     dword [rbx+0x14], 0x0",
+    "mov     byte [rbx+0x1c], 0x7",
+    "je      0x1400184d5",
+    "mov     r8d, dword [rbx+0x18]",
+    "mov     rdx, qword [rbx+0x8]",
+    "mov     rcx, rax",
+    "inc     r8d",
+    "call    memcpy",
+    "or      byte [rbx+0x1d], 0x4",
+    "jmp     0x1400184d5",
+    "mov     rdi, rax",
+    "test    rax, rax",
+    "je      0x1400184c3",
+    "mov     qword [rbx+0x8], rdi",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rax, rdi",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     rcx, rbx",
+    "call    sub_140018594"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

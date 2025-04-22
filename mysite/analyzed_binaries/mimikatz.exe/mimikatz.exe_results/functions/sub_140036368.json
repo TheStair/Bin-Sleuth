@@ -1,0 +1,38 @@
+{
+  "address": "0x140036368",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x38",
+    "mov     r10, qword [rcx]",
+    "or      r11d, 0xffffffff",
+    "test    edx, edx",
+    "mov     eax, r11d  {0xffffffff}",
+    "mov     r9b, 0x1",
+    "cmovne  eax, edx",
+    "mov     dword [rcx+0x24], eax",
+    "test    byte [r10+0x8], r9b",
+    "je      0x1400363a2",
+    "add     rsp, 0x38",
+    "retn     {__return_addr}",
+    "mov     ecx, edx",
+    "call    sub_14008335c",
+    "and     qword [rsp+0x20 {var_18}], 0x0",
+    "mov     r8d, r11d  {0xffffffff}",
+    "mov     rdx, rax",
+    "mov     rcx, r10",
+    "call    sub_140031820"
+  ],
+  "high_level_IL": [
+    "int64_t* r10 = *arg1",
+    "int32_t result = -1",
+    "if (arg2 != 0)",
+    "result = arg2",
+    "*(arg1 + 0x24) = result",
+    "if ((r10[1].b & 1) == 0)",
+    "return result",
+    "int64_t r12",
+    "return sub_140031820(r10, sub_14008335c(arg2), 0xffffffff, 1, r12, arg3, 0)"
+  ]
+}

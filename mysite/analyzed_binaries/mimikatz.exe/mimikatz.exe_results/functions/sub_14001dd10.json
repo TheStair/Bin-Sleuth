@@ -1,0 +1,48 @@
+{
+  "address": "0x14001dd10",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/dc118f3b61184df4a511ed4919cf656f",
+    "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/5f4c97f31ce341008ea23885a97305d8",
+    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/5f4855375d6b45e9bd6b2a189e856211",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rbx, qword [r8+0x8]",
+    "mov     esi, edx",
+    "xor     edx, edx",
+    "mov     rdi, r8",
+    "mov     rbp, rcx",
+    "lea     rcx, [rbx+0x20]",
+    "lea     r8d, [rdx+0x28]",
+    "call    memset",
+    "xor     ecx, ecx",
+    "mov     qword [rbx], rdi",
+    "mov     rax, qword [rdi]",
+    "mov     r8, rdi",
+    "mov     edx, esi",
+    "mov     qword [rbx+0x8], rax",
+    "lea     rax, [rbx+0x48]",
+    "mov     qword [rbx+0x10], rax",
+    "mov     qword [rax], rcx",
+    "lea     eax, [rcx+0x1]",
+    "mov     rcx, rbp",
+    "mov     qword [rbx+0x18], rbp",
+    "mov     dword [rbx+0x30], esi",
+    "mov     word [rbx+0x34], ax",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rbp, qword [rsp+0x38]",
+    "mov     rsi, qword [rsp+0x40]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "jmp     sub_14001dd88"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

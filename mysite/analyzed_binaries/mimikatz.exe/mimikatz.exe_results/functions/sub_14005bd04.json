@@ -1,0 +1,50 @@
+{
+  "address": "0x14005bd04",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     rax, rsp",
+    "mov     qword [rax+0x8], rbx",
+    "mov     qword [rax+0x10], rbp",
+    "mov     qword [rax+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x50",
+    "mov     rbx, rdx",
+    "xor     edx, edx",
+    "mov     esi, r8d",
+    "mov     rbp, rcx",
+    "lea     rcx, [rax-0x38]",
+    "lea     r8d, [rdx+0x30]",
+    "call    memset",
+    "xor     edi, edi",
+    "lea     rcx, [rel sub_14005bcd8]",
+    "mov     al, dil",
+    "mov     qword [rsp+0x48], rbx",
+    "mov     qword [rsp+0x28], rcx",
+    "mov     byte [rsp+0x44], al",
+    "cmp     rbp, rdi",
+    "je      0x14005bd60",
+    "cmp     esi, edi",
+    "jne     0x14005bd66",
+    "lea     rcx, [rsp+0x20]",
+    "mov     rdx, rbp",
+    "call    sub_1400409a0",
+    "mov     al, byte [rsp+0x44]",
+    "mov     rbx, qword [rsp+0x60]",
+    "mov     rbp, qword [rsp+0x68]",
+    "mov     rsi, qword [rsp+0x70]",
+    "cmp     al, dil",
+    "setne   dil",
+    "mov     eax, edi",
+    "add     rsp, 0x50",
+    "pop     rdi",
+    "retn    ",
+    "and     al, 0xfd"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "address": "0x1400b2250",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+  ],
+  "disassembly": [
+    "mov     rax, rsp",
+    "push    rbx",
+    "sub     rsp, 0xd0",
+    "lea     rcx, [rax+0x18]",
+    "call    qword [rel GetSystemTimeAsFileTime]",
+    "lea     rcx, [rsp+0x20]",
+    "call    qword [rel GetTimeZoneInformation]",
+    "lea     rcx, [rel data_14011fd28]  {u\"Local: \"}",
+    "mov     ebx, eax",
+    "call    sub_14000c030",
+    "lea     rcx, [rsp+0xf0]",
+    "call    sub_1400130c0",
+    "lea     rcx, [rel data_1400d27a8]",
+    "call    sub_14000c030",
+    "cmp     ebx, 0xffffffff",
+    "je      0x1400b22bd",
+    "lea     rcx, [rel data_14011fd58]  {u\"UTC  : \"}",
+    "call    sub_14000c030",
+    "lea     rcx, [rsp+0xf0]",
+    "call    sub_140013028",
+    "lea     rcx, [rel data_1400d27a8]",
+    "call    sub_14000c030",
+    "xor     eax, eax",
+    "add     rsp, 0xd0",
+    "pop     rbx",
+    "retn    ",
+    "test    ebx, ebx",
+    "je      0x1400b22bd",
+    "lea     rax, [rsp+0x78]",
+    "cmp     ebx, 0x1",
+    "lea     rdx, [rsp+0x24]",
+    "lea     rcx, [rel data_14011fd38]  {u\"Zone : %.32s\\n\"}",
+    "cmovne  rdx, rax",
+    "call    sub_14000c030"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

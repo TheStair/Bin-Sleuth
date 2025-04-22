@@ -1,0 +1,26 @@
+{
+  "address": "0x140049678",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d"
+  ],
+  "disassembly": [
+    "cmp     r8d, 0x1",
+    "jne     0x140049697",
+    "cmp     r8d, dword [rcx+0x28]",
+    "jle     0x1400496a4",
+    "test    edx, edx",
+    "je      0x1400496a4",
+    "retn    ",
+    "mov     dword [rcx+0x28], r8d",
+    "mov     dword [rcx+0x2c], edx",
+    "cmp     byte [rcx+0x1f], 0x8",
+    "jae     0x1400496a4",
+    "movzx   eax, byte [rcx+0x1f]",
+    "mov     dword [rcx+rax*4+0xbc], edx",
+    "inc     byte [rcx+0x1f]",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

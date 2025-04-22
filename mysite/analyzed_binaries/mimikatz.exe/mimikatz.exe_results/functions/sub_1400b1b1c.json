@@ -1,0 +1,39 @@
+{
+  "address": "0x1400b1b1c",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "manipulate console buffer"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x50",
+    "mov     ecx, 0xfffffff5",
+    "call    qword [rel GetStdHandle]",
+    "lea     rdx, [rsp+0x30]",
+    "mov     rbx, rax",
+    "xor     eax, eax",
+    "mov     rcx, rbx",
+    "mov     word [rsp+0x70], ax",
+    "mov     word [rsp+0x72], ax",
+    "call    qword [rel GetConsoleScreenBufferInfo]",
+    "movsx   ecx, word [rsp+0x30]",
+    "movsx   r8d, word [rsp+0x32]",
+    "imul    r8d, ecx",
+    "mov     r9d, dword [rsp+0x70]",
+    "lea     rax, [rsp+0x78]",
+    "mov     edx, 0x20",
+    "mov     rcx, rbx",
+    "mov     qword [rsp+0x20], rax",
+    "call    qword [rel FillConsoleOutputCharacterW]",
+    "mov     edx, dword [rsp+0x70]",
+    "mov     rcx, rbx",
+    "call    qword [rel SetConsoleCursorPosition]",
+    "xor     eax, eax",
+    "add     rsp, 0x50",
+    "pop     rbx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

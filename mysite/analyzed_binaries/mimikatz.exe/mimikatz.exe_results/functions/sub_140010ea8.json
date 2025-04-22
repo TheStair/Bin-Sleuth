@@ -1,0 +1,36 @@
+{
+  "address": "0x140010ea8",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x28",
+    "and     qword [rsp+0x38], 0x0",
+    "lea     rdx, [rsp+0x38]",
+    "call    qword [rel I_RpcBindingInqSecurityContext]",
+    "test    eax, eax",
+    "jne     0x140010f05",
+    "lea     rcx, [rel data_1400eef80]  {u\"ERROR kull_m_rpc_drsr_RpcSecurit\u2026\"}",
+    "mov     rcx, qword [rel data_140140278]",
+    "test    rcx, rcx",
+    "je      0x140010ee1",
+    "mov     rcx, qword [rsp+0x38]",
+    "lea     r8, [rel data_140140270]",
+    "mov     edx, 0x9",
+    "call    qword [rel QueryContextAttributesW]",
+    "test    eax, eax",
+    "je      0x140010f13",
+    "call    FreeContextBuffer",
+    "and     dword [rel data_140140270], 0x0",
+    "and     qword [rel data_140140278], 0x0",
+    "add     rsp, 0x28",
+    "retn    ",
+    "lea     rcx, [rel data_1400eeee0]  {u\"ERROR kull_m_rpc_drsr_RpcSecurit\u2026\"}",
+    "jmp     0x140010f0c",
+    "mov     edx, eax",
+    "call    sub_14000c030"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

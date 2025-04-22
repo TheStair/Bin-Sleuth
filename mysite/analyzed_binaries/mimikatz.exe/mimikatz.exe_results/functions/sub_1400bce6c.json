@@ -1,0 +1,50 @@
+{
+  "address": "0x1400bce6c",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "contain loop",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rax, qword [rcx+0xe0]",
+    "xor     ebx, ebx",
+    "mov     rbp, rdx",
+    "mov     rsi, rcx",
+    "mov     edi, 0xc0000001",
+    "cmp     dword [rax], ebx",
+    "jbe     0x1400bced4",
+    "mov     rbx, qword [rsp+0x30]",
+    "mov     rbp, qword [rsp+0x38]",
+    "mov     rsi, qword [rsp+0x40]",
+    "mov     eax, edi",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "mov     r8d, ebx",
+    "mov     rdx, rbp",
+    "mov     rcx, rsi",
+    "imul    r8, r8, 0x58",
+    "add     r8, qword [rax+0x8]",
+    "call    sub_1400bc684",
+    "mov     edi, eax",
+    "test    eax, eax",
+    "js      0x1400bcec3",
+    "lea     rcx, [rel data_140128a20]  {u\"ERROR kuhl_m_lsadump_dcshadow_ca\u2026\"}",
+    "mov     r8d, eax",
+    "mov     edx, ebx",
+    "call    sub_14000c030",
+    "mov     rax, qword [rsi+0xe0]",
+    "inc     ebx",
+    "cmp     ebx, dword [rax]",
+    "jb      0x1400bce98",
+    "jmp     0x1400bced4"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

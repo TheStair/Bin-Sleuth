@@ -1,0 +1,38 @@
+{
+  "address": "0x140049714",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "reference SQL statements"
+  ],
+  "disassembly": [
+    "mov     rax, rsp",
+    "mov     qword [rax+0x8], rbx",
+    "mov     qword [rax+0x10], rsi",
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "mov     ebx, r8d",
+    "mov     rdi, rdx",
+    "mov     r8, rdx",
+    "mov     dword [rax-0x10], ebx",
+    "mov     qword [rax-0x18], rdx",
+    "lea     r9, [rel data_1400f43b8]  {\"sqlite_master\"}",
+    "lea     rdx, [rel data_1400f4cb0]  {\"SELECT 1 FROM \"%w\".%s WHERE name\u2026\"}",
+    "mov     rsi, rcx",
+    "call    sub_14004dd58",
+    "test    ebx, ebx",
+    "jne     0x140049767",
+    "mov     rbx, qword [rsp+0x40]",
+    "mov     rsi, qword [rsp+0x48]",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "retn    ",
+    "lea     r8, [rel data_1400f43b8]  {\"sqlite_master\"}",
+    "lea     rdx, [rel data_1400f4d50]  {\"SELECT 1 FROM temp.%s WHERE name\u2026\"}",
+    "mov     r9, rdi",
+    "mov     rcx, rsi",
+    "call    sub_14004dd58"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

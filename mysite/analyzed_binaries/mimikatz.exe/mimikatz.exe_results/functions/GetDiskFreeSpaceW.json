@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c9076",
+  "rules": [
+    "get disk size"
+  ],
+  "disassembly": [
+    "jmp     qword [rel GetDiskFreeSpaceW]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

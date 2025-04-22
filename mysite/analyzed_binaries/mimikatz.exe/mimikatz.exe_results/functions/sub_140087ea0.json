@@ -1,0 +1,33 @@
+{
+  "address": "0x140087ea0",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x38",
+    "xor     r8d, r8d",
+    "xor     edx, edx",
+    "lea     rcx, [rsp+0x50]",
+    "call    NCryptOpenStorageProvider",
+    "test    eax, eax",
+    "js      0x140087efd",
+    "jmp     0x140087f0c",
+    "mov     rcx, qword [rsp+0x50]",
+    "call    NCryptFreeObject",
+    "lea     rax, [rel data_1400e72e0]  {u\"ncrypt.dll\"}",
+    "lea     r9, [rel data_1400f8d68]  {u\"ncryptprov.dll\"}",
+    "cmp     dword [rel data_14014084c], 0x23f0",
+    "cmovb   r9, rax",
+    "mov     dword [rsp+0x20], 0x1",
+    "lea     r8, [rel data_1400f8d88]  {u\"KeyIso\"}",
+    "mov     edx, 0xc",
+    "lea     rcx, [rel data_14013cbc0]",
+    "call    sub_14000c42c",
+    "xor     eax, eax",
+    "add     rsp, 0x38",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "address": "0x140029b80",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "log keystrokes via raw input data/8ec55ca04dc241fe81299251b8cd76f6"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "cmp     byte [rcx], 0x1",
+    "mov     rdi, r9",
+    "mov     esi, r8d",
+    "mov     ebp, edx",
+    "mov     rbx, rcx",
+    "jne     0x140029bab",
+    "call    sub_14002644c",
+    "test    eax, eax",
+    "jne     0x140029bc8",
+    "mov     eax, 0x4",
+    "jmp     0x140029bc8",
+    "mov     rbx, qword [rsp+0x40]",
+    "mov     rbp, qword [rsp+0x48]",
+    "mov     rsi, qword [rsp+0x50]",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "retn    ",
+    "and     dword [rsp+0x20], eax",
+    "mov     r9, rdi",
+    "mov     r8d, esi",
+    "mov     edx, ebp",
+    "mov     rcx, rbx",
+    "call    sub_14002983c"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

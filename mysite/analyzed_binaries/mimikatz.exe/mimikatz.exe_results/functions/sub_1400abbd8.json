@@ -1,0 +1,42 @@
+{
+  "address": "0x1400abbd8",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8 {__saved_rbx}], rbx",
+    "push    rdi {__saved_rdi}",
+    "sub     rsp, 0x20",
+    "mov     rax, qword [rdx]",
+    "mov     rbx, rdx",
+    "mov     rdi, rcx",
+    "movsxd  r8, dword [rax]",
+    "lea     eax, [r8-0x1]",
+    "cmp     eax, 0x9",
+    "ja      0x1400abc08",
+    "lea     r8, [rel data_1400f1800]  {u\"unk!\"}",
+    "mov     rax, r8",
+    "lea     r8, [rel data_14013f5d0]",
+    "mov     r8, qword [r8+rax*8-0x8]",
+    "jmp     0x1400abc0f",
+    "mov     rdx, qword [rcx]",
+    "lea     rcx, [rel data_1401185a8]  {u\"%wZ\\t(%s)\"}",
+    "call    sub_14000c030",
+    "mov     rcx, qword [rdi]",
+    "call    SamFreeMemory",
+    "mov     rcx, qword [rbx]",
+    "mov     rbx, qword [rsp+0x30 {__saved_rbx}]",
+    "add     rsp, 0x20",
+    "pop     rdi {__saved_rdi}",
+    "jmp     SamFreeMemory"
+  ],
+  "high_level_IL": [
+    "int64_t r8 = sx.q(**arg2)",
+    "if ((r8 - 1).d u<= 9)",
+    "*((r8 << 3) + 0x14013f5c8)",
+    "sub_14000c030(u\"%wZ\\t(%s)\", *arg1)",
+    "SamFreeMemory(*arg1)",
+    "return SamFreeMemory(*arg2) __tailcall"
+  ]
+}

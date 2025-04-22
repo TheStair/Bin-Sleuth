@@ -1,0 +1,50 @@
+{
+  "address": "0x140037290",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using Curve25519/ba11e775237f4334901cb73b0f61e10d"
+  ],
+  "disassembly": [
+    "sub     rsp, 0x38",
+    "mov     r10w, word [r8+0x8]",
+    "lea     r9, [rel data_1400d7190]",
+    "mov     rax, r10",
+    "and     eax, 0x3f",
+    "movzx   r9d, byte [rax+r9]",
+    "sub     r9d, 0x1",
+    "je      0x14003730f",
+    "mov     r8, qword [r8]",
+    "call    sub_1400370d0",
+    "sub     r9d, 0x1",
+    "je      0x140037303",
+    "movsd   xmm2, qword [r8]",
+    "call    sub_140037058",
+    "jmp     0x140037317",
+    "sub     r9d, 0x1",
+    "je      0x1400372f9",
+    "add     rsp, 0x38",
+    "retn    ",
+    "mov     al, byte [r8+0xa]",
+    "mov     byte [rsp+0x28], al",
+    "jmp     0x1400372e4",
+    "cmp     r9d, 0x1",
+    "je      0x1400372ca",
+    "mov     r9d, dword [r8+0xc]",
+    "mov     r8, qword [r8+0x10]",
+    "or      qword [rsp+0x20], 0xffffffffffffffff",
+    "call    sub_140036eec",
+    "jmp     0x140037317",
+    "mov     eax, 0x4000",
+    "test    ax, r10w",
+    "je      0x1400372df",
+    "call    sub_140036db0",
+    "jmp     0x140037317",
+    "mov     byte [rsp+0x28], 0x0",
+    "mov     r8d, dword [r8]",
+    "call    sub_14003731c",
+    "jmp     0x140037317"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

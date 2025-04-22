@@ -1,0 +1,36 @@
+{
+  "address": "0x140032b38",
+  "rules": [
+    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     r9, qword [rcx]",
+    "cmp     byte [r9+0x61], 0x0",
+    "je      0x140032b50",
+    "mov     rbx, qword [rcx+0x88]",
+    "movsxd  rax, edx",
+    "mov     rcx, r9",
+    "lea     rdi, [rax+rax*2]",
+    "movsx   edx, byte [rbx+rdi*8+0x1]",
+    "mov     r8, qword [rbx+rdi*8+0x10]",
+    "call    sub_140032a2c",
+    "and     qword [rbx+rdi*8+0x10], 0x0",
+    "mov     byte [rbx+rdi*8+0x1], 0x0",
+    "mov     byte [rbx+rdi*8], 0xaa",
+    "mov     eax, 0x1",
+    "xor     eax, eax",
+    "jmp     0x140032b84",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

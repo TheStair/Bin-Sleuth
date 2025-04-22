@@ -1,0 +1,44 @@
+{
+  "address": "0x140085660",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "PEB access/2627ea084e2f4bea91f14e6cd276939a",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "PEB access/e2c35c8722ff407f92bb1a8869064106",
+    "terminate process"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     ebx, ecx",
+    "xor     ecx, ecx",
+    "call    sub_1400856f4",
+    "lea     rcx, [rel set_new_handler]",
+    "xor     edx, edx",
+    "call    qword [rel SetConsoleCtrlHandler]",
+    "mov     rcx, qword [rel _iob]",
+    "add     rcx, 0x30",
+    "call    qword [rel _fileno]",
+    "mov     edx, dword [rel data_140140838]",
+    "mov     ecx, eax",
+    "call    qword [rel _setmode]",
+    "mov     rcx, qword [rel _iob]",
+    "add     rcx, 0x60",
+    "call    qword [rel _fileno]",
+    "mov     edx, dword [rel data_140140840]",
+    "mov     ecx, eax",
+    "call    qword [rel _setmode]",
+    "mov     ecx, dword [rel data_14014083c]",
+    "call    qword [rel SetConsoleOutputCP]",
+    "xor     ecx, ecx",
+    "cmp     ebx, 0xc000004b",
+    "jne     0x1400856d9",
+    "call    qword [rel ExitProcess]",
+    "{ Does not return }",
+    "call    qword [rel ExitThread]",
+    "{ Does not return }"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "address": "0x140010a8c",
+  "rules": [
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     rax, rsp",
+    "mov     qword [rax+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "mov     rbx, rdx",
+    "mov     rdi, rcx",
+    "and     qword [rax-0x18], 0x0",
+    "and     qword [rax-0x10], 0x0",
+    "lea     r8, [rax+0x18]",
+    "lea     rdx, [rel sub_140010958]",
+    "lea     rcx, [rax-0x18]",
+    "call    MesDecodeIncrementalHandleCreate",
+    "test    eax, eax",
+    "js      0x140010aea",
+    "mov     edx, eax",
+    "lea     rcx, [rel data_1400ee840]  {u\"ERROR kull_m_rpc_Generic_Free ; \u2026\"}",
+    "call    sub_14000c030",
+    "mov     rdx, rdi",
+    "mov     rcx, qword [rsp+0x50]",
+    "call    rbx",
+    "jmp     0x140010ade",
+    "mov     rcx, qword [rsp+0x50]",
+    "call    MesHandleFree",
+    "jmp     0x140010af8",
+    "mov     rbx, qword [rsp+0x40]",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

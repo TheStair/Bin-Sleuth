@@ -1,0 +1,52 @@
+{
+  "address": "0x140086c2c",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "test    rdx, rdx",
+    "je      0x140086cce",
+    "retn    ",
+    "mov     r11, rsp",
+    "mov     qword [r11+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x40",
+    "and     qword [r11-0x28], 0x0",
+    "lea     rax, [rel data_140140240]",
+    "mov     ebx, r8d",
+    "mov     qword [r11-0x18], rdx",
+    "mov     qword [r11-0x10], rcx",
+    "mov     qword [r11-0x20], rax",
+    "test    r8d, r8d",
+    "je      0x140086cc4",
+    "mov     rbx, qword [rsp+0x50]",
+    "add     rsp, 0x40",
+    "pop     rdi",
+    "lea     rcx, [rel data_1400f8650]  {u\"%s: \"}",
+    "mov     rdx, r9",
+    "call    sub_14000c030",
+    "mov     rdx, rbx",
+    "mov     ecx, 0x40",
+    "call    qword [rel LocalAlloc]",
+    "mov     qword [rsp+0x20], rax",
+    "test    rax, rax",
+    "je      0x140086cb8",
+    "lea     rcx, [rel data_1400d27a8]",
+    "call    sub_14000c030",
+    "lea     rdx, [rsp+0x30]",
+    "lea     rcx, [rsp+0x20]",
+    "mov     r8, rbx",
+    "call    sub_14000b6d8",
+    "test    eax, eax",
+    "je      0x140086cad",
+    "mov     rcx, qword [rsp+0x20]",
+    "call    qword [rel LocalFree]",
+    "mov     rcx, qword [rsp+0x20]",
+    "xor     r8d, r8d",
+    "mov     edx, ebx",
+    "call    sub_140012f68"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

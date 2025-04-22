@@ -1,0 +1,53 @@
+{
+  "address": "0x140057c0c",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     rbx, qword [rcx+0x10]",
+    "mov     eax, 0x2000",
+    "mov     rdi, r8",
+    "test    word [rbx+0x8], ax",
+    "jne     0x140057c37",
+    "mov     rbx, qword [rbx+0x10]",
+    "mov     edx, 0x20",
+    "call    sub_14003689c",
+    "mov     rbx, rax",
+    "jmp     0x140057c3b",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    ",
+    "cmp     eax, 0x5",
+    "je      0x140057c93",
+    "mov     rcx, qword [rdi]",
+    "call    sub_140037ac4",
+    "test    rbx, rbx",
+    "je      0x140057c93",
+    "dec     qword [rbx+0x10]",
+    "cmp     eax, 0x1",
+    "jne     0x140057c7f",
+    "mov     rcx, qword [rdi]",
+    "call    sub_140031294",
+    "movsd   xmm2, qword [rbx]",
+    "subsd   xmm2, xmm0",
+    "movsd   qword [rbx], xmm2",
+    "cmp     byte [rbx+0x19], 0x0",
+    "jne     0x140057c7f",
+    "mov     rcx, qword [rdi]",
+    "call    sub_140031230",
+    "sub     qword [rbx+0x8], rax",
+    "movsd   xmm4, qword [rbx]",
+    "pxor    xmm3, xmm3",
+    "cvtsi2sd xmm3, rax",
+    "subsd   xmm4, xmm3",
+    "movsd   qword [rbx], xmm4",
+    "jmp     0x140057c93"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

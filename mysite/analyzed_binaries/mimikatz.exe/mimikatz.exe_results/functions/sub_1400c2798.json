@@ -1,0 +1,36 @@
+{
+  "address": "0x1400c2798",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "push    rdi",
+    "sub     rsp, 0x20",
+    "mov     ebx, ecx",
+    "lea     rcx, [rel data_14012cfc0]  {u\"Switch to MINIDUMP : \"}",
+    "mov     rdi, rdx",
+    "call    sub_14000c030",
+    "cmp     ebx, 0x1",
+    "je      0x1400c27c6",
+    "call    sub_1400c26e4",
+    "mov     rcx, qword [rdi]",
+    "call    qword [rel _wcsdup]",
+    "lea     rcx, [rel data_14012d088]  {u\"'%s'\\n\"}",
+    "mov     rdx, rax",
+    "mov     qword [rel data_140140490], rax",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_14012cff0]  {u\"ERROR kuhl_m_sekurlsa_minidump ;\u2026\"}",
+    "call    sub_14000c030",
+    "jmp     0x1400c27ea",
+    "xor     eax, eax",
+    "mov     rbx, qword [rsp+0x30]",
+    "add     rsp, 0x20",
+    "pop     rdi",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

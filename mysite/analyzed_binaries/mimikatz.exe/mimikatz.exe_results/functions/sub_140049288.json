@@ -1,0 +1,53 @@
+{
+  "address": "0x140049288",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rdi",
+    "cmp     byte [rdx], 0xa2",
+    "je      0x14004929c",
+    "mov     rcx, qword [rcx+0x28]",
+    "mov     r8, qword [rcx]",
+    "test    r8, r8",
+    "je      0x1400492ad",
+    "cmp     byte [rdx], 0xa4",
+    "jne     0x1400492f0",
+    "xor     eax, eax",
+    "mov     eax, dword [r8]",
+    "jmp     0x1400492af",
+    "mov     rbx, qword [rsp+0x8]",
+    "mov     rdi, qword [rsp+0x10]",
+    "xor     eax, eax",
+    "retn    ",
+    "cmp     r9d, eax",
+    "jge     0x1400492e0",
+    "mov     edi, dword [rdx+0x28]",
+    "lea     r11, [r8+0x4c]",
+    "xor     r9d, r9d",
+    "xor     ebx, ebx",
+    "movsxd  r10, eax",
+    "test    eax, eax",
+    "jle     0x1400492d6",
+    "test    eax, eax",
+    "je      0x1400492ed",
+    "inc     dword [rcx+0x8]",
+    "jmp     0x1400492f0",
+    "inc     rbx",
+    "inc     r9d",
+    "add     r11, 0x70",
+    "cmp     rbx, r10",
+    "jl      0x1400492c2",
+    "inc     dword [rcx+0xc]",
+    "mov     eax, dword [r8+0x4c]",
+    "cmp     dword [rdx+0x28], eax",
+    "jge     0x1400492f0",
+    "cmp     edi, dword [r11]",
+    "je      0x1400492d6"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

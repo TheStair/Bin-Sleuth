@@ -1,0 +1,49 @@
+{
+  "address": "0x1400125c4",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "get service handle",
+    "query service status",
+    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57"
+  ],
+  "disassembly": [
+    "mov     qword [rsp+0x8], rbx",
+    "mov     qword [rsp+0x10], rbp",
+    "mov     qword [rsp+0x18], rsi",
+    "push    rdi",
+    "sub     rsp, 0x30",
+    "mov     rdi, r8",
+    "mov     rbp, rdx",
+    "mov     rdx, rcx",
+    "xor     ebx, ebx",
+    "mov     rcx, rdi",
+    "lea     r8d, [rbx+0x4]",
+    "call    qword [rel OpenServiceW]",
+    "mov     rsi, rax",
+    "cmp     rax, rbx",
+    "je      0x14001261f",
+    "mov     rcx, rdi",
+    "call    qword [rel CloseServiceHandle]",
+    "mov     rbp, qword [rsp+0x48]",
+    "mov     rsi, qword [rsp+0x50]",
+    "mov     eax, ebx",
+    "mov     rbx, qword [rsp+0x40]",
+    "add     rsp, 0x30",
+    "pop     rdi",
+    "retn    ",
+    "lea     rax, [rsp+0x58]",
+    "lea     r9d, [rbx+0x24]",
+    "mov     r8, rbp",
+    "xor     edx, edx",
+    "mov     rcx, rsi",
+    "mov     qword [rsp+0x20], rax",
+    "call    qword [rel QueryServiceStatusEx]",
+    "mov     rcx, rsi",
+    "mov     ebx, eax",
+    "call    qword [rel CloseServiceHandle]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

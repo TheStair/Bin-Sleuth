@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c8f44",
+  "rules": [
+    "write file on Windows"
+  ],
+  "disassembly": [
+    "jmp     qword [rel WriteFile]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

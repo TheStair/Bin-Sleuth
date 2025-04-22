@@ -1,0 +1,12 @@
+{
+  "address": "0x1400c8dca",
+  "rules": [
+    "get file version info"
+  ],
+  "disassembly": [
+    "jmp     qword [rel GetFileVersionInfoW]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

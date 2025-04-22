@@ -1,0 +1,39 @@
+{
+  "address": "0x14001ef64",
+  "rules": [
+    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     rax, qword [rcx]",
+    "mov     r9, rdx",
+    "mov     rbx, r8",
+    "lea     rdx, [rsp+0x30]",
+    "mov     r8d, 0x4",
+    "call    qword [rax+0x10]",
+    "mov     r11d, eax",
+    "test    eax, eax",
+    "jne     0x14001efad",
+    "mov     eax, r11d",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    ",
+    "movzx   ecx, byte [rsp+0x32]",
+    "movzx   edx, byte [rsp+0x31]",
+    "movzx   eax, byte [rsp+0x33]",
+    "shl     edx, 0x8",
+    "or      edx, ecx",
+    "movzx   ecx, byte [rsp+0x30]",
+    "shl     ecx, 0x18",
+    "shl     edx, 0x8",
+    "or      edx, ecx",
+    "or      edx, eax",
+    "mov     dword [rbx], edx"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

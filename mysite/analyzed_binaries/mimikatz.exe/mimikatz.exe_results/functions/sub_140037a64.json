@@ -1,0 +1,44 @@
+{
+  "address": "0x140037a64",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "cmp     dl, 0x43",
+    "mov     al, r8b",
+    "mov     rbx, rcx",
+    "jl      0x140037a9a",
+    "cmp     dl, 0x42",
+    "jne     0x140037abe",
+    "test    byte [rcx+0x8], 0x4",
+    "jne     0x140037abe",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    ",
+    "test    byte [rcx+0x8], 0x2",
+    "jne     0x140037ab5",
+    "test    byte [rcx+0x8], 0x8",
+    "jne     0x140037a93",
+    "mov     eax, 0xffd3",
+    "and     word [rbx+0x8], ax",
+    "test    byte [rcx+0x8], 0x2c",
+    "je      0x140037ab5",
+    "call    sub_14003130c",
+    "jmp     0x140037abe",
+    "test    byte [rcx+0x8], 0x2",
+    "je      0x140037abe",
+    "mov     r8b, 0x1",
+    "mov     dl, al",
+    "call    sub_140030f6c",
+    "mov     edx, 0x1",
+    "call    sub_1400379cc",
+    "jmp     0x140037abe"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

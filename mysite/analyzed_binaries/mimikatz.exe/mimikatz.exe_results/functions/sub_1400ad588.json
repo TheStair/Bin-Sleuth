@@ -1,0 +1,53 @@
+{
+  "address": "0x1400ad588",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x20",
+    "mov     r8d, dword [rcx+0x4]",
+    "mov     rdx, qword [rcx+0x20]",
+    "mov     rbx, rcx",
+    "lea     rcx, [rel data_14011a298]  {u\"\\n\\t%p -> %u\"}",
+    "call    sub_14000c030",
+    "cmp     qword [rbx+0x10], 0x0",
+    "je      0x1400ad5bd",
+    "lea     rcx, [rel data_14011a2b8]",
+    "call    sub_14000c030",
+    "mov     edx, dword [rbx+0x8]",
+    "lea     rcx, [rel data_14011a2b0]",
+    "call    sub_14000c030",
+    "jmp     0x1400ad5c9",
+    "lea     rcx, [rel data_14011a2b8]",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_14011a2c0]",
+    "call    sub_14000c030",
+    "jmp     0x1400ad5ec",
+    "mov     rdx, qword [rbx+0x30]",
+    "test    rdx, rdx",
+    "je      0x1400ad5e0",
+    "lea     rcx, [rel data_14011a2b8]",
+    "call    sub_14000c030",
+    "lea     rcx, [rel data_14011a2c8]",
+    "call    sub_14000c030",
+    "jmp     0x1400ad60f",
+    "mov     rdx, qword [rbx+0x10]",
+    "test    rdx, rdx",
+    "je      0x1400ad603",
+    "mov     eax, 0x1",
+    "add     rsp, 0x20",
+    "pop     rbx",
+    "retn    ",
+    "lea     rcx, [rel data_14011a2d0]  {u\"\\t-> %S\"}",
+    "call    sub_14000c030",
+    "mov     rdx, qword [rbx+0x18]",
+    "test    rdx, rdx",
+    "je      0x1400ad624"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

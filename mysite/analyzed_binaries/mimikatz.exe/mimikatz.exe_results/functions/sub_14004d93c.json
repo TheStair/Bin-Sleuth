@@ -1,0 +1,25 @@
+{
+  "address": "0x14004d93c",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "contain loop"
+  ],
+  "disassembly": [
+    "mov     qword [rcx+0x1a0], rdx",
+    "mov     qword [rcx+0x1a8], r8",
+    "test    rdx, rdx",
+    "je      0x14004d96c",
+    "xor     eax, eax",
+    "retn    ",
+    "mov     rax, qword [rcx+0x8]",
+    "jmp     0x14004d967",
+    "test    rax, rax",
+    "jne     0x14004d955",
+    "and     dword [rax+0xc8], 0xfffffffe",
+    "or      dword [rax+0xc8], 0x2",
+    "mov     rax, qword [rax+0x10]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

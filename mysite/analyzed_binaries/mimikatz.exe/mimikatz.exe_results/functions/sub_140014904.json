@@ -1,0 +1,47 @@
+{
+  "address": "0x140014904",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbx",
+    "sub     rsp, 0x30",
+    "mov     rax, qword [rcx]",
+    "lea     r8, [rsp+0x58]",
+    "xor     ebx, ebx",
+    "mov     qword [rsp+0x50], rbx",
+    "call    qword [rax+0x128]",
+    "cmp     eax, ebx",
+    "jne     0x140014977",
+    "mov     rax, rbx",
+    "add     rsp, 0x30",
+    "pop     rbx",
+    "retn    ",
+    "mov     rcx, qword [rsp+0x58]",
+    "cmp     rcx, rbx",
+    "je      0x140014977",
+    "mov     rax, qword [rcx]",
+    "lea     rdx, [rsp+0x20]",
+    "call    qword [rax+0x68]",
+    "cmp     eax, ebx",
+    "jne     0x140014977",
+    "mov     rcx, qword [rsp+0x20]",
+    "cmp     rcx, rbx",
+    "je      0x140014977",
+    "mov     rax, qword [rcx]",
+    "lea     rdx, [rsp+0x40]",
+    "call    qword [rax+0xd0]",
+    "cmp     eax, ebx",
+    "jne     0x140014977",
+    "mov     rdx, qword [rsp+0x40]",
+    "lea     rcx, [rsp+0x50]",
+    "call    sub_1400134d4",
+    "mov     rcx, qword [rsp+0x40]",
+    "call    qword [rel SysFreeString]",
+    "mov     rbx, qword [rsp+0x50]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}
