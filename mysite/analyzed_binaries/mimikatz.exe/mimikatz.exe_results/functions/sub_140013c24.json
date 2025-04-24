@@ -2,8 +2,8 @@
   "address": "0x140013c24",
   "rules": [
     "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "contain loop"
+    "contain loop",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2"
   ],
   "disassembly": [
     "mov     r11, rsp {__return_addr}",

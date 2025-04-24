@@ -1,0 +1,45 @@
+{
+  "address": "0xa6c0",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "mov     rax, qword [rdi+0x70]",
+    "xor     edx, edx",
+    "cmp     qword [rsi+0x70], rax",
+    "setg    al",
+    "setl    dl",
+    "movzx   eax, al",
+    "sub     edx, eax",
+    "mov     rax, qword [rdi+0x78]",
+    "cmp     qword [rsi+0x78], rax",
+    "setl    al",
+    "setg    cl",
+    "movzx   eax, al",
+    "movzx   ecx, cl",
+    "sub     eax, ecx",
+    "lea     eax, [rax+rdx*2]",
+    "test    eax, eax",
+    "jne     0xa720",
+    "retn    ",
+    "push    rbp",
+    "mov     rbp, rsp",
+    "push    r12",
+    "push    rbx",
+    "mov     rbx, qword [rsi]",
+    "mov     r12, qword [rdi]",
+    "call    __errno_location",
+    "mov     rsi, r12",
+    "mov     rdi, rbx",
+    "mov     dword [rax], 0x0",
+    "pop     rbx",
+    "pop     r12",
+    "pop     rbp",
+    "jmp     strcoll"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

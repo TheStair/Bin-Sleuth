@@ -1,11 +1,11 @@
 {
   "address": "0x1400a8804",
   "rules": [
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
-    "read clipboard data/38bd83f34c9e4d6b8b65080bc834a2be",
+    "read clipboard data",
     "open clipboard",
-    "read clipboard data"
+    "read clipboard data/38bd83f34c9e4d6b8b65080bc834a2be",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

@@ -1,10 +1,10 @@
 {
   "address": "0x1400cf0bc",
   "rules": [
-    "compute adler32 checksum/aded99c950db4d9b8d119cbfc64de8e4",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "hash data using murmur3/aeb1a4346751469b809f4261bcfbbb07/dbb00f9448c04dc1b720ac16935c1891",
-    "contain loop"
+    "compute adler32 checksum/aded99c950db4d9b8d119cbfc64de8e4",
+    "contain loop",
+    "hash data using murmur3/aeb1a4346751469b809f4261bcfbbb07/dbb00f9448c04dc1b720ac16935c1891"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

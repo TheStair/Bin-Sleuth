@@ -2,10 +2,10 @@
   "address": "0x14009dfa8",
   "rules": [
     "encrypt or decrypt via WinCrypt",
+    "create new key via CryptAcquireContext",
     "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "create new key via CryptAcquireContext"
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
   ],
   "disassembly": [
     "mov     rax, rsp",

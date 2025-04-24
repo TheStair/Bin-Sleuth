@@ -1,0 +1,50 @@
+{
+  "address": "0xc560",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "push    rbp",
+    "mov     rbp, rsp",
+    "push    r13",
+    "push    r12",
+    "push    rbx",
+    "mov     rbx, rdi",
+    "lea     r13, [rbx+0x10]",
+    "sub     rsp, 0x8",
+    "mov     rax, qword [rdi+0x8]",
+    "mov     rdi, qword [rdi]",
+    "lea     r12, [rax+rax]",
+    "cmp     rdi, r13",
+    "je      0xc591",
+    "cmp     r12, rax",
+    "jb      0xc5c0",
+    "call    free",
+    "mov     rax, qword [rbx+0x8]",
+    "call    __errno_location",
+    "mov     dword [rax], 0xc",
+    "mov     rdi, r12",
+    "call    malloc",
+    "test    rax, rax",
+    "je      0xc5cb",
+    "mov     qword [rbx], rax",
+    "mov     eax, edx",
+    "mov     qword [rbx+0x8], r12",
+    "add     rsp, 0x8",
+    "pop     rbx",
+    "pop     r12",
+    "pop     r13",
+    "pop     rbp",
+    "retn    ",
+    "mov     rax, r13",
+    "mov     r12d, 0x400",
+    "xor     edx, edx",
+    "jmp     0xc5a8",
+    "mov     edx, 0x1"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

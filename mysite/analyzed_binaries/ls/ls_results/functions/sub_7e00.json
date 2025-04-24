@@ -1,0 +1,41 @@
+{
+  "address": "0x7e00",
+  "rules": [
+    "populate SysWhispers2 syscall list/bac71c42a489454d9c62b98a7189c5d2",
+    "contain loop",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "mov     rcx, qword [rdi]",
+    "movsx   rdx, byte [rcx]",
+    "test    dl, dl",
+    "je      0x7e40",
+    "mov     rax, qword [rdi+0x8]",
+    "xor     edx, edx",
+    "xor     rax, rdx",
+    "xor     edx, edx",
+    "div     rsi",
+    "mov     rax, rdx",
+    "retn    ",
+    "xor     eax, eax",
+    "nop     dword [rax]",
+    "rol     rax, 0x9",
+    "add     rcx, 0x1",
+    "add     rax, rdx",
+    "movsx   rdx, byte [rcx]",
+    "test    dl, dl",
+    "jne     0x7e18",
+    "xor     edx, edx",
+    "div     rsi",
+    "mov     rax, qword [rdi+0x8]",
+    "xor     rax, rdx",
+    "xor     edx, edx",
+    "div     rsi",
+    "mov     rax, rdx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

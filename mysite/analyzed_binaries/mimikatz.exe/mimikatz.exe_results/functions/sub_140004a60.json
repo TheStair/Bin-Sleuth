@@ -1,12 +1,12 @@
 {
   "address": "0x140004a60",
   "rules": [
-    "encrypt data using HC-128/86aaff13b46c4951b9ca4e0a9171c391",
-    "hash data using aphash/c01783ca846f48c3a4751b50c0c12749",
     "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/0d7bc900a8ea48098fc469578ae14b88",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "create new key via CryptAcquireContext",
     "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "create new key via CryptAcquireContext"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using HC-128/86aaff13b46c4951b9ca4e0a9171c391",
+    "hash data using aphash/c01783ca846f48c3a4751b50c0c12749"
   ],
   "disassembly": [
     "mov     rax, rsp",

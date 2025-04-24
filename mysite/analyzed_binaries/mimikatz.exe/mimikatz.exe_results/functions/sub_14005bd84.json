@@ -1,18 +1,18 @@
 {
   "address": "0x14005bd84",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "check OS version/816eee64e52f4728b8d606bec12904e3",
-    "contain loop",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
+    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/dc118f3b61184df4a511ed4919cf656f",
     "64-bit execution via heavens gate/6f3d819d94084ecbbf457d6e8a175a62",
-    "write file on Windows/035d57bed47747649158312e9532f27d",
-    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
+    "check OS version/816eee64e52f4728b8d606bec12904e3",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop",
     "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/5f4c97f31ce341008ea23885a97305d8",
-    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/5f4855375d6b45e9bd6b2a189e856211",
-    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/dc118f3b61184df4a511ed4919cf656f"
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
+    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
+    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/5f4855375d6b45e9bd6b2a189e856211"
   ],
   "disassembly": [
     "mov     rax, rsp",

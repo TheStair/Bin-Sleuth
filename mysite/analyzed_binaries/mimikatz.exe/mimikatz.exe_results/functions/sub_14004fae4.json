@@ -1,16 +1,16 @@
 {
   "address": "0x14004fae4",
   "rules": [
-    "hash data using djb2/1485ed9954f84e3481d22b64bc4cfca7",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
-    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
     "encrypt data using chaskey/4b6f9d91d05f46dd9aa3662f80cb6278",
     "PEB access/e2c35c8722ff407f92bb1a8869064106",
+    "hash data using djb2/1485ed9954f84e3481d22b64bc4cfca7",
+    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
     "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
     "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

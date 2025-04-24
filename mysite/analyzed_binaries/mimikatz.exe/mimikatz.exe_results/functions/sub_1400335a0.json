@@ -1,17 +1,17 @@
 {
   "address": "0x1400335a0",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
     "decompress data using LZO/368a268678dc46ccbe6ee697869692a3",
-    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
+    "encrypt data using chaskey/9e1fd69e115146dfb5013a18fb36c920",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "write file on Windows/035d57bed47747649158312e9532f27d",
     "resolve function by parsing PE exports",
-    "encrypt data using chaskey/9e1fd69e115146dfb5013a18fb36c920",
-    "hash data using aphash/0032995a5e514e2ebf12018a2932c851",
     "load assembly via IAssembly/08d07504566140e580f88ed84a643e72",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
+    "hash data using aphash/0032995a5e514e2ebf12018a2932c851",
+    "contain loop"
   ],
   "disassembly": [
     "push    rbx",

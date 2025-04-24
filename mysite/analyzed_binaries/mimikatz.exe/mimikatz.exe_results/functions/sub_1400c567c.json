@@ -1,13 +1,13 @@
 {
   "address": "0x1400c567c",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
-    "get file size",
-    "create or open file",
     "write file on Windows/035d57bed47747649158312e9532f27d",
-    "read file on Windows"
+    "get file size",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "read file on Windows",
+    "create or open file",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop"
   ],
   "disassembly": [
     "mov     rax, rsp",

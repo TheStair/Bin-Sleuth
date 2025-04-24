@@ -1,11 +1,11 @@
 {
   "address": "0x14001de2c",
   "rules": [
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/dc118f3b61184df4a511ed4919cf656f",
     "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/5f4c97f31ce341008ea23885a97305d8",
-    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/5f4855375d6b45e9bd6b2a189e856211",
-    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/dc118f3b61184df4a511ed4919cf656f"
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/5f4855375d6b45e9bd6b2a189e856211"
   ],
   "disassembly": [
     "sub     rsp, 0x28",

@@ -1,10 +1,10 @@
 {
   "address": "0x1400126bc",
   "rules": [
-    "get service handle",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "delete service",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+    "get service handle",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

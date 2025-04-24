@@ -2,8 +2,8 @@
   "address": "0x14009a71c",
   "rules": [
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/dec108a2f8464ac388ec29affb61c4d8",
     "contain loop",
+    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/dec108a2f8464ac388ec29affb61c4d8",
     "encrypt data using Curve25519/4be2ead1b08a4c049dae9c8694881d76",
     "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/88b7572ed916436d804701d7ca2c8848",
     "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/1d2aacee85cc43a0a1c1ba47e394ae52"

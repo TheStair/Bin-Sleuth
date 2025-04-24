@@ -1,10 +1,10 @@
 {
   "address": "0x14005db80",
   "rules": [
-    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
     "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
     "contain loop",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8 {__saved_rbx}], rbx",

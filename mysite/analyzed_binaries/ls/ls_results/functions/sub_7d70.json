@@ -1,0 +1,39 @@
+{
+  "address": "0x7d70",
+  "rules": [
+    "populate SysWhispers2 syscall list/bac71c42a489454d9c62b98a7189c5d2",
+    "contain loop",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "sub     rdx, 0x1",
+    "xor     ecx, ecx",
+    "jmp     0x7d8d",
+    "movzx   eax, byte [rdi+rcx]",
+    "lea     r8d, [rax-0x41]",
+    "mov     r9d, eax",
+    "cmp     r8d, 0x19",
+    "ja      0x7da5",
+    "movzx   r10d, byte [rsi+rcx]",
+    "lea     r11d, [r10-0x41]",
+    "mov     r8d, r10d",
+    "cmp     r11d, 0x19",
+    "ja      0x7dbf",
+    "add     eax, 0x20",
+    "add     r9d, 0x20",
+    "cmp     rcx, rdx",
+    "jne     0x7d80",
+    "add     r10d, 0x20",
+    "add     r8d, 0x20",
+    "test    eax, eax",
+    "je      0x7dc4",
+    "sub     eax, r10d",
+    "retn    ",
+    "add     rcx, 0x1",
+    "cmp     r9b, r8b",
+    "jne     0x7dc4"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

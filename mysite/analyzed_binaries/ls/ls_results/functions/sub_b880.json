@@ -1,0 +1,47 @@
+{
+  "address": "0xb880",
+  "rules": [
+    "terminate process"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "push    rbp",
+    "mov     rbp, rsp",
+    "push    rbx",
+    "sub     rsp, 0x8",
+    "mov     rax, qword [rel stdout]",
+    "mov     rdi, qword [rax]",
+    "call    sub_b810",
+    "test    eax, eax",
+    "je      0xb8e0",
+    "mov     rax, qword [rel stderr]",
+    "mov     rdi, qword [rax]",
+    "call    sub_b810",
+    "test    eax, eax",
+    "jne     0xb8f9",
+    "mov     edx, 0x5",
+    "lea     rsi, [rel data_1ae92]  {\"write error\"}",
+    "xor     edi, edi",
+    "call    dcgettext",
+    "mov     rbx, rax",
+    "call    __errno_location",
+    "xor     edi, edi",
+    "mov     rcx, rbx",
+    "lea     rdx, [rel data_1b561[2]]  {\"%s\"}",
+    "mov     esi, dword [rax]",
+    "xor     eax, eax",
+    "call    error",
+    "mov     edi, dword [rel data_23088]",
+    "call    _exit",
+    "{ Does not return }",
+    "mov     edi, dword [rel data_23088]",
+    "call    _exit",
+    "{ Does not return }",
+    "mov     rbx, qword [rbp-0x8]",
+    "leave   ",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

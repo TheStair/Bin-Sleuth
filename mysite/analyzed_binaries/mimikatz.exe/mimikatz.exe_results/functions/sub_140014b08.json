@@ -1,13 +1,13 @@
 {
   "address": "0x140014b08",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "check for PEB NtGlobalFlag flag/68190ffa3a704e1faaf9eac451181c9e/606194605c6d4de1b75fa5e5077a264c",
-    "contain loop",
     "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "check OS version/fffe123fed074a77b361be6663645d34"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check OS version/fffe123fed074a77b361be6663645d34",
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

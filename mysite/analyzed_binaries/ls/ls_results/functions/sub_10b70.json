@@ -1,0 +1,49 @@
+{
+  "address": "0x10b70",
+  "rules": [
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+  ],
+  "disassembly": [
+    "push    rbp",
+    "mov     rbp, rsp",
+    "push    r14",
+    "mov     r14, rsi",
+    "push    r13",
+    "mov     r13d, edx",
+    "push    r12",
+    "mov     r12, rdi",
+    "mov     edi, 0x20",
+    "push    rbx",
+    "call    malloc",
+    "test    rax, rax",
+    "je      0x10bdc",
+    "call    sub_e430",
+    "{ Does not return }",
+    "mov     rbx, rax",
+    "test    r14, r14",
+    "je      0x10ba6",
+    "mov     qword [rbx+0x8], r14",
+    "test    r12, r12",
+    "je      0x10bba",
+    "mov     rdi, r14",
+    "call    sub_10b30",
+    "mov     r14, rax",
+    "mov     rax, qword [rel data_23720]",
+    "mov     qword [rbx], r12",
+    "mov     byte [rbx+0x10], r13b",
+    "mov     qword [rbx+0x18], rax",
+    "mov     qword [rel data_23720], rbx",
+    "pop     rbx",
+    "pop     r12",
+    "pop     r13",
+    "pop     r14",
+    "pop     rbp",
+    "retn    ",
+    "mov     rdi, r12",
+    "call    sub_10b30",
+    "mov     r12, rax"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

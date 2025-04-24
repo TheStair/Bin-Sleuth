@@ -1,10 +1,10 @@
 {
   "address": "0x140023588",
   "rules": [
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "contain loop",
-    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
     "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
+    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "compute adler32 checksum/aded99c950db4d9b8d119cbfc64de8e4",
     "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41"
   ],

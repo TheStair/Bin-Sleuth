@@ -1,0 +1,34 @@
+{
+  "address": "0x1130",
+  "rules": [
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check OS version/e331473c09f0419eb22f4786f6872060",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "cmp     byte [rel data_4010], 0x0",
+    "jne     0x1168  {data_4010}",
+    "retn     {__return_addr}",
+    "push    rbp {__saved_rbp}",
+    "cmp     qword [rel __cxa_finalize], 0x0",
+    "mov     rbp, rsp {__saved_rbp}",
+    "je      0x1157",
+    "call    deregister_tm_clones",
+    "mov     byte [rel data_4010], 0x1",
+    "pop     rbp {__saved_rbp}",
+    "retn     {__return_addr}",
+    "mov     rdi, qword [rel data_4008]",
+    "call    __cxa_finalize"
+  ],
+  "high_level_IL": [
+    "if (data_4010 != 0)",
+    "return ",
+    "if (__cxa_finalize != 0)",
+    "__cxa_finalize(data_4008)",
+    "deregister_tm_clones()",
+    "data_4010 = 1",
+    "return "
+  ]
+}

@@ -1,10 +1,10 @@
 {
   "address": "0x14009d400",
   "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4",
     "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
-    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89"
   ],
   "disassembly": [
     "push    rbx",

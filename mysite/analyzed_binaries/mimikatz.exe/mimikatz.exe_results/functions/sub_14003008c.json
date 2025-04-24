@@ -2,10 +2,10 @@
   "address": "0x14003008c",
   "rules": [
     "encrypt data using speck/4b1f3c27d17344b39cf9dede3bcf8b4b",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "check OS version/0dbc6332c9724004b686b44a39c40b94",
     "check for software breakpoints/eab8e97e968348cd9975bb039b618db9",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "load shellcode via donut/c9a72a5fdf6e462ea071ab99fb8585e2/5c9bba15e9b64c668b01383d9c9afe0e"
   ],
   "disassembly": [

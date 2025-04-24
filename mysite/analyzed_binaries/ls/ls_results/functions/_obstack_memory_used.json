@@ -1,0 +1,26 @@
+{
+  "address": "0xdf10",
+  "rules": [
+    "contain loop",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "mov     rax, qword [rdi+0x8]",
+    "xor     ecx, ecx",
+    "test    rax, rax",
+    "je      0xdf32",
+    "mov     rax, rcx",
+    "retn    ",
+    "nop     ",
+    "mov     rdx, qword [rax]",
+    "sub     rdx, rax",
+    "mov     rax, qword [rax+0x8]",
+    "add     rcx, rdx",
+    "test    rax, rax",
+    "jne     0xdf20"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,13 +1,13 @@
 {
   "address": "0x1400356a4",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
     "check OS version/816eee64e52f4728b8d606bec12904e3",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "encrypt data using Curve25519/ba11e775237f4334901cb73b0f61e10d",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "compute adler32 checksum/aded99c950db4d9b8d119cbfc64de8e4",
+    "encrypt data using Curve25519/ba11e775237f4334901cb73b0f61e10d",
     "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41"
   ],
   "disassembly": [

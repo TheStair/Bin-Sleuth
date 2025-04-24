@@ -1,0 +1,14 @@
+{
+  "address": "0x4cb0",
+  "rules": [
+    "terminate process"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "jmp     qword [rel exit]",
+    "{ Does not return }"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

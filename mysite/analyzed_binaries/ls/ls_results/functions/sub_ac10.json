@@ -1,0 +1,46 @@
+{
+  "address": "0xac10",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "mov     eax, dword [rdi+0xa8]",
+    "mov     ecx, dword [rsi+0xa8]",
+    "cmp     eax, 0x9",
+    "sete    dl",
+    "cmp     eax, 0x3",
+    "sete    al",
+    "or      edx, eax",
+    "cmp     ecx, 0x3",
+    "je      0xac60",
+    "mov     eax, 0x1",
+    "test    dl, dl",
+    "je      0xac70",
+    "cmp     ecx, 0x9",
+    "je      0xac60",
+    "mov     edx, dword [rdi+0xac]",
+    "xor     ecx, ecx",
+    "and     edx, 0xf000",
+    "cmp     edx, 0x4000",
+    "sete    cl",
+    "sub     eax, ecx",
+    "jne     0xac5b",
+    "jmp     sub_ab80",
+    "mov     eax, dword [rsi+0xac]",
+    "mov     ecx, 0x1",
+    "and     eax, 0xf000",
+    "cmp     eax, 0x4000",
+    "sete    al",
+    "movzx   eax, al",
+    "test    dl, dl",
+    "je      0xac70",
+    "retn    ",
+    "jmp     0xac69",
+    "sub     eax, ecx",
+    "je      0xac69"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

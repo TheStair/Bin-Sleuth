@@ -1,10 +1,10 @@
 {
   "address": "0x1400c9d60",
   "rules": [
-    "encrypt data using HC-128/86aaff13b46c4951b9ca4e0a9171c391",
-    "hash data using aphash/c01783ca846f48c3a4751b50c0c12749",
     "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/0d7bc900a8ea48098fc469578ae14b88",
     "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "encrypt data using HC-128/86aaff13b46c4951b9ca4e0a9171c391",
+    "hash data using aphash/c01783ca846f48c3a4751b50c0c12749",
     "contain loop"
   ],
   "disassembly": [

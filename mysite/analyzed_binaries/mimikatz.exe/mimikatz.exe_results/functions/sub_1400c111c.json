@@ -1,9 +1,9 @@
 {
   "address": "0x1400c111c",
   "rules": [
-    "get file attributes",
-    "write file on Windows/035d57bed47747649158312e9532f27d",
     "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "get file attributes",
     "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89"
   ],
   "disassembly": [

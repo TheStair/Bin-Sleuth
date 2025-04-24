@@ -1,22 +1,22 @@
 {
   "address": "0x140051dd4",
   "rules": [
-    "encrypt data using speck/4b1f3c27d17344b39cf9dede3bcf8b4b",
-    "hash data using djb2/1485ed9954f84e3481d22b64bc4cfca7",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "encrypt data using AES MixColumns step/954c5d7507db4ab48ac65ac05419ca28",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "check OS version/0dbc6332c9724004b686b44a39c40b94",
-    "contain loop",
-    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
     "encrypt data using chaskey/4b6f9d91d05f46dd9aa3662f80cb6278",
     "PEB access/e2c35c8722ff407f92bb1a8869064106",
     "check OS version/fa26a21322994ec4bdbe5020e62bd777",
-    "check if file exists/4d83966993d04127850572b75c95648d/7fda8288a77741bfa31be8be31ac2a25",
+    "hash data using djb2/1485ed9954f84e3481d22b64bc4cfca7",
+    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
+    "encrypt data using AES MixColumns step/954c5d7507db4ab48ac65ac05419ca28",
+    "encrypt data using speck/4b1f3c27d17344b39cf9dede3bcf8b4b",
     "write file on Windows/035d57bed47747649158312e9532f27d",
-    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "check if file exists/4d83966993d04127850572b75c95648d/7fda8288a77741bfa31be8be31ac2a25",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
     "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "check if file exists/a31a651e5a314ee9ac446400cc2abdd5/58dd2a2048194a11b60488e61f6f4fb2"
+    "check if file exists/a31a651e5a314ee9ac446400cc2abdd5/58dd2a2048194a11b60488e61f6f4fb2",
+    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x10], rbx",

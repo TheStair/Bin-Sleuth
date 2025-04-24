@@ -1,16 +1,16 @@
 {
   "address": "0x14000f540",
   "rules": [
-    "PEB access/2627ea084e2f4bea91f14e6cd276939a",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "check OS version/816eee64e52f4728b8d606bec12904e3",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "create thread",
-    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
-    "delay execution",
     "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "create thread",
     "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
+    "PEB access/2627ea084e2f4bea91f14e6cd276939a",
+    "delay execution"
   ],
   "disassembly": [
     "mov     r11, rsp",

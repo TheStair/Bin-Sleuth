@@ -1,10 +1,10 @@
 {
   "address": "0x1400ad97c",
   "rules": [
-    "open process",
     "self delete",
-    "link function at runtime on Windows",
-    "create process on Windows"
+    "create process on Windows",
+    "open process",
+    "link function at runtime on Windows"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

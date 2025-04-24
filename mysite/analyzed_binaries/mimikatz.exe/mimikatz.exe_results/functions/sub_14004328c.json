@@ -1,9 +1,9 @@
 {
   "address": "0x14004328c",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "encrypt data using Curve25519/4be2ead1b08a4c049dae9c8694881d76"
+    "encrypt data using Curve25519/4be2ead1b08a4c049dae9c8694881d76",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2"
   ],
   "disassembly": [
     "push    rbx",

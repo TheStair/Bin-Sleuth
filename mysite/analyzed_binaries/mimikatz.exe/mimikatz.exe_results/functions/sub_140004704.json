@@ -1,20 +1,20 @@
 {
   "address": "0x140004704",
   "rules": [
-    "encrypt data using HC-128/86aaff13b46c4951b9ca4e0a9171c391",
-    "hash data using aphash/c01783ca846f48c3a4751b50c0c12749",
     "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/0d7bc900a8ea48098fc469578ae14b88",
-    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "encrypt data using RSA via embedded library/5013d5f9ed38420496e3af7e38d68d8f",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "contain loop",
     "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "create new key via CryptAcquireContext",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
     "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
     "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
-    "encrypt data using RSA via embedded library/5013d5f9ed38420496e3af7e38d68d8f",
-    "write file on Windows/035d57bed47747649158312e9532f27d",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "create new key via CryptAcquireContext"
+    "encrypt data using HC-128/86aaff13b46c4951b9ca4e0a9171c391",
+    "hash data using aphash/c01783ca846f48c3a4751b50c0c12749",
+    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89"
   ],
   "disassembly": [
     "mov     rax, rsp",

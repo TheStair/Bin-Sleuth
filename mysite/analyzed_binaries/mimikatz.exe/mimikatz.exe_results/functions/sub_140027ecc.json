@@ -1,10 +1,10 @@
 {
   "address": "0x140027ecc",
   "rules": [
-    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/2b55bffaca6540fe805283ae15561184",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/9dc0064ea6fd4874bc7d54bf7517d572",
-    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/ef08a8f7c1c64992b1a0b647e1999c0e"
+    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/2b55bffaca6540fe805283ae15561184",
+    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/ef08a8f7c1c64992b1a0b647e1999c0e",
+    "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/9dc0064ea6fd4874bc7d54bf7517d572"
   ],
   "disassembly": [
     "mov     rax, qword [rcx+0x8]",

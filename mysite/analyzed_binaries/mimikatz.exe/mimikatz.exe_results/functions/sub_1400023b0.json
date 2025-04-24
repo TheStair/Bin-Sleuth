@@ -1,16 +1,16 @@
 {
   "address": "0x1400023b0",
   "rules": [
-    "check for kernel debugger via shared user data structure/f02b2044f10f450f9f5b2b0d5d96cef0",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
-    "hash data with CRC32/7620b456d97a4aaeb63e1213270df3d4",
-    "hash data using aphash/53c84e7b18b64c82aa36e25c45372fcd",
-    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
+    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/dc118f3b61184df4a511ed4919cf656f",
     "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/5f4c97f31ce341008ea23885a97305d8",
-    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/5f4855375d6b45e9bd6b2a189e856211",
-    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/dc118f3b61184df4a511ed4919cf656f"
+    "check for kernel debugger via shared user data structure/f02b2044f10f450f9f5b2b0d5d96cef0",
+    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "hash data with CRC32/7620b456d97a4aaeb63e1213270df3d4",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
+    "hash data using aphash/53c84e7b18b64c82aa36e25c45372fcd",
+    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/5f4855375d6b45e9bd6b2a189e856211"
   ],
   "disassembly": [
     "mov     rax, rsp",

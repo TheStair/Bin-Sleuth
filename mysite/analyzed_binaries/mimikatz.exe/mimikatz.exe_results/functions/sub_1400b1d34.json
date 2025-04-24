@@ -1,13 +1,13 @@
 {
   "address": "0x1400b1d34",
   "rules": [
-    "get common file path",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "contain loop",
     "hash data using murmur3/aeb1a4346751469b809f4261bcfbbb07/dbb00f9448c04dc1b720ac16935c1891",
+    "link function at runtime on Windows",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "get common file path",
     "get file version info",
-    "link function at runtime on Windows"
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8 {__saved_rbx}], rbx",

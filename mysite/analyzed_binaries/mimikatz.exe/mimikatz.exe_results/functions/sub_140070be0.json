@@ -1,8 +1,8 @@
 {
   "address": "0x140070be0",
   "rules": [
-    "write file on Windows/035d57bed47747649158312e9532f27d",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
     "encrypt data using Curve25519/4be2ead1b08a4c049dae9c8694881d76"
   ],
   "disassembly": [

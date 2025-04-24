@@ -2,8 +2,8 @@
   "address": "0x140003c08",
   "rules": [
     "encode data using XOR",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "contain loop"
+    "contain loop",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

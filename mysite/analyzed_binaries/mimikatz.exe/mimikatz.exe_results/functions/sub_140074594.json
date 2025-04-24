@@ -2,10 +2,10 @@
   "address": "0x140074594",
   "rules": [
     "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
     "write file on Windows/035d57bed47747649158312e9532f27d",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

@@ -1,0 +1,14 @@
+{
+  "address": "0x4050",
+  "rules": [
+    "write file on Windows/035d57bed47747649158312e9532f27d"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "push    0x2",
+    "jmp     sub_4020"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

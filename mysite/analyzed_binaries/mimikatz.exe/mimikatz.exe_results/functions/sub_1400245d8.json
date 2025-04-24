@@ -1,11 +1,11 @@
 {
   "address": "0x1400245d8",
   "rules": [
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
     "hash data using murmur3/aeb1a4346751469b809f4261bcfbbb07/dbb00f9448c04dc1b720ac16935c1891",
     "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
-    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
+    "contain loop"
   ],
   "disassembly": [
     "push    rbx",

@@ -1,9 +1,9 @@
 {
   "address": "0x1400a8a18",
   "rules": [
-    "encode data using XOR",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop"
+    "contain loop",
+    "encode data using XOR"
   ],
   "disassembly": [
     "mov     rax, rsp",

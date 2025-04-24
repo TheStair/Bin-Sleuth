@@ -2,11 +2,11 @@
   "address": "0x140019e28",
   "rules": [
     "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using chaskey/9e1fd69e115146dfb5013a18fb36c920",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
     "encrypt data using HC-128/9f0866b6bacc473e89fc08d0359c7c9e",
     "encrypt data using Curve25519/bf3cf3909d844745bc0e01f23d66c6a9",
-    "write file on Windows/035d57bed47747649158312e9532f27d",
-    "encrypt data using chaskey/9e1fd69e115146dfb5013a18fb36c920",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "hash data using aphash/0032995a5e514e2ebf12018a2932c851"
   ],
   "disassembly": [

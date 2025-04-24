@@ -1,0 +1,20 @@
+{
+  "address": "0x6e70",
+  "rules": [
+    "populate SysWhispers2 syscall list/bac71c42a489454d9c62b98a7189c5d2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "mov     eax, dword [rel data_237c8]",
+    "test    eax, eax",
+    "jne     0x6e8d",
+    "retn    ",
+    "mov     eax, dword [rel data_237c4]",
+    "add     eax, 0x1",
+    "mov     dword [rel data_237c4], eax"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

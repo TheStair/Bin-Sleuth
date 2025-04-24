@@ -2,11 +2,11 @@
   "address": "0x1400129b4",
   "rules": [
     "start service",
-    "get service handle",
-    "write file on Windows/035d57bed47747649158312e9532f27d",
     "persist via Windows service/52ea2b14c159443b88c4ee432041b1da",
-    "persist via Windows service",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "get service handle",
     "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "persist via Windows service",
     "create service"
   ],
   "disassembly": [

@@ -2,16 +2,16 @@
   "address": "0x14001c81c",
   "rules": [
     "decrypt data using TEA/b1609112b4574d7d84a6736fb833fd96/7a997b34591146dbbd4411d920ff141c",
-    "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/14b9db6dcaf34a3e86e9217d3cc476a8",
-    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "contain loop",
     "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4",
     "write file on Windows/035d57bed47747649158312e9532f27d",
-    "encrypt data using TEA/a99f0fb4fab7434084917883a6622883/5d37b64795ca4da78dcc19574a757de4",
     "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/2ee106c7c5d34df799b377fb04fb2ee1",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/14b9db6dcaf34a3e86e9217d3cc476a8",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using TEA/a99f0fb4fab7434084917883a6622883/5d37b64795ca4da78dcc19574a757de4",
     "hash data using aphash/98bdcb90423346b7a1fc9c166925c881",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89"
   ],
   "disassembly": [
     "mov     rax, rsp",

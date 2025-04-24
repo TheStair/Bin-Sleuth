@@ -2,8 +2,8 @@
   "address": "0x140018a20",
   "rules": [
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
-    "encrypt data using Curve25519/ba11e775237f4334901cb73b0f61e10d"
+    "encrypt data using Curve25519/ba11e775237f4334901cb73b0f61e10d",
+    "contain loop"
   ],
   "disassembly": [
     "mov     rax, qword [rcx]",

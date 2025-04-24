@@ -2,12 +2,12 @@
   "address": "0x14004cbd0",
   "rules": [
     "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
-    "contain loop",
-    "encrypt data using Curve25519/4be2ead1b08a4c049dae9c8694881d76",
     "write file on Windows/035d57bed47747649158312e9532f27d",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "encrypt data using Curve25519/4be2ead1b08a4c049dae9c8694881d76",
     "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
     "hide graphical window from taskbar/c26bad2600334fd9a84ba1d9de3384f6",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

@@ -1,21 +1,21 @@
 {
   "address": "0x14003fcbc",
   "rules": [
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/a3c4a1cc0982489686093c2de66a39c8",
-    "encrypt data using Curve25519/bf3cf3909d844745bc0e01f23d66c6a9",
-    "check OS version/0dbc6332c9724004b686b44a39c40b94",
-    "contain loop",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
-    "encrypt data using TEA/a99f0fb4fab7434084917883a6622883/6cf0dbdc06cf4e518b05ed91d6a55995",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
     "check OS version/fa26a21322994ec4bdbe5020e62bd777",
     "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/b698edc3bfd142ebb8f43c55408819b5",
+    "contain loop",
     "write file on Windows/035d57bed47747649158312e9532f27d",
-    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
     "encrypt data using HC-128/9c50649e7db346e5b98b1de875012b97",
+    "encrypt data using Curve25519/bf3cf3909d844745bc0e01f23d66c6a9",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
     "decrypt data using TEA/b1609112b4574d7d84a6736fb833fd96/bfe99336573d4b5189dbca2cbd3ed1f2",
-    "check OS version/e331473c09f0419eb22f4786f6872060"
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/a3c4a1cc0982489686093c2de66a39c8",
+    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
+    "check OS version/e331473c09f0419eb22f4786f6872060",
+    "encrypt data using TEA/a99f0fb4fab7434084917883a6622883/6cf0dbdc06cf4e518b05ed91d6a55995"
   ],
   "disassembly": [
     "mov     r11, rsp",

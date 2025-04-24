@@ -5,23 +5,27 @@
     "write file on Windows"
   ],
   "disassembly": [
-    "push    rbx",
+    "push    rbx {__saved_rbx}",
     "sub     rsp, 0x40",
-    "and     qword [rsp+0x20], 0x0",
+    "and     qword [rsp+0x20 {var_28}], 0x0",
     "mov     rbx, r9",
-    "lea     r9, [rsp+0x30]",
+    "lea     r9, [rsp+0x30 {lpNumberOfBytesWritten}]",
     "call    qword [rel WriteFile]",
     "test    eax, eax",
     "jne     0x140001e03",
-    "mov     eax, dword [rsp+0x30]",
+    "mov     eax, dword [rsp+0x30 {lpNumberOfBytesWritten}]",
     "add     rsp, 0x40",
-    "pop     rbx",
-    "retn    ",
-    "or      dword [rsp+0x30], 0xffffffff",
+    "pop     rbx {__saved_rbx}",
+    "retn     {__return_addr}",
+    "or      dword [rsp+0x30 {lpNumberOfBytesWritten}], 0xffffffff  {0xffffffff}",
     "call    qword [rel GetLastError]",
     "mov     dword [rbx], eax"
   ],
   "high_level_IL": [
-    "No High Level IL Loaded"
+    "int32_t lpNumberOfBytesWritten",
+    "if (WriteFile(arg1, arg2, arg3, &lpNumberOfBytesWritten, nullptr) == 0)",
+    "lpNumberOfBytesWritten = 0xffffffff",
+    "*arg4 = GetLastError()",
+    "return zx.q(lpNumberOfBytesWritten)"
   ]
 }

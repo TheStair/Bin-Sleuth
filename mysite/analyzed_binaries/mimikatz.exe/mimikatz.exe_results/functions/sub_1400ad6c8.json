@@ -1,13 +1,13 @@
 {
   "address": "0x1400ad6c8",
   "rules": [
+    "create pipe",
+    "read file on Windows",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "create process on Windows",
-    "contain loop",
-    "delay execution",
-    "read file on Windows",
     "check for trap flag exception/f2973fbf4b89419fb73ecd274d9581c2",
-    "create pipe"
+    "delay execution",
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

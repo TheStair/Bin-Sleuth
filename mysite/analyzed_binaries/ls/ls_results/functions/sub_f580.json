@@ -1,0 +1,50 @@
+{
+  "address": "0xf580",
+  "rules": [
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "check OS version/e331473c09f0419eb22f4786f6872060",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "push    rbp",
+    "cmp     byte [rel data_232cc], 0x0",
+    "mov     rbp, rsp",
+    "push    r12",
+    "push    rbx",
+    "mov     ebx, edi",
+    "je      0xf5c0",
+    "call    sub_f4c0",
+    "mov     r12, rax",
+    "test    rax, rax",
+    "je      0xf596",
+    "mov     r9d, ebx",
+    "lea     r8, [rel data_1af55]",
+    "pop     rbx",
+    "mov     edx, 0x2",
+    "pop     r12",
+    "mov     rcx, 0xffffffffffffffff",
+    "xor     esi, esi",
+    "xor     edi, edi",
+    "xor     eax, eax",
+    "pop     rbp",
+    "jmp     __snprintf_chk",
+    "mov     rdi, rax",
+    "call    strlen",
+    "mov     rdi, r12",
+    "mov     rsi, rax",
+    "call    sub_140a0",
+    "xor     edx, edx",
+    "pop     rbx",
+    "pop     r12",
+    "test    eax, eax",
+    "pop     rbp",
+    "cmovs   eax, edx",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

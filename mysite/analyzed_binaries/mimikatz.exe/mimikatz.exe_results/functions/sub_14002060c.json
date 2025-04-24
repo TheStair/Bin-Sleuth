@@ -3,8 +3,8 @@
   "rules": [
     "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
     "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "hash data using murmur3/aeb1a4346751469b809f4261bcfbbb07/dbb00f9448c04dc1b720ac16935c1891",
-    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd"
+    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
+    "hash data using murmur3/aeb1a4346751469b809f4261bcfbbb07/dbb00f9448c04dc1b720ac16935c1891"
   ],
   "disassembly": [
     "mov     rdx, qword [rcx+0x28]",

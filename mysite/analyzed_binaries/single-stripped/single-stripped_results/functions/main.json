@@ -1,0 +1,38 @@
+{
+  "address": "0x1040",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "push    rbp {__saved_rbp}",
+    "lea     rax, [rel sub_1180]",
+    "push    rbx {__saved_rbx}",
+    "sub     rsp, 0x18",
+    "mov     qword [rsp+0x8 {var_20}], rax  {sub_1180}",
+    "mov     eax, 0x1",
+    "cmp     edi, 0x1",
+    "jne     0x107b",
+    "add     rsp, 0x18",
+    "pop     rbx {__saved_rbx}",
+    "pop     rbp {__saved_rbp}",
+    "retn     {__return_addr}",
+    "call    sub_1190",
+    "mov     ebp, eax",
+    "mov     rax, qword [rsp+0x8 {var_20}]  {sub_1180}",
+    "call    rax  {sub_1180}",
+    "mov     edi, ebp",
+    "mov     ebx, eax",
+    "mov     rax, qword [rsp+0x8 {var_20}]  {sub_1180}",
+    "call    rax  {sub_1180}",
+    "add     eax, ebx"
+  ],
+  "high_level_IL": [
+    "if (argc != 1)",
+    "return 1",
+    "int32_t rax_1 = sub_1190(argc)",
+    "int32_t rax_2 = sub_1180(argc)",
+    "return sub_1180(rax_1) + rax_2"
+  ]
+}

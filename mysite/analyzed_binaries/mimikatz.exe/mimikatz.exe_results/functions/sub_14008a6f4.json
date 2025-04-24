@@ -1,9 +1,9 @@
 {
   "address": "0x14008a6f4",
   "rules": [
+    "contain loop",
     "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "link function at runtime on Windows",
-    "contain loop"
+    "link function at runtime on Windows"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

@@ -1,0 +1,13 @@
+{
+  "address": "0x4700",
+  "rules": [
+    "query environment variable"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "jmp     qword [rel getenv]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

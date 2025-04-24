@@ -1,17 +1,17 @@
 {
   "address": "0x140003fc8",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "initialize hashing via WinCrypt",
-    "contain loop",
     "hash data via WinCrypt/e7b500967c6340beaa50c0acc9342c6e",
-    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
     "encode data using XOR",
     "write file on Windows/035d57bed47747649158312e9532f27d",
+    "create new key via CryptAcquireContext",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
     "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "create new key via CryptAcquireContext"
+    "initialize hashing via WinCrypt",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
+    "contain loop"
   ],
   "disassembly": [
     "mov     rax, rsp",

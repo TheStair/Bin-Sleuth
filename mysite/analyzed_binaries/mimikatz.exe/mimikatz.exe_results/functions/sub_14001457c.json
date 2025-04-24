@@ -1,9 +1,9 @@
 {
   "address": "0x14001457c",
   "rules": [
-    "open process",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "check process job object/b286d4d3afdb478b8f588fc86186cdb4"
+    "check process job object/b286d4d3afdb478b8f588fc86186cdb4",
+    "open process"
   ],
   "disassembly": [
     "mov     qword [rsp+0x10], rbx",

@@ -1,8 +1,0 @@
-[
-  "check Internet connectivity via WinINet/ea05bd30c19f4c13b0bbb655c1b11307",
-  "check OS version/c7f774b0c3a54e4fb85d9b00e11d143b",
-  "check OS version/5ae3f92537254bf087bf3c143b1053ba",
-  "check OS version/825b272b5e1d417c910e639f60831eba",
-  "validate payment card number using luhn algorithm with no lookup table/c7fe1e7579fa4b64a366153a2c9756c7",
-  "write file on Windows/6b10463c9c4d44d0acbd23f1cf48dee1"
-]

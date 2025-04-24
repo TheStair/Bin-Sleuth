@@ -1,19 +1,19 @@
 {
   "address": "0x140026af4",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
     "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "check OS version/0dbc6332c9724004b686b44a39c40b94",
-    "encrypt data using RSA via embedded library/285da8a69bb24628bf4dae1e6958a35f",
-    "contain loop",
     "check OS version/fa26a21322994ec4bdbe5020e62bd777",
     "write file on Windows/035d57bed47747649158312e9532f27d",
-    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
-    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
-    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
+    "encrypt data using RSA via embedded library/285da8a69bb24628bf4dae1e6958a35f",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "check OS version/e331473c09f0419eb22f4786f6872060"
+    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
+    "check OS version/e331473c09f0419eb22f4786f6872060",
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rcx",

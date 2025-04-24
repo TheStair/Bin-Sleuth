@@ -1,15 +1,15 @@
 {
   "address": "0x14004f660",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "check OS version/0dbc6332c9724004b686b44a39c40b94",
-    "contain loop",
+    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
     "check OS version/fa26a21322994ec4bdbe5020e62bd777",
     "write file on Windows/035d57bed47747649158312e9532f27d",
-    "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "check if file exists/a31a651e5a314ee9ac446400cc2abdd5/58dd2a2048194a11b60488e61f6f4fb2",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "check OS version/e331473c09f0419eb22f4786f6872060",
-    "check if file exists/a31a651e5a314ee9ac446400cc2abdd5/58dd2a2048194a11b60488e61f6f4fb2"
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x10], rbx",

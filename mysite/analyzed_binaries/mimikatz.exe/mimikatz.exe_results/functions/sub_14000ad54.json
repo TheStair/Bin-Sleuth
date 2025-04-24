@@ -1,10 +1,10 @@
 {
   "address": "0x14000ad54",
   "rules": [
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4",
-    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

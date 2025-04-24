@@ -2,10 +2,10 @@
   "address": "0x14000a67c",
   "rules": [
     "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
     "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4",
-    "write file on Windows/035d57bed47747649158312e9532f27d"
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop"
   ],
   "disassembly": [
     "mov     r11, rsp",

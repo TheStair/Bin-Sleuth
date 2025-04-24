@@ -1,12 +1,12 @@
 {
   "address": "0x1400572e8",
   "rules": [
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "encrypt data using Curve25519/ba11e775237f4334901cb73b0f61e10d",
-    "contain loop",
     "decompress data using LZO/87c7a2ec75aa43fe877541de4275123a",
     "write file on Windows/035d57bed47747649158312e9532f27d",
-    "encrypt data using HC-128/dc9a54888ead410ba377a88c79e5e622"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using HC-128/dc9a54888ead410ba377a88c79e5e622",
+    "encrypt data using Curve25519/ba11e775237f4334901cb73b0f61e10d",
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

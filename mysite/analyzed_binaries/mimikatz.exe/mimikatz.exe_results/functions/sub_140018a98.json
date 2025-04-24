@@ -1,19 +1,19 @@
 {
   "address": "0x140018a98",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "encrypt data using Curve25519/ba11e775237f4334901cb73b0f61e10d",
-    "contain loop",
-    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
-    "decompress data using LZO/87c7a2ec75aa43fe877541de4275123a",
-    "write file on Windows/035d57bed47747649158312e9532f27d",
-    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
-    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
     "encrypt data using HC-128/edc455eb75c84651ba504cec06bcd48f",
-    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
+    "decompress data using LZO/87c7a2ec75aa43fe877541de4275123a",
+    "contain loop",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "encrypt data using HC-128/dc9a54888ead410ba377a88c79e5e622"
+    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
+    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
+    "encrypt data using HC-128/dc9a54888ead410ba377a88c79e5e622",
+    "encrypt data using Curve25519/ba11e775237f4334901cb73b0f61e10d",
+    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

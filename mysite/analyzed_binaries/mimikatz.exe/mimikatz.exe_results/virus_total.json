@@ -1,0 +1,447 @@
+{
+  "md5": "29efd64dd3c7fe1e2b022b7ad73a1ba5",
+  "permalink": "https://www.virustotal.com/gui/file/61c0810a23580cf492a6ba4f7654566108331e7a4134c968c2d6a05261b2d8a1/detection/f-61c0810a23580cf492a6ba4f7654566108331e7a4134c968c2d6a05261b2d8a1-1745407476",
+  "positives": 65,
+  "resource": "29efd64dd3c7fe1e2b022b7ad73a1ba5",
+  "response_code": 1,
+  "scan_date": "2025-04-23 11:24:36",
+  "scan_id": "61c0810a23580cf492a6ba4f7654566108331e7a4134c968c2d6a05261b2d8a1-1745407476",
+  "scans": {
+    "ALYac": {
+      "detected": true,
+      "result": "Misc.HackTool.Mimikatz",
+      "update": "20250423",
+      "version": "2.0.0.10"
+    },
+    "APEX": {
+      "detected": true,
+      "result": "Malicious",
+      "update": "20250422",
+      "version": "6.647"
+    },
+    "AVG": {
+      "detected": true,
+      "result": "Win64:MalwareX-gen [Hack]",
+      "update": "20250423",
+      "version": "23.9.8494.0"
+    },
+    "Acronis": {
+      "detected": false,
+      "result": null,
+      "update": "20240328",
+      "version": "1.2.0.121"
+    },
+    "AhnLab-V3": {
+      "detected": true,
+      "result": "Trojan/Win32.RL_Mimikatz.R366782",
+      "update": "20250423",
+      "version": "3.27.2.10550"
+    },
+    "Alibaba": {
+      "detected": true,
+      "result": "Trojan:Win32/Mimikatz.10401874",
+      "update": "20190527",
+      "version": "0.3.0.5"
+    },
+    "Antiy-AVL": {
+      "detected": true,
+      "result": "RiskWare/Win64.Mimikatz",
+      "update": "20250423",
+      "version": "3.0"
+    },
+    "Arcabit": {
+      "detected": true,
+      "result": "Trojan.Generic.D3FA3F50",
+      "update": "20250423",
+      "version": "2022.0.0.18"
+    },
+    "Avast": {
+      "detected": true,
+      "result": "Win64:MalwareX-gen [Hack]",
+      "update": "20250423",
+      "version": "23.9.8494.0"
+    },
+    "Avira": {
+      "detected": true,
+      "result": "TR/Hacktool.Mimikatz.A",
+      "update": "20250423",
+      "version": "8.3.3.20"
+    },
+    "Baidu": {
+      "detected": false,
+      "result": null,
+      "update": "20190318",
+      "version": "1.0.0.2"
+    },
+    "BitDefender": {
+      "detected": true,
+      "result": "Trojan.GenericKD.66731856",
+      "update": "20250423",
+      "version": "7.2"
+    },
+    "Bkav": {
+      "detected": true,
+      "result": "W64.AIDetectMalware",
+      "update": "20250422",
+      "version": "2.0.0.1"
+    },
+    "CAT-QuickHeal": {
+      "detected": true,
+      "result": "HackTool.Mimikatz.S13719268",
+      "update": "20250422",
+      "version": "22.00"
+    },
+    "CMC": {
+      "detected": false,
+      "result": null,
+      "update": "20250421",
+      "version": "2.4.2022.1"
+    },
+    "CTX": {
+      "detected": true,
+      "result": "exe.hacktool.mimikatz",
+      "update": "20250423",
+      "version": "2024.8.29.1"
+    },
+    "ClamAV": {
+      "detected": true,
+      "result": "Win.Dropper.Mimikatz-9778171-1",
+      "update": "20250423",
+      "version": "1.4.2.0"
+    },
+    "CrowdStrike": {
+      "detected": true,
+      "result": "win/malicious_confidence_100% (W)",
+      "update": "20231026",
+      "version": "1.0"
+    },
+    "Cylance": {
+      "detected": true,
+      "result": "Unsafe",
+      "update": "20250417",
+      "version": "3.0.0.0"
+    },
+    "Cynet": {
+      "detected": true,
+      "result": "Malicious (score: 100)",
+      "update": "20250423",
+      "version": "4.0.3.4"
+    },
+    "DeepInstinct": {
+      "detected": true,
+      "result": "MALICIOUS",
+      "update": "20250423",
+      "version": "5.0.0.8"
+    },
+    "DrWeb": {
+      "detected": true,
+      "result": "Tool.Mimikatz.1232",
+      "update": "20250423",
+      "version": "7.0.67.2170"
+    },
+    "ESET-NOD32": {
+      "detected": true,
+      "result": "a variant of Win64/Riskware.Mimikatz.G",
+      "update": "20250423",
+      "version": "31082"
+    },
+    "Elastic": {
+      "detected": true,
+      "result": "Windows.Hacktool.Mimikatz",
+      "update": "20250422",
+      "version": "4.0.201"
+    },
+    "Emsisoft": {
+      "detected": true,
+      "result": "Trojan.GenericKD.66731856 (B)",
+      "update": "20250423",
+      "version": "2024.8.0.61147"
+    },
+    "F-Secure": {
+      "detected": true,
+      "result": "Trojan.TR/Hacktool.Mimikatz.A",
+      "update": "20250423",
+      "version": "18.10.1547.307"
+    },
+    "Fortinet": {
+      "detected": true,
+      "result": "Riskware/NetWalker",
+      "update": "20250423",
+      "version": "7.0.30.0"
+    },
+    "GData": {
+      "detected": true,
+      "result": "Win64.Trojan-Stealer.Mimikatz.J",
+      "update": "20250423",
+      "version": "GD:27.40074AVA:64.29069"
+    },
+    "Google": {
+      "detected": true,
+      "result": "Detected",
+      "update": "20250423",
+      "version": "1745404246"
+    },
+    "Gridinsoft": {
+      "detected": true,
+      "result": "Risk.Win64.Gen.dd!i",
+      "update": "20250423",
+      "version": "1.0.215.174"
+    },
+    "Ikarus": {
+      "detected": true,
+      "result": "HackTool.Mimikatz",
+      "update": "20250423",
+      "version": "6.3.30.0"
+    },
+    "Jiangmin": {
+      "detected": true,
+      "result": "Trojan.PSW.Mimikatz.pv",
+      "update": "20250422",
+      "version": "16.0.100"
+    },
+    "K7AntiVirus": {
+      "detected": true,
+      "result": "Trojan ( 005046a31 )",
+      "update": "20250423",
+      "version": "12.232.55532"
+    },
+    "K7GW": {
+      "detected": true,
+      "result": "Trojan ( 005046a31 )",
+      "update": "20250423",
+      "version": "12.232.55534"
+    },
+    "Kaspersky": {
+      "detected": true,
+      "result": "HEUR:Trojan.Win32.Generic",
+      "update": "20250423",
+      "version": "22.0.1.28"
+    },
+    "Kingsoft": {
+      "detected": true,
+      "result": "Win32.Troj.Undef.a",
+      "update": "20250423",
+      "version": "None"
+    },
+    "Lionic": {
+      "detected": false,
+      "result": null,
+      "update": "20250423",
+      "version": "8.16"
+    },
+    "Malwarebytes": {
+      "detected": true,
+      "result": "Mimikatz.Spyware.Stealer.DDS",
+      "update": "20250423",
+      "version": "4.5.5.54"
+    },
+    "MaxSecure": {
+      "detected": true,
+      "result": "Trojan.Malware.7164915.susgen",
+      "update": "20250423",
+      "version": "1.0.0.1"
+    },
+    "McAfee": {
+      "detected": true,
+      "result": "HTool-MimiKatz!29EFD64DD3C7",
+      "update": "20250422",
+      "version": "6.0.6.653"
+    },
+    "McAfeeD": {
+      "detected": true,
+      "result": "ti!61C0810A2358",
+      "update": "20250423",
+      "version": "1.2.0.7977"
+    },
+    "MicroWorld-eScan": {
+      "detected": true,
+      "result": "Trojan.GenericKD.66731856",
+      "update": "20250423",
+      "version": "14.0.409.0"
+    },
+    "Microsoft": {
+      "detected": true,
+      "result": "HackTool:Win32/Mimikatz!pz",
+      "update": "20250423",
+      "version": "1.1.25030.1"
+    },
+    "NANO-Antivirus": {
+      "detected": true,
+      "result": "Trojan.Win64.Mimikatz.jsrqig",
+      "update": "20250423",
+      "version": "1.0.170.26531"
+    },
+    "Paloalto": {
+      "detected": true,
+      "result": "generic.ml",
+      "update": "20250423",
+      "version": "0.9.0.1003"
+    },
+    "Panda": {
+      "detected": true,
+      "result": "HackingTool/Mimikatz",
+      "update": "20250422",
+      "version": "4.6.4.2"
+    },
+    "Rising": {
+      "detected": true,
+      "result": "HackTool.Mimikatz!1.B3A8 (CLASSIC)",
+      "update": "20250423",
+      "version": "25.0.0.28"
+    },
+    "SUPERAntiSpyware": {
+      "detected": true,
+      "result": "Hack.Tool/Gen-Mimikatz",
+      "update": "20250423",
+      "version": "5.6.0.1032"
+    },
+    "Sangfor": {
+      "detected": true,
+      "result": "HackTool.Win64.Mimikatz.uwccg",
+      "update": "20250418",
+      "version": "2.22.3.0"
+    },
+    "SentinelOne": {
+      "detected": true,
+      "result": "Static AI - Malicious PE",
+      "update": "20250114",
+      "version": "25.1.1.1"
+    },
+    "Skyhigh": {
+      "detected": true,
+      "result": "BehavesLike.Win64.Rootkit.th",
+      "update": "20250422",
+      "version": "v2021.2.0+4045"
+    },
+    "Sophos": {
+      "detected": true,
+      "result": "ATK/Mimikatz-BJ",
+      "update": "20250423",
+      "version": "3.0.3.0"
+    },
+    "Symantec": {
+      "detected": true,
+      "result": "Hacktool.Mimikatz",
+      "update": "20250423",
+      "version": "1.22.0.0"
+    },
+    "TACHYON": {
+      "detected": true,
+      "result": "Abuse-Worry/W64.Mimikatz.1355264",
+      "update": "20250423",
+      "version": "2025-04-23.02"
+    },
+    "Tencent": {
+      "detected": true,
+      "result": "Trojan.Win64.Mimikatz.a",
+      "update": "20250423",
+      "version": "1.0.0.1"
+    },
+    "Trapmine": {
+      "detected": true,
+      "result": "malicious.high.ml.score",
+      "update": "20250417",
+      "version": "4.0.4.0"
+    },
+    "TrendMicro": {
+      "detected": true,
+      "result": "HackTool.Win64.Mimikatz.ZTKE",
+      "update": "20250423",
+      "version": "24.550.0.1002"
+    },
+    "TrendMicro-HouseCall": {
+      "detected": true,
+      "result": "HackTool.Win64.Mimikatz.ZTKE",
+      "update": "20250423",
+      "version": "24.550.0.1002"
+    },
+    "VBA32": {
+      "detected": false,
+      "result": null,
+      "update": "20250423",
+      "version": "5.3.2"
+    },
+    "VIPRE": {
+      "detected": true,
+      "result": "Trojan.GenericKD.66731856",
+      "update": "20250423",
+      "version": "6.0.0.35"
+    },
+    "Varist": {
+      "detected": true,
+      "result": "W64/S-b61adc75!Eldorado",
+      "update": "20250423",
+      "version": "6.6.1.3"
+    },
+    "ViRobot": {
+      "detected": true,
+      "result": "HackTool.S.Mimikatz.1355264",
+      "update": "20250423",
+      "version": "2014.3.20.0"
+    },
+    "VirIT": {
+      "detected": true,
+      "result": "HackTool.Win64.Genus.BBC",
+      "update": "20250422",
+      "version": "9.5.940"
+    },
+    "Webroot": {
+      "detected": true,
+      "result": "W32.Hacktool.Gen",
+      "update": "20250227",
+      "version": "1.9.0.8"
+    },
+    "Xcitium": {
+      "detected": true,
+      "result": "Malware@#2e2m06ht3u8w",
+      "update": "20250423",
+      "version": "37666"
+    },
+    "Yandex": {
+      "detected": true,
+      "result": "Trojan.Agent!RmbVaruywWw",
+      "update": "20250423",
+      "version": "5.5.2.24"
+    },
+    "Zillya": {
+      "detected": true,
+      "result": "Tool.Mimikatz.Win64.2782",
+      "update": "20250422",
+      "version": "2.0.0.5345"
+    },
+    "ZoneAlarm": {
+      "detected": true,
+      "result": "ATK/Mimikatz-BJ",
+      "update": "20250423",
+      "version": "6.15-102622880"
+    },
+    "Zoner": {
+      "detected": false,
+      "result": null,
+      "update": "20250423",
+      "version": "2.2.2.0"
+    },
+    "alibabacloud": {
+      "detected": true,
+      "result": "HackTool:Win/Mimikatz.FZ",
+      "update": "20250321",
+      "version": "2.2.0"
+    },
+    "huorong": {
+      "detected": true,
+      "result": "HackTool/Mikatz.k",
+      "update": "20250422",
+      "version": "df39629:df39629:fcc327b:fcc327b"
+    },
+    "tehtris": {
+      "detected": false,
+      "result": null,
+      "update": "20250423",
+      "version": "v0.1.4"
+    }
+  },
+  "sha1": "e3b6ea8c46fa831cec6f235a5cf48b38a4ae8d69",
+  "sha256": "61c0810a23580cf492a6ba4f7654566108331e7a4134c968c2d6a05261b2d8a1",
+  "total": 72,
+  "verbose_msg": "Scan finished, information embedded"
+}

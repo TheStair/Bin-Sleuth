@@ -2,8 +2,8 @@
   "address": "0x1400833b4",
   "rules": [
     "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2"
   ],
   "disassembly": [
     "sub     rsp, 0x28",

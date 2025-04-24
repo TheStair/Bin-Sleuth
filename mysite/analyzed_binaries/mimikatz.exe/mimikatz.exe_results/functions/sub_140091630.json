@@ -2,9 +2,9 @@
   "address": "0x140091630",
   "rules": [
     "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4",
-    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89",
+    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
     "contain loop",
-    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57"
+    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89"
   ],
   "disassembly": [
     "mov     rax, rsp",

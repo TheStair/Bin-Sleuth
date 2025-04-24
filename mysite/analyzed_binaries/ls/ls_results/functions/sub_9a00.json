@@ -1,0 +1,29 @@
+{
+  "address": "0x9a00",
+  "rules": [
+    "terminate process",
+    "write file on Windows/035d57bed47747649158312e9532f27d"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "push    rbp",
+    "mov     edx, 0x5",
+    "lea     rsi, [rel data_1ae7b]  {\"memory exhausted\"}",
+    "xor     edi, edi",
+    "mov     rbp, rsp",
+    "call    dcgettext",
+    "lea     rdx, [rel data_1b4c3[8]]  {\"%s\\n\"}",
+    "mov     esi, 0x2",
+    "mov     rcx, rax",
+    "mov     rax, qword [rel stderr]",
+    "mov     rdi, qword [rax]",
+    "xor     eax, eax",
+    "call    __fprintf_chk",
+    "mov     edi, dword [rel data_23088]",
+    "call    exit",
+    "{ Does not return }"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

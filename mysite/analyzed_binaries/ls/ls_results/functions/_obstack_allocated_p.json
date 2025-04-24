@@ -1,0 +1,28 @@
+{
+  "address": "0xde30",
+  "rules": [
+    "contain loop"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "mov     rax, qword [rdi+0x8]",
+    "test    rax, rax",
+    "je      0xde66",
+    "retn    ",
+    "nop     dword [rax]",
+    "mov     rax, qword [rax+0x8]",
+    "test    rax, rax",
+    "jne     0xde40",
+    "cmp     qword [rax], rsi",
+    "jae     0xde60",
+    "cmp     rax, rsi",
+    "jae     0xde4a",
+    "xor     eax, eax",
+    "retn    ",
+    "mov     eax, 0x1",
+    "retn    "
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

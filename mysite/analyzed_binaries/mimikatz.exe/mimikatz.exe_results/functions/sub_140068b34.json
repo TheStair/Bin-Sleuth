@@ -1,9 +1,9 @@
 {
   "address": "0x140068b34",
   "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "hide graphical window from taskbar/c26bad2600334fd9a84ba1d9de3384f6",
     "write file on Windows/035d57bed47747649158312e9532f27d",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "contain loop"
   ],
   "disassembly": [

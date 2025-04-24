@@ -1,0 +1,25 @@
+{
+  "address": "0x7a90",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "mov     rax, qword [rsi+0x48]",
+    "cmp     qword [rdi+0x48], rax",
+    "setl    al",
+    "setg    dl",
+    "movzx   eax, al",
+    "movzx   edx, dl",
+    "sub     eax, edx",
+    "jne     0x7ac0",
+    "retn    ",
+    "mov     rsi, qword [rsi]",
+    "mov     rdi, qword [rdi]",
+    "jmp     strcmp"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

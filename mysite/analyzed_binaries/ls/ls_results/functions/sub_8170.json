@@ -1,0 +1,17 @@
+{
+  "address": "0x8170",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "add     qword [rel data_23350], rsi",
+    "mov     rax, qword [rel stdout]",
+    "mov     rdx, rsi",
+    "mov     esi, 0x1",
+    "mov     rcx, qword [rax]",
+    "jmp     fwrite_unlocked"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "address": "0x4c90",
+  "rules": [
+    "get hostname"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "jmp     qword [rel gethostname]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

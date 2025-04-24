@@ -1,0 +1,13 @@
+{
+  "address": "0x4cc0",
+  "rules": [
+    "write file on Linux"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "jmp     qword [rel fwrite]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "address": "0x1400141e8",
   "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
-    "get user security identifier",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+    "get user security identifier"
   ],
   "disassembly": [
     "mov     r11, rsp",

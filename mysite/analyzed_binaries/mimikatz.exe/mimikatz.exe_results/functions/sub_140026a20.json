@@ -1,8 +1,8 @@
 {
   "address": "0x140026a20",
   "rules": [
-    "contain loop",
-    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57"
+    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
+    "contain loop"
   ],
   "disassembly": [
     "lea     rax, [rdx+0x4]",

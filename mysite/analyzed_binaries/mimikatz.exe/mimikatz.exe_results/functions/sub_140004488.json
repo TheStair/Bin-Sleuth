@@ -1,15 +1,15 @@
 {
   "address": "0x140004488",
   "rules": [
-    "encrypt or decrypt via WinCrypt",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/a3c4a1cc0982489686093c2de66a39c8",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
-    "encrypt data using TEA/a99f0fb4fab7434084917883a6622883/6cf0dbdc06cf4e518b05ed91d6a55995",
     "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/b698edc3bfd142ebb8f43c55408819b5",
+    "encrypt or decrypt via WinCrypt",
     "write file on Windows/035d57bed47747649158312e9532f27d",
-    "decrypt data using TEA/b1609112b4574d7d84a6736fb833fd96/bfe99336573d4b5189dbca2cbd3ed1f2"
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "decrypt data using TEA/b1609112b4574d7d84a6736fb833fd96/bfe99336573d4b5189dbca2cbd3ed1f2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/a3c4a1cc0982489686093c2de66a39c8",
+    "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
+    "encrypt data using TEA/a99f0fb4fab7434084917883a6622883/6cf0dbdc06cf4e518b05ed91d6a55995"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

@@ -1,14 +1,14 @@
 {
   "address": "0x140026958",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
+    "encrypt data using chaskey/9e1fd69e115146dfb5013a18fb36c920",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
     "encrypt data using Curve25519/bf3cf3909d844745bc0e01f23d66c6a9",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
-    "encrypt data using chaskey/9e1fd69e115146dfb5013a18fb36c920",
     "hash data using aphash/0032995a5e514e2ebf12018a2932c851",
-    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57"
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

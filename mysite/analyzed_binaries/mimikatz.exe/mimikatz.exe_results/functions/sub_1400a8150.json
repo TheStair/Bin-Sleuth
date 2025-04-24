@@ -1,8 +1,8 @@
 {
   "address": "0x1400a8150",
   "rules": [
-    "PEB access/2627ea084e2f4bea91f14e6cd276939a",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "PEB access/2627ea084e2f4bea91f14e6cd276939a"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rcx",

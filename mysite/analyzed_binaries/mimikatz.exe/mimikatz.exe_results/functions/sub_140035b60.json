@@ -2,8 +2,8 @@
   "address": "0x140035b60",
   "rules": [
     "decompress data using LZO/368a268678dc46ccbe6ee697869692a3",
-    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
-    "contain loop"
+    "contain loop",
+    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3"
   ],
   "disassembly": [
     "mov     rax, qword [rcx+0x8]",

@@ -19,23 +19,11 @@
     "call    qword [rel ASN1_CloseEncoder]",
     "and     qword [rel data_140140228], 0x0",
     "add     rsp, 0x28",
-    "retn     {__return_addr}",
+    "retn    ",
     "call    qword [rel ASN1_CloseModule]",
     "and     qword [rel data_140140220], 0x0"
   ],
   "high_level_IL": [
-    "int64_t rcx = data_140140230",
-    "if (rcx != 0)",
-    "ASN1_CloseDecoder(rcx)",
-    "data_140140230 = 0",
-    "int64_t rcx_1 = data_140140228",
-    "if (rcx_1 != 0)",
-    "ASN1_CloseEncoder(rcx_1)",
-    "data_140140228 = 0",
-    "int64_t rcx_2 = data_140140220",
-    "if (rcx_2 != 0)",
-    "ASN1_CloseModule(rcx_2)",
-    "data_140140220 = 0",
-    "return "
+    "No High Level IL Loaded"
   ]
 }

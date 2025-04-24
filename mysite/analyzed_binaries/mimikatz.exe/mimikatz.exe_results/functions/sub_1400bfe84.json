@@ -1,8 +1,8 @@
 {
   "address": "0x1400bfe84",
   "rules": [
-    "open process",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "open process"
   ],
   "disassembly": [
     "mov     rax, rsp",

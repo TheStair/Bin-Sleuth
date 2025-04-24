@@ -1,13 +1,13 @@
 {
   "address": "0x140020c08",
   "rules": [
-    "encrypt data using speck/4b1f3c27d17344b39cf9dede3bcf8b4b",
-    "encrypt data using AES MixColumns step/954c5d7507db4ab48ac65ac05419ca28",
-    "check OS version/0dbc6332c9724004b686b44a39c40b94",
-    "check for software breakpoints/eab8e97e968348cd9975bb039b618db9",
     "write file on Windows/035d57bed47747649158312e9532f27d",
-    "load shellcode via donut/c9a72a5fdf6e462ea071ab99fb8585e2/5c9bba15e9b64c668b01383d9c9afe0e",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+    "encrypt data using AES MixColumns step/954c5d7507db4ab48ac65ac05419ca28",
+    "encrypt data using speck/4b1f3c27d17344b39cf9dede3bcf8b4b",
+    "check for software breakpoints/eab8e97e968348cd9975bb039b618db9",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94",
+    "load shellcode via donut/c9a72a5fdf6e462ea071ab99fb8585e2/5c9bba15e9b64c668b01383d9c9afe0e"
   ],
   "disassembly": [
     "mov     r8d, edx",

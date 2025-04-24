@@ -1,0 +1,52 @@
+{
+  "address": "0xb040",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "push    rbp",
+    "mov     rbp, rsp",
+    "push    r12",
+    "push    rbx",
+    "sub     rsp, 0x1000",
+    "or      qword [rsp], 0x0",
+    "sub     rsp, 0x1000",
+    "or      qword [rsp], 0x0",
+    "sub     rsp, 0x30",
+    "mov     rbx, rdi",
+    "mov     ecx, edx",
+    "lea     rdi, [rbp-0x2028]",
+    "mov     rdx, rsi",
+    "lea     r12, [rbp-0x2020]",
+    "lea     r9, [rbp-0x2031]",
+    "mov     rsi, rbx",
+    "mov     rax, qword [fs:0x28]",
+    "mov     qword [rbp-0x18], rax",
+    "xor     eax, eax",
+    "lea     r8, [rbp-0x2030]",
+    "mov     qword [rbp-0x2028], r12",
+    "call    sub_14230",
+    "mov     rdi, qword [rbp-0x2028]",
+    "cmp     rdi, rbx",
+    "je      0xb0bb",
+    "movzx   eax, byte [rbp-0x2031]",
+    "add     rax, qword [rbp-0x2030]",
+    "mov     rdx, qword [rbp-0x18]",
+    "sub     rdx, qword [fs:0x28]",
+    "jne     0xb0e4",
+    "cmp     rdi, r12",
+    "je      0xb0bb",
+    "call    __stack_chk_fail",
+    "{ Does not return }",
+    "add     rsp, 0x2030",
+    "pop     rbx",
+    "pop     r12",
+    "pop     rbp",
+    "retn    ",
+    "call    free"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

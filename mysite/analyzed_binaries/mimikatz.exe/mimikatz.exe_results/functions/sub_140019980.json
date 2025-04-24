@@ -1,17 +1,17 @@
 {
   "address": "0x140019980",
   "rules": [
+    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/b698edc3bfd142ebb8f43c55408819b5",
+    "contain loop",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
     "check for kernel debugger via shared user data structure/f02b2044f10f450f9f5b2b0d5d96cef0",
     "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/a3c4a1cc0982489686093c2de66a39c8",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
     "hash data with CRC32/7620b456d97a4aaeb63e1213270df3d4",
-    "encrypt data using TEA/a99f0fb4fab7434084917883a6622883/6cf0dbdc06cf4e518b05ed91d6a55995",
+    "decrypt data using TEA/b1609112b4574d7d84a6736fb833fd96/bfe99336573d4b5189dbca2cbd3ed1f2",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/a3c4a1cc0982489686093c2de66a39c8",
     "hash data using aphash/53c84e7b18b64c82aa36e25c45372fcd",
-    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/b698edc3bfd142ebb8f43c55408819b5",
-    "write file on Windows/035d57bed47747649158312e9532f27d",
-    "decrypt data using TEA/b1609112b4574d7d84a6736fb833fd96/bfe99336573d4b5189dbca2cbd3ed1f2"
+    "encrypt data using TEA/a99f0fb4fab7434084917883a6622883/6cf0dbdc06cf4e518b05ed91d6a55995"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

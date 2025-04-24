@@ -1,11 +1,11 @@
 {
   "address": "0x14009f924",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89",
+    "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
-    "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4"
+    "contain loop"
   ],
   "disassembly": [
     "mov     r11, rsp",

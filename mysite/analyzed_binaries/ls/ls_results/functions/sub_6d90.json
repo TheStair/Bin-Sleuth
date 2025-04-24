@@ -1,0 +1,25 @@
+{
+  "address": "0x6d90",
+  "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+  ],
+  "disassembly": [
+    "lea     rdi, [rel data_23278]",
+    "lea     rsi, [rel data_23278]",
+    "sub     rsi, rdi",
+    "mov     rax, rsi",
+    "shr     rsi, 0x3f",
+    "sar     rax, 0x3",
+    "add     rsi, rax",
+    "sar     rsi, 0x1",
+    "je      0x6dc8",
+    "retn    ",
+    "mov     rax, qword [rel _ITM_registerTMCloneTable]",
+    "test    rax, rax",
+    "je      0x6dc8",
+    "jmp     rax"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

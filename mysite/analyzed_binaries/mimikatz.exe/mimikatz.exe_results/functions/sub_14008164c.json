@@ -1,17 +1,17 @@
 {
   "address": "0x14008164c",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/dc118f3b61184df4a511ed4919cf656f",
+    "parse credit card information/ec3c9303e8bc46be9fce39fa86e0e7e3",
     "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "contain loop",
-    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
-    "write file on Windows/035d57bed47747649158312e9532f27d",
-    "search for credit card data/e92219581e504df894450f60474cb51f",
-    "parse credit card information/ec3c9303e8bc46be9fce39fa86e0e7e3",
     "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/5f4c97f31ce341008ea23885a97305d8",
-    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/5f4855375d6b45e9bd6b2a189e856211",
-    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/dc118f3b61184df4a511ed4919cf656f"
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "search for credit card data/e92219581e504df894450f60474cb51f",
+    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
+    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/5f4855375d6b45e9bd6b2a189e856211"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

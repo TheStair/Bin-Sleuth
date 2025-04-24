@@ -1,17 +1,17 @@
 {
   "address": "0x14006fe70",
   "rules": [
-    "hash data using djb2/1485ed9954f84e3481d22b64bc4cfca7",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/dec108a2f8464ac388ec29affb61c4d8",
-    "contain loop",
-    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
     "encrypt data using chaskey/4b6f9d91d05f46dd9aa3662f80cb6278",
-    "encrypt data using Curve25519/4be2ead1b08a4c049dae9c8694881d76",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop",
+    "hash data using djb2/1485ed9954f84e3481d22b64bc4cfca7",
+    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
     "write file on Windows/035d57bed47747649158312e9532f27d",
+    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/dec108a2f8464ac388ec29affb61c4d8",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "encrypt data using Curve25519/4be2ead1b08a4c049dae9c8694881d76",
     "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/88b7572ed916436d804701d7ca2c8848",
-    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/1d2aacee85cc43a0a1c1ba47e394ae52",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/1d2aacee85cc43a0a1c1ba47e394ae52"
   ],
   "disassembly": [
     "mov     qword [rsp+0x18], rbx",

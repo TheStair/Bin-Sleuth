@@ -1,0 +1,15 @@
+{
+  "address": "0x4360",
+  "rules": [
+    "64-bit execution via heavens gate/8ead700947cc4341856e03309a3c4890"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "push    0x33 {var_8}",
+    "jmp     sub_4020"
+  ],
+  "high_level_IL": [
+    "int64_t var_8 = 0x33",
+    "return sub_4020() __tailcall"
+  ]
+}

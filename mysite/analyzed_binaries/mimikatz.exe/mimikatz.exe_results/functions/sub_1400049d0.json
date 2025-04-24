@@ -1,11 +1,11 @@
 {
   "address": "0x1400049d0",
   "rules": [
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "initialize hashing via WinCrypt",
     "hash data via WinCrypt/e7b500967c6340beaa50c0acc9342c6e",
     "write file on Windows/035d57bed47747649158312e9532f27d",
-    "create new key via CryptAcquireContext"
+    "create new key via CryptAcquireContext",
+    "initialize hashing via WinCrypt",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
   ],
   "disassembly": [
     "push    rbx",

@@ -1,11 +1,11 @@
 {
   "address": "0x14008145c",
   "rules": [
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
     "write file on Windows/035d57bed47747649158312e9532f27d",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "hash data using fnv/628d667c74574c3a8ee33aa4d0133bda",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+    "contain loop"
   ],
   "disassembly": [
     "mov     rax, rsp",

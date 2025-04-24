@@ -1,8 +1,8 @@
 {
   "address": "0x1400b0b98",
   "rules": [
-    "run as service/73dfd1e4ada74828bc8b1a67120facca",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "run as service/73dfd1e4ada74828bc8b1a67120facca"
   ],
   "disassembly": [
     "mov     r11, rsp",

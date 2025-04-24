@@ -1,8 +1,8 @@
 {
   "address": "0x140001da0",
   "rules": [
-    "read file on Windows",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "read file on Windows"
   ],
   "disassembly": [
     "push    rbx",

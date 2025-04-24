@@ -1,9 +1,9 @@
 {
   "address": "0x14000ee50",
   "rules": [
-    "set registry value",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57"
+    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
+    "set registry value"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

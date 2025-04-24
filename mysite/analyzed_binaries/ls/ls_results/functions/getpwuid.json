@@ -1,0 +1,14 @@
+{
+  "address": "0x4890",
+  "rules": [
+    "get current user on Linux",
+    "get password database entry on Linux"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "jmp     qword [rel getpwuid]"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

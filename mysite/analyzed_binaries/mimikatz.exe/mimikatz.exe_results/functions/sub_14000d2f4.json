@@ -1,11 +1,11 @@
 {
   "address": "0x14000d2f4",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "check OS version/0dbc6332c9724004b686b44a39c40b94",
-    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
     "check Internet connectivity via WinINet/e5536f56688049548c83e5cf372d25ac",
-    "log keystrokes via raw input data/8ec55ca04dc241fe81299251b8cd76f6"
+    "log keystrokes via raw input data/8ec55ca04dc241fe81299251b8cd76f6",
+    "check OS version/fa26a21322994ec4bdbe5020e62bd777",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "check OS version/0dbc6332c9724004b686b44a39c40b94"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

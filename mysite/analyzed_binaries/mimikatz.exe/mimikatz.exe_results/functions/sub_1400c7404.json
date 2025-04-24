@@ -1,8 +1,8 @@
 {
   "address": "0x1400c7404",
   "rules": [
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
     "allocate or change RWX memory/e5d60c23edee4683a25ac882b99be25c/be08ffa5ddd942e8ab0706a663121e4b",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
     "contain loop"
   ],
   "disassembly": [

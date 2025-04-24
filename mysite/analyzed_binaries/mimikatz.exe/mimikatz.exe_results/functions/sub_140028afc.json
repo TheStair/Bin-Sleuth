@@ -1,10 +1,10 @@
 {
   "address": "0x140028afc",
   "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2"
   ],
   "disassembly": [
     "mov     qword [rsp+0x10], rbx",

@@ -1,8 +1,8 @@
 {
   "address": "0x1400c90c4",
   "rules": [
-    "print debug messages",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "print debug messages"
   ],
   "disassembly": [
     "push    rbx",

@@ -1,15 +1,15 @@
 {
   "address": "0x14001f5bc",
   "rules": [
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/ef08a8f7c1c64992b1a0b647e1999c0e",
-    "contain loop",
     "PEB access/e2c35c8722ff407f92bb1a8869064106",
     "write file on Windows/035d57bed47747649158312e9532f27d",
-    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/2b55bffaca6540fe805283ae15561184",
     "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
+    "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/2b55bffaca6540fe805283ae15561184",
     "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/9dc0064ea6fd4874bc7d54bf7517d572"
+    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/ef08a8f7c1c64992b1a0b647e1999c0e",
+    "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/9dc0064ea6fd4874bc7d54bf7517d572",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

@@ -2,9 +2,9 @@
   "address": "0x140014f6c",
   "rules": [
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/dec108a2f8464ac388ec29affb61c4d8",
     "contain loop",
     "write file on Windows/035d57bed47747649158312e9532f27d",
+    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/dec108a2f8464ac388ec29affb61c4d8",
     "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/88b7572ed916436d804701d7ca2c8848",
     "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/1d2aacee85cc43a0a1c1ba47e394ae52"
   ],

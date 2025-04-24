@@ -1,19 +1,19 @@
 {
   "address": "0x1400280b8",
   "rules": [
-    "hash data using djb2/1485ed9954f84e3481d22b64bc4cfca7",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
-    "encrypt data using chaskey/4b6f9d91d05f46dd9aa3662f80cb6278",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
-    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
-    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
-    "write file on Windows/035d57bed47747649158312e9532f27d",
-    "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/5f4c97f31ce341008ea23885a97305d8",
-    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/5f4855375d6b45e9bd6b2a189e856211",
     "encrypt data using XXTEA/031815fb14e94f2fb59fa9eb4980d745/dc118f3b61184df4a511ed4919cf656f",
-    "encrypt data using HC-128/9c50649e7db346e5b98b1de875012b97"
+    "encrypt data using chaskey/4b6f9d91d05f46dd9aa3662f80cb6278",
+    "encrypt data using TEA/2e46a442f8994747bcdba3ad7ba7dd19/5f4c97f31ce341008ea23885a97305d8",
+    "hash data using djb2/1485ed9954f84e3481d22b64bc4cfca7",
+    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "encrypt data using HC-128/9c50649e7db346e5b98b1de875012b97",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "encrypt data using chaskey/7025f739e4b341df894563ee3ec22dfd",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "decompress data using aPLib/a5c76dae137d4aaa9aade786acafaa41",
+    "decrypt data using TEA/171baf30f6564bc494c3539bab277577/5f4855375d6b45e9bd6b2a189e856211"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

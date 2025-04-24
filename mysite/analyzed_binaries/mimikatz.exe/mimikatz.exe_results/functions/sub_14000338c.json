@@ -1,9 +1,9 @@
 {
   "address": "0x14000338c",
   "rules": [
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "decompress data using LZO/368a268678dc46ccbe6ee697869692a3",
-    "64-bit execution via heavens gate/d7fcc2def38746b09a33d0c7032e9b82",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e"
+    "64-bit execution via heavens gate/d7fcc2def38746b09a33d0c7032e9b82"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

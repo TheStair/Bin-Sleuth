@@ -1,10 +1,10 @@
 {
   "address": "0x1400469b0",
   "rules": [
-    "write file on Windows/035d57bed47747649158312e9532f27d",
-    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop"
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "contain loop",
+    "encrypt data using XTEA/4b6117a2d51f4354afd7eb58ab16e151/1a6c04bed22346cdaee8fbdaa0f123d3"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

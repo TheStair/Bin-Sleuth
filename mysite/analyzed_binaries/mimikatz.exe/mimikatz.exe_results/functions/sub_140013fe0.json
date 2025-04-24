@@ -1,10 +1,10 @@
 {
   "address": "0x140013fe0",
   "rules": [
-    "get token membership",
-    "write file on Windows/035d57bed47747649158312e9532f27d",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57"
+    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
+    "write file on Windows/035d57bed47747649158312e9532f27d",
+    "get token membership"
   ],
   "disassembly": [
     "mov     r11, rsp",

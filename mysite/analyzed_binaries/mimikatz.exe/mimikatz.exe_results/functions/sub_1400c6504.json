@@ -1,11 +1,11 @@
 {
   "address": "0x1400c6504",
   "rules": [
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
     "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+    "contain loop"
   ],
   "disassembly": [
     "mov     r11, rsp {__return_addr}",

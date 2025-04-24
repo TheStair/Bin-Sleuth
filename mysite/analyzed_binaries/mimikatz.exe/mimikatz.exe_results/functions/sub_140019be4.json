@@ -1,11 +1,11 @@
 {
   "address": "0x140019be4",
   "rules": [
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "encrypt data using HC-128/9c50649e7db346e5b98b1de875012b97",
     "encrypt data using Curve25519/bf3cf3909d844745bc0e01f23d66c6a9",
-    "contain loop",
     "hide graphical window from taskbar/bbd5a45812ac411c80d2c86457ef37b7",
-    "encrypt data using HC-128/9c50649e7db346e5b98b1de875012b97"
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "contain loop"
   ],
   "disassembly": [
     "sub     rsp, 0x18",

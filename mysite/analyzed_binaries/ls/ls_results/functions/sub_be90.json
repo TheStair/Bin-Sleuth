@@ -1,0 +1,48 @@
+{
+  "address": "0xbe90",
+  "rules": [
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "contain loop"
+  ],
+  "disassembly": [
+    "endbr64 ",
+    "push    rbp",
+    "mov     rbp, rsp",
+    "push    rbx",
+    "mov     rbx, rdi",
+    "sub     rsp, 0x8",
+    "cmp     byte [rel data_237c0], 0x0",
+    "je      0xbed0",
+    "mov     edi, 0x1",
+    "mov     byte [rel data_237c0], 0x1",
+    "call    tcgetpgrp",
+    "test    eax, eax",
+    "jns     0xbf00",
+    "mov     rax, qword [rel stdout]",
+    "mov     rsi, qword [rbx]",
+    "mov     edx, 0x1",
+    "mov     rdi, qword [rbx+0x8]",
+    "mov     rbx, qword [rbp-0x8]",
+    "mov     rcx, qword [rax]",
+    "leave   ",
+    "jmp     fwrite_unlocked",
+    "mov     edi, 0x1",
+    "call    sub_8a60",
+    "jmp     0xbee5",
+    "cmp     qword [rel data_230e8], 0x0",
+    "je      0xbf10",
+    "lea     rdi, [rel data_230c0]",
+    "call    sub_be90",
+    "lea     rdi, [rel data_230f0]",
+    "call    sub_be90",
+    "lea     rdi, [rel data_230d0]",
+    "call    sub_be90",
+    "jmp     0xbea9",
+    "lea     rdi, [rel data_230e0]",
+    "call    sub_be90",
+    "jmp     0xbea9"
+  ],
+  "high_level_IL": [
+    "No High Level IL Loaded"
+  ]
+}

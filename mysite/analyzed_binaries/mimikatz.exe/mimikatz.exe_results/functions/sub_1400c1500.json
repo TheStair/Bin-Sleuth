@@ -1,8 +1,8 @@
 {
   "address": "0x1400c1500",
   "rules": [
-    "get file attributes",
     "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4",
+    "get file attributes",
     "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89"
   ],
   "disassembly": [

@@ -1,13 +1,13 @@
 {
   "address": "0x14001d71c",
   "rules": [
+    "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/0d7bc900a8ea48098fc469578ae14b88",
+    "contain loop",
+    "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "encrypt data using HC-128/86aaff13b46c4951b9ca4e0a9171c391",
     "hash data using aphash/c01783ca846f48c3a4751b50c0c12749",
-    "encrypt data using XXTEA/3026d94f6eda43e0bed136bd89733650/0d7bc900a8ea48098fc469578ae14b88",
-    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
-    "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4"
+    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

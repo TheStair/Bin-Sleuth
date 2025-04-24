@@ -3,9 +3,9 @@
   "rules": [
     "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
     "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
-    "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57"
+    "contain loop"
   ],
   "disassembly": [
     "mov     rax, rsp",

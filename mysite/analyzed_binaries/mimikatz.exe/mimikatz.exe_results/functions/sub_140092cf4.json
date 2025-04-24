@@ -1,15 +1,15 @@
 {
   "address": "0x140092cf4",
   "rules": [
-    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
-    "connect to WMI namespace via WbemLocator",
+    "connect to WMI namespace via WbemLocator/2f16b997303a4efbad54cff01fc6cd00",
     "contain loop",
     "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4",
-    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
-    "connect to WMI namespace via WbemLocator/2f16b997303a4efbad54cff01fc6cd00",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "allocate or change RW memory/f065d51335ee4137b486ba2a6434de57",
-    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440"
+    "connect to WMI namespace via WbemLocator/50f8c95bd151440fa4fe29260efaf440",
+    "empty recycle bin quietly/a401764de4c44240956dc7f3c78baebd",
+    "connect to WMI namespace via WbemLocator",
+    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89"
   ],
   "disassembly": [
     "mov     rax, rsp",

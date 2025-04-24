@@ -1,12 +1,12 @@
 {
   "address": "0x1400be490",
   "rules": [
+    "encrypt data using chaskey/4b6f9d91d05f46dd9aa3662f80cb6278",
     "hash data using djb2/1485ed9954f84e3481d22b64bc4cfca7",
+    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
     "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
-    "contain loop",
-    "hash data using jshash/79354a2ef36a4036b42806ea4b41f8bd",
-    "encrypt data using chaskey/4b6f9d91d05f46dd9aa3662f80cb6278"
+    "contain loop"
   ],
   "disassembly": [
     "mov     qword [rsp+0x8], rbx",

@@ -1,16 +1,16 @@
 {
   "address": "0x1400cbd7c",
   "rules": [
-    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89",
-    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
     "encrypt data using RC4 KSA/ce2c5ff22cc84a5d8021901651b76a23",
-    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
     "contain loop",
     "hash data with CRC32/dc8063c9cb1c41b9a5bafe66f5117ac4",
-    "encrypt data using Curve25519/4be2ead1b08a4c049dae9c8694881d76",
     "write file on Windows/035d57bed47747649158312e9532f27d",
+    "check for time delay via GetTickCount/dcdc41ab318e4e618f624ba5aeac30b2",
+    "encrypt data using Curve25519/4be2ead1b08a4c049dae9c8694881d76",
+    "validate payment card number using luhn algorithm with no lookup table/f595b07566ee46b3ba7870816078c34e",
+    "hide graphical window from taskbar/c26bad2600334fd9a84ba1d9de3384f6",
     "check for trap flag exception/f2973fbf4b89419fb73ecd274d9581c2",
-    "hide graphical window from taskbar/c26bad2600334fd9a84ba1d9de3384f6"
+    "decompress data using aPLib/88da69e00a6e49ce8c080be3a0beeb89"
   ],
   "disassembly": [
     "mov     qword [rsp+0x20 {__saved_rbx}], rbx",
