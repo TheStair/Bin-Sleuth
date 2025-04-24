@@ -1,8 +1,11 @@
 annotated-types==0.7.0
 asgiref==3.8.1
+certifi==2025.1.31
+charset-normalizer==3.4.1
 colorama==0.4.6
 cxxfilt==0.3.0
 Django==5.2
+django-tailwind==4.0.1
 dncil==1.0.2
 dnfile==0.15.1
 flare-capa==9.1.0
@@ -10,6 +13,7 @@ funcy==2.0
 humanize==4.12.2
 ida-netnode==3.0
 ida-settings==2.1.0
+idna==3.10
 intervaltree==3.1.0
 lief==0.16.5
 markdown-it-py==3.0.0
@@ -29,6 +33,7 @@ pyelftools==0.32
 Pygments==2.19.1
 python-flirt==0.9.7
 PyYAML==6.0.2
+requests==2.32.3
 rich==14.0.0
 ruamel.yaml==0.18.10
 ruamel.yaml.clib==0.2.12
@@ -38,6 +43,7 @@ sortedcontainers==2.4.0
 sqlparse==0.5.3
 typing-inspection==0.4.0
 typing_extensions==4.13.2
+urllib3==2.4.0
 viv_utils==0.8.0
 vivisect==1.2.1
 xmltodict==0.14.2
